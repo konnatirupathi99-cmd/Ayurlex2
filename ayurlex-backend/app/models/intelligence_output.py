@@ -1,0 +1,104 @@
+from pydantic import BaseModel
+from typing import List, Dict, Any, Optional
+from app.models.evidence import RetrievedEvidence
+
+class ConfidenceIndicator(BaseModel):
+    score: float
+    level: str
+    explanation: str
+    limitations: List[str]
+
+class ClassificationOutput(BaseModel):
+    type: str
+    label: str
+    summary: str
+
+class ModuleOutput(BaseModel):
+    module: str
+    status: str
+    classification: Optional[ClassificationOutput] = None
+    signals: List[str]
+    summary: str
+    evidence_ids: List[str]
+    confidence: float
+    limitations: List[str]
+    recommended_actions: List[str]
+
+class PatentContextOutput(BaseModel):
+    status: str
+    signals: List[str]
+    evidence_ids: List[str]
+
+class PriorArtOutput(BaseModel):
+    status: str
+    similarity_signals: List[str]
+    evidence_ids: List[str]
+
+class DifferentiationOutput(BaseModel):
+    signals: List[str]
+    evidence_ids: List[str]
+
+class TrademarkContextOutput(BaseModel):
+    status: str
+    signals: List[str]
+
+class IPModuleOutput(BaseModel):
+    module: str
+    status: str
+    summary: str
+    patent_context: PatentContextOutput
+    prior_art: PriorArtOutput
+    innovation_differentiation: DifferentiationOutput
+    trademark_context: TrademarkContextOutput
+    key_findings: List[str]
+    supporting_evidence: List[RetrievedEvidence]
+    confidence: float
+    limitations: List[str]
+    recommended_actions: List[str]
+
+class TKTermAnalysis(BaseModel):
+    normalized_terms: List[str]
+    ambiguous_terms: List[str]
+
+class TKIngredientAnalysis(BaseModel):
+    ingredient: str
+    traditional_context: str
+    evidence_ids: List[str]
+    confidence: float
+
+class TKFormulationAnalysis(BaseModel):
+    signals: List[str]
+    evidence_ids: List[str]
+
+class TKUseAnalysis(BaseModel):
+    signals: List[str]
+    evidence_ids: List[str]
+
+class TKModuleOutput(BaseModel):
+    module: str
+    status: str
+    summary: str
+    term_analysis: TKTermAnalysis
+    ingredient_analysis: List[TKIngredientAnalysis]
+    formulation_analysis: TKFormulationAnalysis
+    traditional_use_analysis: TKUseAnalysis
+    key_findings: List[str]
+    supporting_evidence: List[RetrievedEvidence]
+    confidence: float
+    limitations: List[str]
+    recommended_actions: List[str]
+
+class CoreIntelligenceOutput(BaseModel):
+    analysis_id: str
+    status: str
+    processing: Dict[str, str]
+    formulation_intelligence: ModuleOutput
+    ip_intelligence: IPModuleOutput
+    traditional_knowledge: TKModuleOutput
+    abs_context: ModuleOutput
+    regulatory_context: ModuleOutput
+    key_findings: List[str]
+    evidence: List[RetrievedEvidence]
+    confidence: ConfidenceIndicator
+    limitations: List[str]
+    recommended_next_steps: List[str]

@@ -1,0 +1,20 @@
+{
+  "ashwagandha": {
+    "canonical": "Ashwagandha",
+    "scientific": "Withania somnifera",
+    "english": "Indian Ginseng",
+    "aliases": ["अश्वगंधा", "అశ్వగంధ", "अश्वगन्धा", "Winter Cherry"]
+  },
+  "turmeric": {
+    "canonical": "Turmeric",
+    "scientific": "Curcuma longa",
+    "english": "Turmeric",
+    "aliases": ["हल्दी", "పసుపు", "हरिद्रा", "Haldi"]
+  },
+  "tulsi": {
+    "canonical": "Tulsi",
+    "scientific": "Ocimum sanctum",
+    "english": "Holy Basil",
+    "aliases": ["तुलसी", "తులసి", "Holy Basil"]
+  }
+}

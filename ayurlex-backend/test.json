@@ -1,0 +1,9 @@
+{
+    "innovation_name": "Test",
+    "query": "ఈ ఫార్ములేషన్కు పేటెంట్ అవకాశం ఉందా?",
+    "product_type": "Herbal",
+    "ingredients": ["అశ్వగంధ", "పసుపు"],
+    "jurisdiction": "India",
+    "language": "te",
+    "output_language": "te"
+}
