@@ -19,7 +19,7 @@ from app.services.evidence_router import EvidenceRouter
 from app.intelligence.formulation.formulation_analyzer import analyze_formulation
 from app.intelligence.ip.ip_analyzer import analyze_ip
 from app.intelligence.traditional_knowledge.tk_analyzer import analyze_traditional_knowledge
-from app.intelligence.abs import analyze_abs
+from app.intelligence.abs.abs_analyzer import analyze_abs
 from app.intelligence.regulatory import analyze_regulatory
 
 # Import Engines

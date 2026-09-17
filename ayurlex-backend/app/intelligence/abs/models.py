@@ -1,13 +1,12 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 
-class TKEvidenceContext(BaseModel):
+class ABSEvidenceContext(BaseModel):
     evidence_id: str
     source_title: str
     source_type: str
     category: str
-    language: str
-    source_language: str
     jurisdiction: str
+    language: str
     relevant_excerpt: str
     relevance_score: float

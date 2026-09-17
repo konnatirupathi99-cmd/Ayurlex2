@@ -10,6 +10,9 @@ class IntelligenceInput(BaseModel):
     product_type: str
     ingredients: List[str]
     normalized_ingredients: List[NormalizedTerm]
+    biological_resources: Optional[List[str]] = None
+    resource_source_information: Optional[Dict[str, Any]] = None
+    formulation_context: Optional[Dict[str, Any]] = None
     jurisdiction: str
     detected_language: str
     output_language: str

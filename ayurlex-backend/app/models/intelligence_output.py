@@ -84,7 +84,31 @@ class TKModuleOutput(BaseModel):
     traditional_use_analysis: TKUseAnalysis
     key_findings: List[str]
     supporting_evidence: List[RetrievedEvidence]
-    confidence: float
+    confidence: ConfidenceIndicator
+    limitations: List[str]
+    recommended_actions: List[str]
+
+class ABSResourceAnalysis(BaseModel):
+    ingredient: str
+    normalized_name: str
+    resource_context: str
+    available_source_information: str
+    signals: List[str]
+    evidence_ids: List[str]
+    confidence: ConfidenceIndicator
+
+class ABSModuleOutput(BaseModel):
+    module: str
+    status: str
+    summary: str
+    context_level: str
+    resource_analysis: List[ABSResourceAnalysis]
+    utilization_context: Dict[str, Any]
+    jurisdiction_context: Dict[str, Any]
+    signals: List[Dict[str, Any]]
+    supporting_evidence: List[RetrievedEvidence]
+    missing_information: List[str]
+    confidence: ConfidenceIndicator
     limitations: List[str]
     recommended_actions: List[str]
 
@@ -95,7 +119,7 @@ class CoreIntelligenceOutput(BaseModel):
     formulation_intelligence: ModuleOutput
     ip_intelligence: IPModuleOutput
     traditional_knowledge: TKModuleOutput
-    abs_context: ModuleOutput
+    abs_context: ABSModuleOutput
     regulatory_context: ModuleOutput
     key_findings: List[str]
     evidence: List[RetrievedEvidence]
