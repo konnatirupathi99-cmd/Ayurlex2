@@ -22,9 +22,16 @@ class SignalAggregator:
             elif hasattr(mod, 'key_findings'):
                 signals_to_process = mod.key_findings
 
-            for signal in signals_to_process:
-                if signal not in seen_signals:
-                    key_findings.append(f"[{name.upper()}] {signal}")
-                    seen_signals.add(signal)
+            for raw_signal in signals_to_process:
+                # Handle both string and complex signal objects
+                signal_text = raw_signal
+                if hasattr(raw_signal, 'signal'):
+                    signal_text = raw_signal.signal
+                elif isinstance(raw_signal, dict) and 'signal' in raw_signal:
+                    signal_text = raw_signal['signal']
+                    
+                if signal_text not in seen_signals:
+                    key_findings.append(f"[{name.upper()}] {signal_text}")
+                    seen_signals.add(signal_text)
                     
         return key_findings

@@ -112,6 +112,45 @@ class ABSModuleOutput(BaseModel):
     limitations: List[str]
     recommended_actions: List[str]
 
+class ProductClassificationOutput(BaseModel):
+    potential_contexts: List[str]
+    signals: List[str]
+    confidence: ConfidenceIndicator
+
+class IngredientRegulatoryAnalysis(BaseModel):
+    ingredient: str
+    normalized_name: str
+    scientific_name: Optional[str] = None
+    regulatory_context: str
+    signals: List[str]
+    evidence_ids: List[str]
+    confidence: ConfidenceIndicator
+
+class RegulatorySignal(BaseModel):
+    signal: str
+    priority: str
+    explanation: str
+    evidence_ids: List[str]
+    confidence: float
+
+class RegulatoryModuleOutput(BaseModel):
+    module: str
+    status: str
+    summary: str
+    product_classification: ProductClassificationOutput
+    claim_analysis: Dict[str, Any]
+    ingredient_analysis: List[IngredientRegulatoryAnalysis]
+    product_form_context: Dict[str, Any]
+    manufacturing_context: Dict[str, Any]
+    labelling_context: Dict[str, Any]
+    jurisdiction_context: Dict[str, Any]
+    signals: List[RegulatorySignal]
+    supporting_evidence: List[RetrievedEvidence]
+    missing_information: List[str]
+    confidence: ConfidenceIndicator
+    limitations: List[str]
+    recommended_actions: List[str]
+
 class CoreIntelligenceOutput(BaseModel):
     analysis_id: str
     status: str
@@ -120,7 +159,7 @@ class CoreIntelligenceOutput(BaseModel):
     ip_intelligence: IPModuleOutput
     traditional_knowledge: TKModuleOutput
     abs_context: ABSModuleOutput
-    regulatory_context: ModuleOutput
+    regulatory_context: RegulatoryModuleOutput
     key_findings: List[str]
     evidence: List[RetrievedEvidence]
     confidence: ConfidenceIndicator

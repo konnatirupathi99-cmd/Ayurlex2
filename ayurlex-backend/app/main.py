@@ -21,4 +21,4 @@ app.add_middleware(
 app.include_router(health.router, tags=["Health"])
 app.include_router(analysis.router, tags=["Analysis"], prefix="/analysis")
 app.include_router(documents.router, tags=["Documents"], prefix="/documents")
-app.include_router(knowledge.router, tags=["Knowledge"], prefix="/knowledge")
+app.include_router(knowledge.router, tags=["Knowledge"])

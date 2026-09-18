@@ -8,11 +8,16 @@ class IntelligenceInput(BaseModel):
     innovation_name: str
     innovation_description: str
     product_type: str
+    product_form: Optional[str] = None
+    intended_use: Optional[str] = None
+    claims: Optional[List[str]] = None
     ingredients: List[str]
     normalized_ingredients: List[NormalizedTerm]
     biological_resources: Optional[List[str]] = None
     resource_source_information: Optional[Dict[str, Any]] = None
     formulation_context: Optional[Dict[str, Any]] = None
+    manufacturing_information: Optional[Dict[str, Any]] = None
+    labelling_information: Optional[Dict[str, Any]] = None
     jurisdiction: str
     detected_language: str
     output_language: str
