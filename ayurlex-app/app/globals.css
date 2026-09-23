@@ -3,33 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: #fafaf9; /* Warm neutral background (stone-50) */
-  --foreground: #1c1917; /* stone-900 */
+  /* AYURLEX Core Colors */
+  --color-botanical-green: #1a3b2b;
+  --color-botanical-green-dark: #12291d;
+  --color-sage: #8a9a86;
+  --color-ivory: #fdfbf7;
+  --color-ivory-muted: #e6e3dd;
+  --color-terracotta: #c65d47;
+  --color-amber: #d4a373;
+  --color-indigo: #3d5a80;
+  
+  --color-text: #1c1917;
+  --color-text-light: #57534e;
+  --color-border: #e7e5e4;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-text);
   --card: #ffffff;
-  --card-foreground: #1c1917;
-  --border: #e7e5e4; /* stone-200 */
+  --card-foreground: var(--color-text);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1c1917; /* stone-900 */
-    --foreground: #fafaf9; /* stone-50 */
-    --card: #292524; /* stone-800 */
-    --card-foreground: #fafaf9;
-    --border: #44403c; /* stone-700 */
+    --color-botanical-green: #234d38;
+    --color-botanical-green-dark: #1a3b2b;
+    --color-sage: #a1b09d;
+    --color-ivory: #1c1917;
+    --color-ivory-muted: #292524;
+    --color-terracotta: #e07a5f;
+    --color-amber: #e3bc9a;
+    --color-indigo: #5c7fa6;
+
+    --color-text: #fafaf9;
+    --color-text-light: #a8a29e;
+    --color-border: #44403c;
+    
+    --background: var(--color-ivory);
+    --foreground: var(--color-text);
+    --card: #292524;
+    --card-foreground: var(--color-text);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Base resets since we're using vanilla CSS for the page */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

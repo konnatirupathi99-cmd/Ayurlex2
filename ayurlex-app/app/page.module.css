@@ -1,150 +1,506 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.dashboard {
+  min-height: 100vh;
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  font-family: 'Playfair Display', 'Inter', system-ui, sans-serif;
 }
 
-.main {
+.nav {
   display: flex;
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-ivory);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.intro {
+.logo {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-botanical-green);
+  text-decoration: none;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.navButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  transition: color 0.2s;
 }
 
-.intro a {
+.navButton:hover {
+  color: var(--color-botanical-green);
+}
+
+.exportButton {
+  background-color: var(--color-botanical-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
   font-weight: 500;
-  color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+.exportButton:hover {
+  background-color: var(--color-botanical-green-dark);
 }
 
-.ctas a {
+.hero {
+  background-color: var(--color-botanical-green);
+  color: var(--color-ivory);
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heroPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.heroEditorial {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-sage);
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto 2.5rem;
+  color: var(--color-ivory-muted);
+  line-height: 1.6;
+}
+
+.badges {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  display: flex;
   align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.commandBar {
+  max-width: 48rem;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(2rem);
+  z-index: 20;
+}
+
+.commandInput {
+  width: 100%;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  font-size: 1.125rem;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background-color: white;
+  color: var(--color-text);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.commandInput:focus {
+  box-shadow: 0 10px 30px rgba(26, 59, 43, 0.15);
+  border-color: var(--color-botanical-green);
+}
+
+.commandIcon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-sage);
+}
+
+.scopeBadge {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-ivory);
+  color: var(--color-botanical-green);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s;
+}
+
+.scopeBadge:hover {
+  background-color: var(--color-botanical-green);
+  color: white;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 0 2rem 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-botanical-green);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.metricsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-bottom: 3rem;
+}
+
+.metricCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.metricHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-botanical-green);
+}
+
+.metricTrend {
+  font-size: 0.875rem;
+  color: var(--color-sage);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.workbenchGrid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 3rem;
+}
+
+.moduleCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.moduleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  border-color: var(--color-sage);
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.moduleIcon {
+  background-color: var(--color-ivory);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  color: var(--color-botanical-green);
+}
+
+.moduleCategory {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+  background: var(--color-ivory);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.moduleTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.moduleDescription {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.moduleFooter {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-sage);
+}
+
+.workspaceSignal {
+  background: linear-gradient(135deg, var(--color-botanical-green), #142c20);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.signalContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.signalHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-sage);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.signalInsight {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.signalInsight strong {
+  color: var(--color-terracotta);
+}
+
+.signalAction {
+  background-color: white;
+  color: var(--color-botanical-green);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.signalAction:hover {
+  background-color: var(--color-ivory);
+}
+
+.signalScore {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.scoreValue {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-amber);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.scoreLabel {
+  font-size: 0.875rem;
+  color: var(--color-ivory-muted);
+}
+
+.recentBriefs {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.briefList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.briefItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.briefItem:last-child {
+  border-bottom: none;
+}
+
+.briefItem:hover {
+  background-color: var(--color-ivory);
+}
+
+.briefInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.briefTitle {
+  font-weight: 600;
+  color: var(--color-botanical-green);
+}
+
+.briefMeta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.briefScore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-ivory);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-indigo);
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.responsibleUse {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.warningIcon {
+  color: var(--color-terracotta);
+  flex-shrink: 0;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem;
   }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .navActions {
+    display: none;
   }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+  .hero {
+    padding: 3rem 1rem;
   }
-
-  .intro {
-    gap: 16px;
+  .heroTitle {
+    font-size: 2.5rem;
   }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+  .badges {
+    flex-direction: column;
+    align-items: stretch;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .commandBar {
+    margin: 0 1rem;
+    transform: translateY(2rem);
   }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .scopeBadge {
+    display: none;
   }
-}
-
-.code {
-  font-family: var(--font-geist-mono);
-  font-size: 0.9em;
-  background: color-mix(in srgb, currentColor 8%, transparent);
-  padding: 0.1em 0.4em;
-  border-radius: 6px;
+  .workspaceSignal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .briefItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }

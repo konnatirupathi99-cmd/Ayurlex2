@@ -1,0 +1,451 @@
+.workspaceContainer {
+  min-height: 100vh;
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 3rem 4rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(26,59,43,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 10;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.headerInfo {
+  max-width: 600px;
+}
+
+.headerTitle {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-botanical-green);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.headerSubtitle {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.newProjectButton {
+  background-color: var(--color-botanical-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.newProjectButton:hover {
+  background-color: var(--color-botanical-green-dark);
+}
+
+.previewBanner {
+  background-color: rgba(212, 163, 115, 0.15); /* amber with opacity */
+  border: 1px solid rgba(212, 163, 115, 0.4);
+  color: var(--color-text);
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.previewBannerInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.previewBannerTitle {
+  font-weight: 600;
+  color: var(--color-botanical-green);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.previewBannerText {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.signInButton {
+  background-color: white;
+  color: var(--color-botanical-green);
+  border: 1px solid var(--color-botanical-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.signInButton:hover {
+  background-color: var(--color-ivory);
+}
+
+.mainContent {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.metricCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.metricIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-ivory);
+  color: var(--color-botanical-green);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.metricValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-botanical-green);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filterSelect {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  outline: none;
+  cursor: pointer;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.projectCard {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  border-color: var(--color-sage);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.projectName {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.projectStatus {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.statusActive {
+  background-color: rgba(61, 90, 128, 0.1);
+  color: var(--color-indigo);
+}
+
+.statusCompleted {
+  background-color: rgba(26, 59, 43, 0.1);
+  color: var(--color-botanical-green);
+}
+
+.statusPaused {
+  background-color: rgba(212, 163, 115, 0.2);
+  color: var(--color-text-light);
+}
+
+.projectDetails {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.projectDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--color-border);
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLink {
+  color: var(--color-indigo);
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+.itemCard {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.itemCard:hover {
+  background-color: var(--color-ivory);
+  border-color: var(--color-sage);
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.itemTitle {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.itemMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.itemMetaTag {
+  background-color: var(--color-ivory-muted);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--color-text);
+}
+
+.itemAction {
+  color: var(--color-sage);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.itemCard:hover .itemAction {
+  color: var(--color-botanical-green);
+}
+
+.emptyState {
+  background-color: white;
+  border: 1px dashed var(--color-border);
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-ivory);
+  color: var(--color-sage);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.emptyDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  max-width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 2rem 1.5rem;
+  }
+  .previewBanner {
+    padding: 1rem 2rem;
+  }
+  .mainContent {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .headerTitle {
+    font-size: 2rem;
+  }
+  .previewBanner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .previewBannerInfo {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .itemCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .itemAction {
+    align-self: flex-end;
+  }
+}

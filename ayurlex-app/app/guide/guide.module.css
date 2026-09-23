@@ -1,0 +1,506 @@
+.guideContainer {
+  min-height: 100vh;
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2rem 4rem;
+  background-color: var(--color-botanical-green);
+  color: var(--color-ivory);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.headerTitle {
+  font-family: var(--font-playfair);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.headerDescription {
+  font-size: 1.125rem;
+  color: var(--color-sage);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.headerEmphasis {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.headerActions {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.actionButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.actionButton:hover {
+  background-color: white;
+  color: var(--color-botanical-green);
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 4rem;
+  gap: 4rem;
+}
+
+.sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.stepList::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.25rem;
+  width: 2px;
+  background-color: var(--color-border);
+  z-index: 0;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.stepItem:hover {
+  background-color: white;
+}
+
+.stepItemActive {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid var(--color-border);
+}
+
+.stepIndicator {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.stepItemActive .stepIndicator {
+  border-color: var(--color-botanical-green);
+  color: var(--color-botanical-green);
+  background-color: var(--color-botanical-green);
+  color: white;
+}
+
+.stepItemCompleted .stepIndicator {
+  border-color: var(--color-sage);
+  background-color: var(--color-sage);
+  color: white;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 2.5rem;
+}
+
+.stepTitle {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  line-height: 1.3;
+}
+
+.stepItemActive .stepTitle {
+  color: var(--color-botanical-green);
+}
+
+.stepStatus {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  overflow: hidden;
+}
+
+.phaseHeader {
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-ivory);
+}
+
+.phaseTag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-botanical-green);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phaseTitle {
+  font-family: var(--font-playfair);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.phaseTasks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.taskCard {
+  background: white;
+  border: 1px solid var(--color-border);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.taskIcon {
+  color: var(--color-sage);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.taskText {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.phaseBody {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sectionHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-botanical-green);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.outputsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.outputCard {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: var(--color-ivory);
+}
+
+.outputCard:hover {
+  border-color: var(--color-botanical-green);
+  box-shadow: 0 4px 12px rgba(26,59,43,0.05);
+}
+
+.outputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.outputTitle {
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.outputStatus {
+  font-size: 0.75rem;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
+.outputAction {
+  color: var(--color-botanical-green);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.askPromptBox {
+  background: rgba(61, 90, 128, 0.05);
+  border: 1px solid rgba(61, 90, 128, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.askIcon {
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-indigo);
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.askContent {
+  flex: 1;
+}
+
+.askLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.askText {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.askButton {
+  background-color: white;
+  border: 1px solid var(--color-indigo);
+  color: var(--color-indigo);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.askButton:hover {
+  background-color: var(--color-indigo);
+  color: white;
+}
+
+.phaseControls {
+  padding: 1.5rem 2.5rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-ivory);
+}
+
+.controlButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: white;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.controlButton:hover {
+  background-color: var(--color-border);
+}
+
+.controlButtonPrimary {
+  background-color: var(--color-botanical-green);
+  color: white;
+  border-color: var(--color-botanical-green);
+}
+
+.controlButtonPrimary:hover {
+  background-color: var(--color-botanical-green-dark);
+}
+
+.guardrailPanel {
+  margin-top: auto;
+  background-color: white;
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  display: flex;
+  gap: 1rem;
+}
+
+.guardrailIcon {
+  color: var(--color-terracotta);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .stepList {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  .stepList::before {
+    top: 1.25rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 2px;
+    width: auto;
+  }
+  .stepItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .headerTitle {
+    font-size: 2rem;
+  }
+  .layout {
+    padding: 1rem;
+  }
+  .phaseHeader, .phaseBody, .phaseControls {
+    padding: 1.5rem;
+  }
+  .phaseTitle {
+    font-size: 1.75rem;
+  }
+}

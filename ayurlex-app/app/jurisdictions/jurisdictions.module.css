@@ -1,0 +1,413 @@
+.jurisdictionsContainer {
+  min-height: 100vh;
+  background-color: var(--color-ivory);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.header {
+  padding: 3rem 4rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background-image: radial-gradient(circle at center, rgba(26,59,43,0.05) 2px, transparent 2px);
+  background-size: 24px 24px;
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+  pointer-events: none;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.headerInfo {
+  max-width: 600px;
+}
+
+.headerTitle {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-botanical-green);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.headerSubtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.headerActions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.actionButton {
+  background-color: white;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.actionButton:hover {
+  background-color: var(--color-ivory);
+  border-color: var(--color-sage);
+}
+
+.actionButtonPrimary {
+  background-color: var(--color-botanical-green);
+  color: white;
+  border: none;
+}
+
+.actionButtonPrimary:hover {
+  background-color: var(--color-botanical-green-dark);
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.disclaimerBanner {
+  background-color: rgba(224, 122, 95, 0.05);
+  border: 1px solid rgba(224, 122, 95, 0.2);
+  color: var(--color-terracotta);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.disclaimerIcon {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.pathwayPanel {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.pathwayInfo {
+  flex: 1;
+}
+
+.pathwayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.pathwayTitle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.marketSelector {
+  font-family: var(--font-playfair);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-botanical-green);
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  border-bottom: 2px dashed var(--color-border);
+  padding-bottom: 0.25rem;
+}
+
+.saveAction {
+  color: var(--color-sage);
+  background: transparent;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  cursor: pointer;
+}
+
+.saveAction:hover {
+  color: var(--color-botanical-green);
+}
+
+.postureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.postureItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.postureLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.postureValue {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.marketNote {
+  background-color: var(--color-ivory);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  border-left: 3px solid var(--color-sage);
+}
+
+.readinessWidget {
+  width: 320px;
+  background-color: var(--color-botanical-green);
+  color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.readinessTitle {
+  font-size: 0.875rem;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.readinessScore {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-amber);
+  margin-bottom: 1.5rem;
+}
+
+.progressContainer {
+  height: 6px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: var(--color-amber);
+  border-radius: 3px;
+}
+
+.readinessLabel {
+  font-size: 0.75rem;
+  color: var(--color-ivory-muted);
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-botanical-green);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marketCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.marketCard {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.marketCard:hover {
+  border-color: var(--color-sage);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.marketCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.marketName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marketCategory {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--color-ivory);
+  color: var(--color-botanical-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.marketDescription {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+.matrixContainer {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.matrixWrapper {
+  overflow-x: auto;
+}
+
+.matrixTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.matrixTh {
+  background-color: var(--color-ivory);
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-botanical-green);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.matrixTh:first-child {
+  width: 200px;
+  color: var(--color-text-light);
+}
+
+.matrixTd {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.matrixTr:last-child .matrixTd {
+  border-bottom: none;
+}
+
+.matrixTr:hover .matrixTd {
+  background-color: rgba(253, 251, 247, 0.5); /* var(--color-ivory) with opacity */
+}
+
+.matrixRowLabel {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.875rem;
+}
+
+.termHighlight {
+  color: var(--color-indigo);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .headerContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pathwayPanel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .readinessWidget {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem;
+  }
+  .headerTitle {
+    font-size: 2rem;
+  }
+  .mainContent {
+    padding: 0 1.5rem 3rem;
+  }
+  .postureGrid {
+    grid-template-columns: 1fr;
+  }
+}
