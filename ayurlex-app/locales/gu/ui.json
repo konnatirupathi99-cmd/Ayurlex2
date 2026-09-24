@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "ઝાંખી (Overview)",
+    "newAnalysis": "નવું વિશ્લેષણ (New Analysis)",
+    "evidenceExplorer": "પુરાવા સંશોધક (Evidence Explorer)",
+    "knowledgeBase": "જ્ઞાન આધાર (Knowledge Base)",
+    "analysisHistory": "વિશ્લેષણ ઇતિહાસ (Analysis History)",
+    "settings": "સેટિંગ્સ (Settings)",
+    "help": "મદદ અને આધાર (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "વિશ્લેષણ શોધો... (Search analysis...)",
+    "ayurvedaScope": "માત્ર આયુર્વેદ (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "પ્રતિસાદ માત્ર આયુર્વેદ અને પરંપરાગત ચિકિત્સા જ્ઞાન પૂરતા મર્યાદિત છે",
+    "drResearcher": "ડૉ. સંશોધક (Dr. Researcher)",
+    "proAccount": "પ્રો એકાઉન્ટ (Pro Account)",
+    "signInToSave": "સાચવવા માટે સાઇન ઇન કરો (Sign in to save)",
+    "export": "નિકાસ કરો (Export)",
+    "open": "ખોલો (Open)",
+    "resume": "ફરી શરૂ કરો (Resume)",
+    "search": "શોધો (Search)"
+  },
+  "workspace": {
+    "headerTitle": "જે કાર્ય વિકસિત થાય છે તેને સાચવો (Keep the work that should compound)",
+    "headerSubtitle": "ઇનોવેશન પ્રોજેક્ટ્સ (Innovation projects) સાચવો, ચેટ ઇતિહાસ જુઓ અને જનરેટ કરેલા અહેવાલો સુરક્ષિત આયુર્વેદ સંશોધન કાર્યક્ષેત્રમાં (workspace) રાખો.",
+    "newProject": "નવો પ્રોજેક્ટ (New project)",
+    "previewMode": "પૂર્વાવલોકન મોડ સક્રિય છે (Preview mode is active)",
+    "previewText": "તમે નમૂના કાર્યક્ષેત્રની સામગ્રી જોઈ રહ્યા છો. સાઇન ઇન કરવાથી ખાનગી બચત સક્રિય થાય છે અને તમારા પ્રોજેક્ટ્સ સત્રો સાથે જોડાય છે. નોંધ: અમે ક્યારેય અન્ય વપરાશકર્તાના રેકોર્ડ પ્રદર્શિત કરતા નથી.",
+    "metrics": {
+      "savedProjects": "સાચવેલા પ્રોજેક્ટ્સ (Saved Projects)",
+      "chatSessions": "ચેટ સત્રો (Chat Sessions)",
+      "generatedReports": "જનરેટ કરેલા અહેવાલો (Generated Reports)"
+    },
+    "projects": {
+      "title": "ઇનોવેશન પ્રોજેક્ટ્સ (Innovation Projects)",
+      "allStatuses": "તમામ સ્થિતિઓ (All Statuses)",
+      "active": "સક્રિય (Active)",
+      "paused": "અટકાવેલ (Paused)",
+      "completed": "પૂર્ણ (Completed)",
+      "allJurisdictions": "તમામ અધિકારક્ષેત્રો (All Jurisdictions)",
+      "india": "ભારત (India)",
+      "us": "યુનાઇટેડ સ્ટેટ્સ (United States)",
+      "eu": "યુરોપિયન યુનિયન (European Union)",
+      "noProjectsTitle": "હજુ સુધી કોઈ પ્રોજેક્ટ નથી",
+      "noProjectsDesc": "તમારો પ્રથમ આયુર્વેદ ઇનોવેશન પ્રોજેક્ટ બનાવીને તમારા સંશોધન, ચેટ સત્રો અને અહેવાલોને જૂથબદ્ધ કરો.",
+      "createProject": "પ્રોજેક્ટ બનાવો (Create Project)",
+      "focus": "કેન્દ્ર (Focus)",
+      "jurisdiction": "અધિકારક્ષેત્ર (Jurisdiction)",
+      "updated": "અપડેટ થયેલ (Updated)",
+      "chats": "ચેટ્સ (Chats)",
+      "reports": "અહેવાલો (Reports)"
+    },
+    "chats": {
+      "title": "ચેટ ઇતિહાસ (Chat History)",
+      "noChatsTitle": "કોઈ સાચવેલ ચેટ્સ નથી",
+      "noChatsDesc": "પરંપરાગત જ્ઞાન અથવા નિયમનકારી માર્ગો (regulatory pathways) વિશે સંશોધન શરૂ કરો.",
+      "askAyurlex": "AYURLEX ને પૂછો (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "જનરેટ કરેલા અહેવાલો (Generated Reports)",
+      "noReportsTitle": "કોઈ અહેવાલો બનાવ્યા નથી",
+      "noReportsDesc": "અહીં અહેવાલો સાચવવા માટે અધિકારક્ષેત્ર મેટ્રિક્સ (jurisdiction matrix) અથવા ઇનોવેશન બ્રીફ (innovation brief) પૂર્ણ કરો."
+    }
+  },
+  "assistant": {
+    "headerTitle": "શ્રેષ્ઠ પ્રશ્નો પૂછો. બુદ્ધિશાળી ઇનોવેશન બનાવો.",
+    "headerSubtitle": "AYURLEX આયુર્વેદ સંશોધન, ફોર્મ્યુલેશન વિશ્લેષણ (Formulation analysis), પરંપરાગત જ્ઞાન ટ્રેકિંગ, પુરાવા ચકાસણી, બૌદ્ધિક સંપત્તિ (Intellectual property) અને નિયમનકારી માર્ગો (Regulatory pathways) ને સમર્થન આપે છે.",
+    "citationOnline": "સાઇટેશન લેયર ઓનલાઇન છે (Citation layer online)",
+    "assistantName": "AYURLEX સહાયક (Assistant)",
+    "scopeBadge": "પુરાવા-આધારિત (Evidence-grounded) · માત્ર આયુર્વેદ",
+    "liveCitation": "લાઇવ સાઇટેશન સૂચક (Live citation indicator)",
+    "guardrailText": "હું માત્ર આયુર્વેદ સંબંધિત પ્રશ્નો માટે રચાયેલ છું. હું આ વિષયને આયુર્વેદિક ફોર્મ્યુલેશન (Formulation), પરંપરાગત જ્ઞાન, પુરાવા (Evidence), ઇનોવેશન (Innovation), બૌદ્ધિક સંપત્તિ (Intellectual property) અથવા માર્કેટ પાથવે સાથે જોડવામાં મદદ કરી શકું છું.",
+    "guardrailDisclaimer": "AYURLEX તબીબી નિદાન અથવા કટોકટી તબીબી સલાહ આપતું નથી. કૃપા કરીને ક્લિનિકલ માર્ગદર્શન માટે યોગ્ય ચિકિત્સકની સલાહ લો.",
+    "composerPlaceholder": "ઘટક (Ingredient), ફોર્મ્યુલેશન, પરંપરાગત જ્ઞાન અથવા ઇનોવેશન પાથવે વિશે પૂછો...",
+    "shiftEnter": "નવી લાઇન માટે Shift + Enter દબાવો",
+    "lens": {
+      "title": "સંદર્ભ લેન્સ (Context Lens)",
+      "jurisdiction": "પ્રાથમિક અધિકારક્ષેત્ર (Primary Jurisdiction)",
+      "pathway": "માર્ગ તૈયારી (Pathway Readiness)",
+      "category": "ઉત્પાદન શ્રેણી સ્મૃતિપત્ર (Category Reminder)",
+      "claimSensitivity": "દાવો સંવેદનશીલતા (Claim Sensitivity)",
+      "expectedEvidence": "અપેક્ષિત પુરાવા / પુરાવાનો અભાવ (Evidence Expected)"
+    },
+    "quality": {
+      "title": "જવાબની ગુણવત્તા (Answer Quality)",
+      "coverage": "સ્રોત કવરેજ (Source Coverage)",
+      "classical": "શાસ્ત્રીય સંદર્ભો (Classical References)",
+      "journal": "જર્નલ અનુક્રમણિકા (Journal Index)",
+      "openQuestions": "અનિશ્ચિતતાઓ / ખુલ્લા પ્રશ્નો (Open Questions)"
+    },
+    "citations": {
+      "title": "લાઇવ સાઇટેશન્સ (Live Citations)",
+      "classicalType": "શાસ્ત્રીય લખાણ (Classical Text)",
+      "journalType": "જર્નલ (Journal)",
+      "author": "લેખક (Author)",
+      "chapter": "અધ્યાય (Chapter)",
+      "year": "વર્ષ (Year)",
+      "source": "સ્રોત (Source)",
+      "viewOriginal": "મૂળ સંસ્કૃત અને અનુવાદ જુઓ (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC દ્વારા સ્રોત ચકાસણી કરો (Verify Source details)",
+      "note": "નોંધ: ઔપચારિક સબમિશનમાં શામેલ કરતા પહેલા હંમેશા અધ્યાય, અનુવાદ, આવૃત્તિ અને વર્તમાન પ્રકાશન વિગતોની ચકાસણી કરો."
+    },
+    "responsibleUse": "AYURLEX સંશોધનની રચના કરે છે અને પુરાવાઓનો નકશો બનાવે છે, પરંતુ પ્રમાણિત ચિકિત્સકો, નિયમનકારો (regulators), વૈજ્ઞાનિક સમીક્ષકો અથવા યોગ્ય કાનૂની સલાહકારોનું સ્થાન લેતું નથી."
+  }
+}

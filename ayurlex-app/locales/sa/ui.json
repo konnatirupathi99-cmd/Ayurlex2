@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "सिंहावलोकनम् (Overview)",
+    "newAnalysis": "नूतनविश्लेषणम् (New Analysis)",
+    "evidenceExplorer": "प्रमाण-अन्वेषकः (Evidence Explorer)",
+    "knowledgeBase": "ज्ञानकोशः (Knowledge Base)",
+    "analysisHistory": "विश्लेषणेतिहासः (Analysis History)",
+    "settings": "विन्यासाः (Settings)",
+    "help": "साहाय्यम् (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "विश्लेषणम् अन्विष्यताम्... (Search analysis...)",
+    "ayurvedaScope": "आयुर्वेद-व्याप्तिः (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "प्रतिक्रियाः आयुर्वेद-पारम्परिक-चिकित्साज्ञाने एव सीमिताः (Responses are constrained to Ayurveda and traditional medicine knowledge)",
+    "drResearcher": "डा. शोधकर्ता (Dr. Researcher)",
+    "proAccount": "प्रो-खाता (Pro Account)",
+    "signInToSave": "रक्षणार्थं प्रविशतु (Sign in to save)",
+    "export": "निर्यातयतु (Export)",
+    "open": "उद्घाटयतु (Open)",
+    "resume": "पुनः आरभ्यताम् (Resume)",
+    "search": "अन्वेषणम् (Search)"
+  },
+  "workspace": {
+    "headerTitle": "तत्कार्यं रक्षतु यत् वर्धेत (Keep the work that should compound)",
+    "headerSubtitle": "नवाचार-परियोजनाः (Innovation projects) रक्षतु, सम्भाषणेतिहासम् (Chat history) पश्यतु, तथा च विश्लेषणात्मक-विवरणानि (Generated reports) एकस्मिन् सुरक्षित-आयुर्वेदानुसन्धान-कार्यक्षेत्रे (Ayurveda research workspace) स्थापयतु।",
+    "newProject": "नूतन-परियोजना (New project)",
+    "previewMode": "पूर्वावलोकन-प्रणाली (Preview mode) सक्रिया अस्ति",
+    "previewText": "भवान् नमूना-कार्यक्षेत्र-सामग्रीं (Sample workspace content) पश्यन् अस्ति। प्रवेशेन (Sign in) निजी-रक्षणं (Private saving) सक्रियं भवति, तव परियोजनाः च सत्रेषु (Sessions) सम्बद्धाः भवन्ति। सूच्यते: वयं कदापि अन्यस्य उपयोक्तुः अभिलेखान् न प्रदर्शयामः।",
+    "metrics": {
+      "savedProjects": "रक्षिताः परियोजनाः (Saved Projects)",
+      "chatSessions": "सम्भाषण-सत्राणि (Chat Sessions)",
+      "generatedReports": "निर्मित-विवरणानि (Generated Reports)"
+    },
+    "projects": {
+      "title": "नवाचार-परियोजनाः (Innovation Projects)",
+      "allStatuses": "सर्वाः स्थितयः (All Statuses)",
+      "active": "सक्रियाः (Active)",
+      "paused": "स्थगिताः (Paused)",
+      "completed": "पूर्णाः (Completed)",
+      "allJurisdictions": "सर्वाणि अधिकरणानि (All Jurisdictions)",
+      "india": "भारतम् (India)",
+      "us": "संयुक्तानि राज्यानि (United States)",
+      "eu": "यूरोपीयसङ्घः (European Union)",
+      "noProjectsTitle": "अद्यापि न कापि परियोजना (No projects yet)",
+      "noProjectsDesc": "प्रथमाम् आयुर्वेद-नवाचार-परियोजनां (Ayurveda innovation project) निर्माय स्वशोधं, सम्भाषण-सत्राणि (Chat sessions), विवरणानि च (Reports) सङ्घटयतु।",
+      "createProject": "परियोजनां निर्मातु (Create Project)",
+      "focus": "केन्द्रम् (Focus)",
+      "jurisdiction": "अधिकरणम् (Jurisdiction)",
+      "updated": "अद्यतनीकृतम् (Updated)",
+      "chats": "सम्भाषणानि (Chats)",
+      "reports": "विवरणानि (Reports)"
+    },
+    "chats": {
+      "title": "सम्भाषणेतिहासः (Chat History)",
+      "noChatsTitle": "न किमपि रक्षितं सम्भाषणम् (No saved chats)",
+      "noChatsDesc": "पारम्परिकज्ञानस्य (Traditional knowledge) अथवा नियामक-मार्गाणां (Regulatory pathways) अन्वेषणम् आरभ्यताम्।",
+      "askAyurlex": "AYURLEX पृच्छतु (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "निर्मित-विवरणानि (Generated Reports)",
+      "noReportsTitle": "न किमपि विवरणं निर्मितम् (No reports generated)",
+      "noReportsDesc": "अत्र विवरणानि (Reports) रक्षितुम् अधिकार-मातृकां (Jurisdiction matrix) वा नवाचार-सङ्क्षेपं (Innovation brief) पूरयतु।"
+    }
+  },
+  "assistant": {
+    "headerTitle": "उत्तम-प्रश्नान् पृच्छतु। प्रज्ञापूर्ण-नवाचारान् (Innovations) निर्मातु।",
+    "headerSubtitle": "AYURLEX आयुर्वेदानुसन्धानं, योग-विश्लेषणं (Formulation analysis), पारम्परिकज्ञान-अनुमार्गणं, प्रमाण-सत्यापनं (Evidence verification), बौद्धिकसम्पदं (Intellectual property), तथा च नियामक-मार्गान् (Regulatory pathways) समर्थयति।",
+    "citationOnline": "उद्धरण-स्तरः (Citation layer) अन्तर्जाल-सक्रियः (Online)",
+    "assistantName": "AYURLEX सहायकः (Assistant)",
+    "scopeBadge": "प्रमाण-आधारितम् (Evidence-grounded) · केवलम् आयुर्वेदः",
+    "liveCitation": "प्रत्यक्ष-उद्धरण-सूचकः (Live citation indicator)",
+    "guardrailText": "अहं केवलम् आयुर्वेद-सम्बद्ध-प्रश्नेभ्यः निर्मितः अस्मि। अहम् एतं विषयम् आयुर्वेदिक-योगेन (Formulation), पारम्परिकज्ञानेन, प्रमाणेन (Evidence), नवाचारेन (Innovation), बौद्धिकसम्पदा (Intellectual property) वा विपणि-मार्गेण सह संयोजयितुं साहाय्यं कर्तुं शक्नोमि।",
+    "guardrailDisclaimer": "AYURLEX वैद्यकीय-निदानम् अथवा आपत्कालीन-वैद्यकीय-परामर्शं न ददाति। कृपया नैदानिक-मार्गदर्शनाय योग्य-चिकित्सकेन सह मन्त्रयतु।",
+    "composerPlaceholder": "द्रव्यस्य (Ingredient), योगस्य (Formulation), पारम्परिकज्ञानस्य नवाचार-मार्गस्य वा विषये पृच्छतु...",
+    "shiftEnter": "नूतनपङ्क्त्यै Shift + Enter नुदतु",
+    "lens": {
+      "title": "सन्दर्भ-दृष्टिः (Context Lens)",
+      "jurisdiction": "प्राथमिक-अधिकरणम् (Primary Jurisdiction)",
+      "pathway": "मार्ग-सज्जता (Pathway Readiness)",
+      "category": "श्रेणी-स्मरणम् (Category Reminder)",
+      "claimSensitivity": "दावा-संवेदनशीलता (Claim Sensitivity)",
+      "expectedEvidence": "अपेक्षित-प्रमाणम् (Evidence Expected)"
+    },
+    "quality": {
+      "title": "उत्तर-गुणवत्ता (Answer Quality)",
+      "coverage": "स्रोत-व्याप्तिः (Source Coverage)",
+      "classical": "शास्त्रीय-सन्दर्भाः (Classical References)",
+      "journal": "जर्नल-सूचिका (Journal Index)",
+      "openQuestions": "मुक्त-प्रश्नाः (Open Questions)"
+    },
+    "citations": {
+      "title": "प्रत्यक्ष-उद्धरणानि (Live Citations)",
+      "classicalType": "शास्त्रीय-ग्रन्थः (Classical Text)",
+      "journalType": "जर्नलम् (Journal)",
+      "author": "लेखकः (Author)",
+      "chapter": "अध्यायः / स्थानम् (Chapter)",
+      "year": "वर्षम् (Year)",
+      "source": "स्रोतः (Source)",
+      "viewOriginal": "मूल-संस्कृतं तथा च अनुवादं पश्यतु (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC माध्यमेन स्रोत-विवरणं सत्यापयतु (Verify Source details)",
+      "note": "सूच्यते (Note): औपचारिक-प्रस्तुतीकरणेषु समावेशात् पूर्वं सर्वदा अध्यायस्य, अनुवादस्य, संस्करणस्य, वर्तमान-प्रकाशन-विवरणस्य च पुष्टिं करोतु।"
+    },
+    "responsibleUse": "AYURLEX अनुसन्धानं सङ्घटयति तथा च प्रमाणानि (Evidence) चित्रयति, किन्तु एतत् प्रमाणित-चिकित्सकानां, नियामकानां (Regulators), वैज्ञानिक-समीक्षकानां, योग्य-विधि-परामर्शदातॄणां वा स्थानं न गृह्णाति।"
+  }
+}

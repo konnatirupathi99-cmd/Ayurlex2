@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "Aperçu (Overview)",
+    "newAnalysis": "Nouvelle Analyse (New Analysis)",
+    "evidenceExplorer": "Explorateur de Preuves (Evidence Explorer)",
+    "knowledgeBase": "Base de Connaissances (Knowledge Base)",
+    "analysisHistory": "Historique des Analyses (Analysis History)",
+    "settings": "Paramètres (Settings)",
+    "help": "Aide & Support (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "Rechercher une analyse... (Search analysis...)",
+    "ayurvedaScope": "Portée exclusive à l'Ayurveda (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "Les réponses sont strictement limitées à l'Ayurveda et aux connaissances médicales traditionnelles",
+    "drResearcher": "Dr. Chercheur (Dr. Researcher)",
+    "proAccount": "Compte Pro (Pro Account)",
+    "signInToSave": "Connectez-vous pour enregistrer (Sign in to save)",
+    "export": "Exporter (Export)",
+    "open": "Ouvrir (Open)",
+    "resume": "Reprendre (Resume)",
+    "search": "Recherche (Search)"
+  },
+  "workspace": {
+    "headerTitle": "Préservez le travail qui doit capitaliser (Keep the work that should compound)",
+    "headerSubtitle": "Enregistrez les projets d'innovation responsable, consultez l'historique des discussions et conservez les rapports générés dans un espace de recherche ayurvédique sécurisé.",
+    "newProject": "Nouveau projet (New project)",
+    "previewMode": "Mode aperçu activé (Preview mode is active)",
+    "previewText": "Vous consultez le contenu d'un espace de travail d'exemple. La connexion active la sauvegarde privée et associe vos projets aux sessions. Remarque : nous ne montrons jamais les dossiers d'un autre utilisateur.",
+    "metrics": {
+      "savedProjects": "Projets enregistrés (Saved Projects)",
+      "chatSessions": "Sessions de chat (Chat Sessions)",
+      "generatedReports": "Rapports générés (Generated Reports)"
+    },
+    "projects": {
+      "title": "Projets d'Innovation (Innovation Projects)",
+      "allStatuses": "Tous les statuts (All Statuses)",
+      "active": "Actif (Active)",
+      "paused": "En pause (Paused)",
+      "completed": "Terminé (Completed)",
+      "allJurisdictions": "Toutes les juridictions (All Jurisdictions)",
+      "india": "Inde (India)",
+      "us": "États-Unis (United States)",
+      "eu": "Union Européenne (European Union)",
+      "noProjectsTitle": "Aucun projet pour le moment",
+      "noProjectsDesc": "Créez votre premier projet d'innovation ayurvédique pour regrouper vos recherches, sessions de chat et rapports.",
+      "createProject": "Créer un projet (Create Project)",
+      "focus": "Cible (Focus)",
+      "jurisdiction": "Juridiction (Jurisdiction)",
+      "updated": "Mis à jour (Updated)",
+      "chats": "Discussions (Chats)",
+      "reports": "Rapports (Reports)"
+    },
+    "chats": {
+      "title": "Historique des Discussions (Chat History)",
+      "noChatsTitle": "Aucune discussion enregistrée",
+      "noChatsDesc": "Commencez à explorer les connaissances traditionnelles ou les parcours réglementaires.",
+      "askAyurlex": "Demander à AYURLEX (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "Rapports Générés (Generated Reports)",
+      "noReportsTitle": "Aucun rapport généré",
+      "noReportsDesc": "Complétez la matrice de juridiction ou le brief d'innovation pour enregistrer les rapports ici."
+    }
+  },
+  "assistant": {
+    "headerTitle": "Posez d'excellentes questions. Bâtissez des innovations intelligentes.",
+    "headerSubtitle": "AYURLEX soutient la recherche en Ayurveda, la formulation, la vérification des connaissances traditionnelles, la sécurité, la propriété intellectuelle et les parcours réglementaires.",
+    "citationOnline": "Couche de citations en ligne (Citation layer online)",
+    "assistantName": "Assistant AYURLEX (Assistant)",
+    "scopeBadge": "Fondé sur des preuves (Evidence-grounded) · Exclusivement Ayurveda",
+    "liveCitation": "Indicateur de citations en direct (Live citation indicator)",
+    "guardrailText": "Je suis conçu uniquement pour les questions liées à l'Ayurveda. Je peux aider à relier ce sujet à la formulation, aux connaissances traditionnelles, aux preuves, à l'innovation responsable, à la propriété intellectuelle ou au marché.",
+    "guardrailDisclaimer": "AYURLEX ne fournit pas de diagnostic médical ni de conseils médicaux d'urgence. Veuillez consulter un praticien qualifié pour des conseils cliniques.",
+    "composerPlaceholder": "Renseignez-vous sur un ingrédient, une formulation, une allégation ou un parcours d'innovation...",
+    "shiftEnter": "Appuyez sur Shift + Entrée pour une nouvelle ligne",
+    "lens": {
+      "title": "Lentille de Contexte (Context Lens)",
+      "jurisdiction": "Juridiction principale (Primary Jurisdiction)",
+      "pathway": "Parcours Réglementaire (Regulatory Pathway)",
+      "category": "Allégation & Sécurité (Claim & Safety)",
+      "claimSensitivity": "Propriété Intellectuelle (Intellectual Property)",
+      "expectedEvidence": "Preuves & Qualité (Evidence & Quality)"
+    },
+    "quality": {
+      "title": "Qualité de la Réponse (Answer Quality)",
+      "coverage": "Couverture des Sources (Source Coverage)",
+      "classical": "Limites des Sources (Source Limitations)",
+      "journal": "Index des Revues (Journal Index)",
+      "openQuestions": "Questions Ouvertes (Open Questions)"
+    },
+    "citations": {
+      "title": "Citations en Direct (Live Citations)",
+      "classicalType": "Texte Classique (Classical Text)",
+      "journalType": "Revue (Journal)",
+      "author": "Auteur (Author)",
+      "chapter": "Chapitre (Chapter)",
+      "year": "Année (Year)",
+      "source": "Source (Source)",
+      "viewOriginal": "Voir le Sanskrit original et la traduction (View original Sanskrit & Translation)",
+      "verifySource": "Vérifier les détails de la source via Europe PMC (Verify Source details)",
+      "note": "Remarque : Veuillez toujours vérifier le chapitre, la traduction, l'édition et les détails de la publication actuelle avant de les inclure dans une soumission officielle."
+    },
+    "responsibleUse": "AYURLEX structure la recherche et cartographie les preuves, mais ne remplace ni l'examen des États membres, ni les médecins certifiés, ni les régulateurs, ni les conseillers juridiques qualifiés."
+  }
+}

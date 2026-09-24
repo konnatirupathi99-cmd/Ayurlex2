@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "newAnalysis": "New Analysis",
+    "evidenceExplorer": "Evidence Explorer",
+    "knowledgeBase": "Knowledge Base",
+    "analysisHistory": "Analysis History",
+    "settings": "Settings",
+    "help": "Help & Support"
+  },
+  "common": {
+    "searchAnalysis": "Search analysis...",
+    "ayurvedaScope": "Ayurveda-only Scope",
+    "scopeNoticeTooltip": "Responses are constrained to Ayurveda and traditional medicine knowledge",
+    "drResearcher": "Dr. Researcher",
+    "proAccount": "Pro Account",
+    "signInToSave": "Sign in to save",
+    "export": "Export",
+    "open": "Open",
+    "resume": "Resume",
+    "search": "Search"
+  },
+  "workspace": {
+    "headerTitle": "Keep the work that should compound.",
+    "headerSubtitle": "Save innovation projects, return to chat history and keep generated reports in one secure Ayurveda research workspace.",
+    "newProject": "New project",
+    "previewMode": "Preview mode is active",
+    "previewText": "You are viewing sample workspace content. Signing in enables private saving and connects your projects across sessions. Note: We never display another user's records.",
+    "metrics": {
+      "savedProjects": "Saved Projects",
+      "chatSessions": "Chat Sessions",
+      "generatedReports": "Generated Reports"
+    },
+    "projects": {
+      "title": "Innovation Projects",
+      "allStatuses": "All Statuses",
+      "active": "Active",
+      "paused": "Paused",
+      "completed": "Completed",
+      "allJurisdictions": "All Jurisdictions",
+      "india": "India",
+      "us": "United States",
+      "eu": "European Union",
+      "noProjectsTitle": "No projects yet",
+      "noProjectsDesc": "Group your research, chat sessions, and reports by creating your first Ayurveda innovation project.",
+      "createProject": "Create Project",
+      "focus": "Focus",
+      "jurisdiction": "Jurisdiction",
+      "updated": "Updated",
+      "chats": "Chats",
+      "reports": "Reports"
+    },
+    "chats": {
+      "title": "Chat History",
+      "noChatsTitle": "No saved chats",
+      "noChatsDesc": "Start exploring traditional knowledge or regulatory pathways.",
+      "askAyurlex": "Ask AYURLEX"
+    },
+    "reports": {
+      "title": "Generated Reports",
+      "noReportsTitle": "No reports generated",
+      "noReportsDesc": "Complete a jurisdiction matrix or innovation brief to save reports here."
+    }
+  },
+  "assistant": {
+    "headerTitle": "Ask better questions. Build wiser innovations.",
+    "headerSubtitle": "AYURLEX supports Ayurveda research, formulation analysis, traditional knowledge tracing, evidence verification, intellectual property, and jurisdictional pathways.",
+    "citationOnline": "Citation layer online",
+    "assistantName": "AYURLEX Assistant",
+    "scopeBadge": "Evidence-grounded · Ayurveda only",
+    "liveCitation": "Live citation indicator",
+    "guardrailText": "I’m designed only for Ayurveda-related questions. I can help connect this topic to an Ayurvedic formulation, traditional knowledge, evidence, innovation, intellectual property, or a market pathway.",
+    "guardrailDisclaimer": "AYURLEX does not provide medical diagnosis or emergency medical advice. Please consult a qualified practitioner for clinical guidance.",
+    "composerPlaceholder": "Ask about an ingredient, formulation, traditional knowledge or innovation pathway...",
+    "shiftEnter": "Shift + Enter for new line",
+    "lens": {
+      "title": "Context Lens",
+      "jurisdiction": "Primary Jurisdiction",
+      "pathway": "Pathway Readiness",
+      "category": "Category Reminder",
+      "claimSensitivity": "Claim Sensitivity",
+      "expectedEvidence": "Evidence Expected"
+    },
+    "quality": {
+      "title": "Answer Quality",
+      "coverage": "Source Coverage",
+      "classical": "Classical References",
+      "journal": "Journal Index",
+      "openQuestions": "Open Questions"
+    },
+    "citations": {
+      "title": "Live Citations",
+      "classicalType": "Classical Text",
+      "journalType": "Journal",
+      "author": "Author",
+      "chapter": "Chapter",
+      "year": "Year",
+      "source": "Source",
+      "viewOriginal": "View original Sanskrit & Translation",
+      "verifySource": "Verify Source details via Europe PMC",
+      "note": "Note: Always verify chapter, translation, edition, and current publication details before including in formal submissions."
+    },
+    "responsibleUse": "AYURLEX structures research and maps evidence, but does not replace certified practitioners, regulators, scientific reviewers, or qualified legal counsel."
+  }
+}

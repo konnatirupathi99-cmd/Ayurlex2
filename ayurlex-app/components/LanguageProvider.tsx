@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { dictionaries } from '../lib/i18n/dictionaries';
+import englishDict from '../locales/en/ui.json';
 
 type LanguageCode = 'en' | 'hi' | 'sa' | 'mr' | 'ta' | 'te' | 'kn' | 'ml' | 'bn' | 'gu' | 'pa' | 'or' | 'ur' | 'ne' | 'si' | 'fr';
 
@@ -35,6 +35,7 @@ export const LANGUAGE_NAMES: Record<LanguageCode, string> = {
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<LanguageCode>('en');
+  const [dict, setDict] = useState<Record<string, any>>(englishDict);
 
   // Hydrate from localStorage if available
   useEffect(() => {
@@ -44,6 +45,23 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, []);
 
+  useEffect(() => {
+    if (language === 'en') {
+      setDict(englishDict);
+      return;
+    }
+    
+    // Dynamically load the language resource
+    import(`../locales/${language}/ui.json`)
+      .then((module) => {
+        setDict(module.default || module);
+      })
+      .catch((err) => {
+        console.error(`Failed to load language resources for ${language}`, err);
+        setDict(englishDict); // fallback
+      });
+  }, [language]);
+
   const setLanguage = (lang: LanguageCode) => {
     setLanguageState(lang);
     localStorage.setItem('ayurlex_language', lang);
@@ -51,7 +69,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let value: any = dictionaries[language] || dictionaries['en'];
+    let value: any = dict;
     
     for (const k of keys) {
       if (value === undefined) break;
@@ -59,7 +77,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
     
     if (typeof value !== 'string') {
-      value = dictionaries['en'];
+      value = englishDict;
       for (const k of keys) {
         if (value === undefined) break;
         value = value[k];

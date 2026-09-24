@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "ସମୀକ୍ଷା (Overview)",
+    "newAnalysis": "ନୂତନ ବିଶ୍ଳେଷଣ (New Analysis)",
+    "evidenceExplorer": "ପ୍ରମାଣ ଅନୁସନ୍ଧାନକାରୀ (Evidence Explorer)",
+    "knowledgeBase": "ଜ୍ଞାନ ଆଧାର (Knowledge Base)",
+    "analysisHistory": "ବିଶ୍ଳେଷଣ ଇତିହାସ (Analysis History)",
+    "settings": "ସେଟିଂସ୍ (Settings)",
+    "help": "ସାହାଯ୍ୟ ଏବଂ ସମର୍ଥନ (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "ବିଶ୍ଳେଷଣ ଖୋଜନ୍ତୁ... (Search analysis...)",
+    "ayurvedaScope": "କେବଳ ଆୟୁର୍ବେଦ (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "ଉତ୍ତରଗୁଡ଼ିକ କେବଳ ଆୟୁର୍ବେଦ ଏବଂ ପାରମ୍ପରିକ ଚିକିତ୍ସା ଜ୍ଞାନ ପାଇଁ ସୀମିତ",
+    "drResearcher": "ଡଃ ଗବେଷକ (Dr. Researcher)",
+    "proAccount": "ପ୍ରୋ ଆକାଉଣ୍ଟ (Pro Account)",
+    "signInToSave": "ସେଭ୍ କରିବା ପାଇଁ ସାଇନ୍ ଇନ୍ କରନ୍ତୁ (Sign in to save)",
+    "export": "ଏକ୍ସପୋର୍ଟ କରନ୍ତୁ (Export)",
+    "open": "ଖୋଲନ୍ତୁ (Open)",
+    "resume": "ପୁନର୍ବାର ଆରମ୍ਭ କରନ୍ତୁ (Resume)",
+    "search": "ଖୋଜନ୍ତୁ (Search)"
+  },
+  "workspace": {
+    "headerTitle": "ବୃଦ୍ଧି ପାଉଥିବା କାର୍ଯ୍ୟ ସଂରକ୍ଷଣ କରନ୍ତୁ (Keep the work that should compound)",
+    "headerSubtitle": "ନବସୃଜନ ପ୍ରୋଜେକ୍ଟଗୁଡିକ (Innovation projects) ସେଭ୍ କରନ୍ତୁ, ଚାଟ୍ ଇତିହାସ ଦେଖନ୍ତୁ ଏବଂ ପ୍ରସ୍ତୁତ ରିପୋର୍ଟଗୁଡିକୁ ଏକ ସୁରକ୍ଷିତ ଆୟୁର୍ବେଦ ଅନୁସନ୍ଧାନ ୱାର୍କସ୍ପେସରେ (workspace) ରଖନ୍ତୁ |",
+    "newProject": "ନୂତନ ପ୍ରୋଜେକ୍ଟ (New project)",
+    "previewMode": "ପ୍ରିଭ୍ୟୁ ମୋଡ୍ ସକ୍ରିୟ ଅଛି (Preview mode is active)",
+    "previewText": "ଆପଣ ନମୁନା ୱାର୍କସ୍ପେସ୍ ବିଷୟବସ୍ତୁ ଦେଖୁଛନ୍ତି। ସାଇନ୍ ଇନ୍ କରିବା ଦ୍ୱାରା ବ୍ୟକ୍ତିଗତ ସଂରକ୍ଷଣ ସକ୍ରିୟ ହୁଏ ଏବଂ ଆପଣଙ୍କର ପ୍ରୋଜେକ୍ଟଗୁଡିକ ସେସନ୍ ସହିତ ସଂଲଗ୍ନ ହୁଏ। ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଆମେ କଦାପି ଅନ୍ୟ ଉପଭୋକ୍ତାଙ୍କ ରେକର୍ଡ ପ୍ରଦର୍ଶନ କରୁନାହୁଁ।",
+    "metrics": {
+      "savedProjects": "ସେଭ୍ ହୋଇଥିବା ପ୍ରୋଜେକ୍ଟ (Saved Projects)",
+      "chatSessions": "ଚାଟ୍ ସେସନ୍ (Chat Sessions)",
+      "generatedReports": "ପ୍ରସ୍ତୁତ ରିପୋର୍ଟ (Generated Reports)"
+    },
+    "projects": {
+      "title": "ନବସୃଜନ ପ୍ରୋଜେକ୍ଟଗୁଡିକ (Innovation Projects)",
+      "allStatuses": "ସମସ୍ତ ସ୍ଥିତି (All Statuses)",
+      "active": "ସକ୍ରିୟ (Active)",
+      "paused": "ସ୍ଥଗିତ (Paused)",
+      "completed": "ସମ୍ପୂର୍ଣ୍ଣ (Completed)",
+      "allJurisdictions": "ସମସ୍ତ ଅଧିକାର କ୍ଷେତ୍ର (All Jurisdictions)",
+      "india": "ଭାରତ (India)",
+      "us": "ଯୁକ୍ତରାଷ୍ଟ୍ର (United States)",
+      "eu": "ୟୁରୋପୀୟ ୟୁନିଅନ୍ (European Union)",
+      "noProjectsTitle": "ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ପ୍ରୋଜେକ୍ଟ ନାହିଁ",
+      "noProjectsDesc": "ଆପଣଙ୍କର ପ୍ରଥମ ଆୟୁର୍ବେଦ ନବସୃଜନ ପ୍ରୋଜେକ୍ଟ ସୃଷ୍ଟି କରି ଆପଣଙ୍କର ଗବେଷଣା, ଚାଟ୍ ସେସନ୍ ଏବଂ ରିପୋର୍ଟଗୁଡିକୁ ଗୋଷ୍ଠୀଭୁକ୍ତ କରନ୍ତୁ।",
+      "createProject": "ପ୍ରୋଜେକ୍ଟ ସୃଷ୍ଟି କରନ୍ତୁ (Create Project)",
+      "focus": "ଧ୍ୟାନ (Focus)",
+      "jurisdiction": "ଅଧିକାର କ୍ଷେତ୍ର (Jurisdiction)",
+      "updated": "ଅପଡେଟ୍ ହୋଇଛି (Updated)",
+      "chats": "ଚାଟ୍ (Chats)",
+      "reports": "ରିପୋର୍ଟ (Reports)"
+    },
+    "chats": {
+      "title": "ଚାଟ୍ ଇତିହାସ (Chat History)",
+      "noChatsTitle": "କୌଣସି ସେଭ୍ ହୋଇଥିବା ଚାଟ୍ ନାହିଁ",
+      "noChatsDesc": "ପାରମ୍ପରିକ ଜ୍ଞାନ କିମ୍ବା ନିୟାମକ ପଥ (regulatory pathways) ଅନୁସନ୍ଧାନ ଆରମ୍ଭ କରନ୍ତୁ |",
+      "askAyurlex": "AYURLEX କୁ ପଚାରନ୍ତୁ (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "ପ୍ରସ୍ତୁତ ରିପୋର୍ଟ (Generated Reports)",
+      "noReportsTitle": "କୌଣସି ରିପୋର୍ଟ ପ୍ରସ୍ତୁତ ହୋଇନାହିଁ",
+      "noReportsDesc": "ଏଠାରେ ରିପୋର୍ଟ ସେଭ୍ କରିବାକୁ ଅଧିକାର କ୍ଷେତ୍ର ମ୍ୟାଟ୍ରିକ୍ସ (jurisdiction matrix) କିମ୍ବା ନବସୃଜନ ସଂକ୍ଷିପ୍ତ (innovation brief) ସମ୍ପୂର୍ଣ୍ଣ କରନ୍ତୁ |"
+    }
+  },
+  "assistant": {
+    "headerTitle": "ଉତ୍ତମ ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ | ବୁଦ୍ଧିମାନ ନବସୃଜନ ତିଆରି କରନ୍ତୁ |",
+    "headerSubtitle": "AYURLEX ଆୟୁର୍ବେଦ ଅନୁସନ୍ଧାନ, ଫର୍ମୁଲେସନ୍ ବିଶ୍ଳେଷଣ (Formulation analysis), ପାରମ୍ପରିକ ଜ୍ଞାନ ଅନୁସନ୍ଧାନ, ପ୍ରମାଣ ଯାଞ୍ଚ, ବୌଦ୍ଧିକ ସମ୍ପତ୍ତି (Intellectual property) ଏବଂ ନିୟାମକ ପଥ (Regulatory pathways) କୁ ସମର୍ଥନ କରେ |",
+    "citationOnline": "ସାଇଟେସନ୍ ସ୍ତର ଅନଲାଇନରେ ଅଛି (Citation layer online)",
+    "assistantName": "AYURLEX ସହାୟକ (Assistant)",
+    "scopeBadge": "ପ୍ରମାଣ-ଭିତ୍ତିକ (Evidence-grounded) · କେବଳ ଆୟୁର୍ବେଦ",
+    "liveCitation": "ଲାଇଭ୍ ସାଇଟେସନ୍ ସୂଚକ (Live citation indicator)",
+    "guardrailText": "ମୁଁ କେବଳ ଆୟୁର୍ବେଦ ସମ୍ବନ୍ଧୀୟ ପ୍ରଶ୍ନ ପାଇଁ ଡିଜାଇନ୍ ହୋଇଛି | ମୁଁ ଏହି ବିଷୟକୁ ଆୟୁର୍ବେଦ ଫର୍ମୁଲେସନ୍ (Formulation), ପାରମ୍ପରିକ ଜ୍ଞାନ, ପ୍ରମାଣ (Evidence), ନବସୃଜନ (Innovation), ବୌଦ୍ଧିକ ସମ୍ପତ୍ତି (Intellectual property) କିମ୍ବା ବଜାର ପଥ ସହିତ ଯୋଡିବାରେ ସାହାଯ୍ୟ କରିପାରିବି |",
+    "guardrailDisclaimer": "AYURLEX କୌଣସି ଡାକ୍ତରୀ ନିଦାନ କିମ୍ବା ଜରୁରୀକାଳୀନ ଡାକ୍ତରୀ ପରାମର୍ଶ ପ୍ରଦାନ କରେ ନାହିଁ। ଦୟାକରି କ୍ଲିନିକାଲ୍ ମାର୍ଗଦର୍ଶନ ପାଇଁ ଜଣେ ଯୋଗ୍ୟ ଡାକ୍ତରଙ୍କ ସହିତ ପରାମର୍ଶ କରନ୍ତୁ।",
+    "composerPlaceholder": "ଉପାଦାନ (Ingredient), ଫର୍ମୁଲେସନ୍, ପାରମ୍ପରିକ ଜ୍ଞାନ କିମ୍ବା ନବସୃଜନ ପଥ ବିଷୟରେ ପଚାରନ୍ତୁ...",
+    "shiftEnter": "ନୂଆ ଲାଇନ୍ ପାଇଁ Shift + Enter ଦବାନ୍ତୁ",
+    "lens": {
+      "title": "ପ୍ରସଙ୍ଗ ଲେନ୍ସ (Context Lens)",
+      "jurisdiction": "ପ୍ରାଥମିକ ଅଧିକାର କ୍ଷେତ୍ର (Primary Jurisdiction)",
+      "pathway": "ନବସୃଜନ ପ୍ରଭାବ ଏବଂ ପ୍ରସ୍ତୁତି (Innovation Implications & Readiness)",
+      "category": "ଶ୍ରେଣୀ ସ୍ମାରକୀ (Category Reminder)",
+      "claimSensitivity": "ଉତ୍ସ ସୀମାବଦ୍ଧତା (Source Limitations)",
+      "expectedEvidence": "ପ୍ରମାଣ ଏବଂ ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ (Evidence & Next Steps)"
+    },
+    "quality": {
+      "title": "ଉତ୍ତରର ଗୁଣବତ୍ତା (Answer Quality)",
+      "coverage": "ଉତ୍ସ କଭରେଜ୍ (Source Coverage)",
+      "classical": "ଶାସ୍ତ୍ରୀୟ ଉଲ୍ଲେଖ (Classical References)",
+      "journal": "ଜର୍ଣ୍ଣାଲ୍ ସୂଚକାଙ୍କ (Journal Index)",
+      "openQuestions": "ମୁକ୍ତ ପ୍ରଶ୍ନଗୁଡିକ (Open Questions)"
+    },
+    "citations": {
+      "title": "ଲାଇଭ୍ ସାଇଟେସନ୍ (Live Citations)",
+      "classicalType": "ଶାସ୍ତ୍ରୀୟ ପାଠ୍ୟ (Classical Text)",
+      "journalType": "ଜର୍ଣ୍ଣାଲ୍ (Journal)",
+      "author": "ଲେଖକ (Author)",
+      "chapter": "ଅଧ୍ୟାୟ (Chapter)",
+      "year": "ବର୍ଷ (Year)",
+      "source": "ଉତ୍ସ (Source)",
+      "viewOriginal": "ମୂଳ ସଂସ୍କୃତ ଏବଂ ଅନୁବାଦ ଦେଖନ୍ତୁ (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC ମାଧ୍ୟମରେ ଉତ୍ସ ବିବରଣୀ ଯାଞ୍ଚ କରନ୍ତୁ (Verify Source details)",
+      "note": "ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଔପଚାରିକ ଦାଖଲରେ ଅନ୍ତର୍ଭୁକ୍ତ କରିବା ପୂର୍ବରୁ ସର୍ବଦା ଅଧ୍ୟାୟ, ଅନୁବାଦ, ସଂସ୍କରଣ ଏବଂ ବର୍ତ୍ତମାନର ପ୍ରକାଶନ ବିବରଣୀ ଯାଞ୍ଚ କରନ୍ତୁ।"
+    },
+    "responsibleUse": "AYURLEX ଅନୁସନ୍ଧାନକୁ ଗଠନ କରେ ଏବଂ ପ୍ରମାଣ (Evidence) ମ୍ୟାପ୍ କରେ, କିନ୍ତୁ ପ୍ରମାଣିତ ଡାକ୍ତର, ନିୟାମକ (regulators), ବୈଜ્ઞାନିକ ସମୀକ୍ଷକ କିମ୍ବା ଯୋଗ୍ୟ ଆଇନ ପରାମର୍ଶଦାତାଙ୍କ ସ୍ଥାନ ନିଏ ନାହିଁ।"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "கண்ணோட்டம் (Overview)",
+    "newAnalysis": "புதிய பகுப்பாய்வு (New Analysis)",
+    "evidenceExplorer": "ஆதார ஆய்வி (Evidence Explorer)",
+    "knowledgeBase": "அறிவுத் தளம் (Knowledge Base)",
+    "analysisHistory": "பகுப்பாய்வு வரலாறு (Analysis History)",
+    "settings": "அமைப்புகள் (Settings)",
+    "help": "உதவி & ஆதரவு (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "பகுப்பாய்வை தேடு... (Search analysis...)",
+    "ayurvedaScope": "ஆயுர்வேதம் மட்டும் (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "பதில்கள் ஆயுர்வேதம் மற்றும் பாரம்பரிய மருத்துவ அறிவுக்கு மட்டுமே வரையறுக்கப்பட்டுள்ளன",
+    "drResearcher": "டாக்டர். ஆராய்ச்சியாளர் (Dr. Researcher)",
+    "proAccount": "ப்ரோ கணக்கு (Pro Account)",
+    "signInToSave": "சேமிக்க உள்நுழையவும் (Sign in to save)",
+    "export": "ஏற்றுமதி (Export)",
+    "open": "திற (Open)",
+    "resume": "தொடரவும் (Resume)",
+    "search": "தேடு (Search)"
+  },
+  "workspace": {
+    "headerTitle": "வளர வேண்டிய பணிகளை சேமித்து வைக்கவும் (Keep the work that should compound)",
+    "headerSubtitle": "கண்டுபிடிப்பு திட்டங்களை (Innovation projects) சேமிக்கவும், அரட்டை வரலாற்றைக் காணவும் மற்றும் உருவாக்கப்பட்ட அறிக்கைகளை ஒரு பாதுகாப்பான ஆயுர்வேத ஆராய்ச்சி பணியிடத்தில் (workspace) வைக்கவும்.",
+    "newProject": "புதிய திட்டம் (New project)",
+    "previewMode": "முன்னோட்ட முறை செயலில் உள்ளது (Preview mode is active)",
+    "previewText": "நீங்கள் மாதிரி பணியிட உள்ளடக்கத்தைப் பார்க்கிறீர்கள். உள்நுழைவது தனிப்பட்ட சேமிப்பை செயல்படுத்துகிறது மற்றும் உங்கள் திட்டங்களை அமர்வுகளில் இணைக்கிறது. குறிப்பு: மற்ற பயனரின் பதிவுகளை நாங்கள் ஒருபோதும் காண்பிக்க மாட்டோம்.",
+    "metrics": {
+      "savedProjects": "சேமிக்கப்பட்ட திட்டங்கள் (Saved Projects)",
+      "chatSessions": "அரட்டை அமர்வுகள் (Chat Sessions)",
+      "generatedReports": "உருவாக்கப்பட்ட அறிக்கைகள் (Generated Reports)"
+    },
+    "projects": {
+      "title": "கண்டுபிடிப்பு திட்டங்கள் (Innovation Projects)",
+      "allStatuses": "அனைத்து நிலைகள் (All Statuses)",
+      "active": "செயலில் (Active)",
+      "paused": "நிறுத்தப்பட்டது (Paused)",
+      "completed": "முடிந்தது (Completed)",
+      "allJurisdictions": "அனைத்து அதிகார வரம்புகள் (All Jurisdictions)",
+      "india": "இந்தியா (India)",
+      "us": "அமெரிக்கா (United States)",
+      "eu": "ஐரோப்பிய ஒன்றியம் (European Union)",
+      "noProjectsTitle": "இன்னும் திட்டங்கள் இல்லை",
+      "noProjectsDesc": "உங்கள் முதல் ஆயுர்வேத கண்டுபிடிப்பு திட்டத்தை உருவாக்குவதன் மூலம் உங்கள் ஆராய்ச்சி, அரட்டை அமர்வுகள் மற்றும் அறிக்கைகளை குழுவாக்கவும்.",
+      "createProject": "திட்டத்தை உருவாக்கவும் (Create Project)",
+      "focus": "கவனம் (Focus)",
+      "jurisdiction": "அதிகார வரம்பு (Jurisdiction)",
+      "updated": "புதுப்பிக்கப்பட்டது (Updated)",
+      "chats": "அரட்டைகள் (Chats)",
+      "reports": "அறிக்கைகள் (Reports)"
+    },
+    "chats": {
+      "title": "அரட்டை வரலாறு (Chat History)",
+      "noChatsTitle": "சேமிக்கப்பட்ட அரட்டைகள் இல்லை",
+      "noChatsDesc": "பாரம்பரிய அறிவு அல்லது ஒழுங்குமுறை பாதைகளை (regulatory pathways) ஆராயத் தொடங்குங்கள்.",
+      "askAyurlex": "AYURLEX யிடம் கேளுங்கள் (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "உருவாக்கப்பட்ட அறிக்கைகள் (Generated Reports)",
+      "noReportsTitle": "அறிக்கைகள் எதுவும் உருவாக்கப்படவில்லை",
+      "noReportsDesc": "இங்கே அறிக்கைகளைச் சேமிக்க அதிகார வரம்பு அணி (jurisdiction matrix) அல்லது கண்டுபிடிப்பு சுருக்கத்தை (innovation brief) முடிக்கவும்."
+    }
+  },
+  "assistant": {
+    "headerTitle": "சிறந்த கேள்விகளைக் கேளுங்கள். புத்திசாலித்தனமான கண்டுபிடிப்புகளை உருவாக்குங்கள்.",
+    "headerSubtitle": "AYURLEX ஆயுர்வேத ஆராய்ச்சி, சூத்திரப் பகுப்பாய்வு (Formulation analysis), பாரம்பரிய அறிவைக் கண்காணித்தல், ஆதார சரிபார்ப்பு, அறிவுசார் சொத்து (Intellectual property) மற்றும் ஒழுங்குமுறை பாதைகளை (Regulatory pathways) ஆதரிக்கிறது.",
+    "citationOnline": "மேற்கோள் அடுக்கு ஆன்லைனில் உள்ளது (Citation layer online)",
+    "assistantName": "AYURLEX உதவியாளர் (Assistant)",
+    "scopeBadge": "ஆதார அடிப்படையிலானது (Evidence-grounded) · ஆயுர்வேதம் மட்டும்",
+    "liveCitation": "நேரடி மேற்கோள் காட்டி (Live citation indicator)",
+    "guardrailText": "நான் ஆயுர்வேதம் தொடர்பான கேள்விகளுக்கு மட்டுமே வடிவமைக்கப்பட்டுள்ளேன். இந்த தலைப்பை ஆயுர்வேத சூத்திரம் (Formulation), பாரம்பரிய அறிவு, ஆதாரம் (Evidence), கண்டுபிடிப்பு (Innovation), அறிவுசார் சொத்து (Intellectual property) அல்லது சந்தை பாதையுடன் (Market pathway) இணைக்க நான் உதவ முடியும்.",
+    "guardrailDisclaimer": "AYURLEX மருத்துவ நோயறிதல் அல்லது அவசர மருத்துவ ஆலோசனைகளை வழங்குவதில்லை. மருத்துவ வழிகாட்டுதலுக்கு தகுதிவாய்ந்த மருத்துவரை அணுகவும்.",
+    "composerPlaceholder": "ஒரு மூலப்பொருள் (Ingredient), சூத்திரம், பாரம்பரிய அறிவு அல்லது கண்டுபிடிப்பு பாதை பற்றி கேளுங்கள்...",
+    "shiftEnter": "புதிய வரிக்கு Shift + Enter அழுத்தவும்",
+    "lens": {
+      "title": "சூழல் லென்ஸ் (Context Lens)",
+      "jurisdiction": "முதன்மை அதிகார வரம்பு (Primary Jurisdiction)",
+      "pathway": "பாதை தயார்நிலை (Pathway Readiness)",
+      "category": "வகை நினைவூட்டல் (Category Reminder)",
+      "claimSensitivity": "உரிமைகோரல் உணர்திறன் (Claim Sensitivity)",
+      "expectedEvidence": "எதிர்பார்க்கப்படும் ஆதாரம் (Evidence Expected)"
+    },
+    "quality": {
+      "title": "பதில் தரம் (Answer Quality)",
+      "coverage": "மூல கவரேஜ் (Source Coverage)",
+      "classical": "பாரம்பரிய குறிப்புகள் (Classical References)",
+      "journal": "இதழ் குறியீடு (Journal Index)",
+      "openQuestions": "திறந்த கேள்விகள் (Open Questions)"
+    },
+    "citations": {
+      "title": "நேரடி மேற்கோள்கள் (Live Citations)",
+      "classicalType": "பாரம்பரிய உரை (Classical Text)",
+      "journalType": "இதழ் (Journal)",
+      "author": "ஆசிரியர் (Author)",
+      "chapter": "அத்தியாயம் (Chapter)",
+      "year": "ஆண்டு (Year)",
+      "source": "மூலம் (Source)",
+      "viewOriginal": "அசல் சமஸ்கிருதம் & மொழிபெயர்ப்பைக் காண்க (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC மூலம் மூல விவரங்களைச் சரிபார்க்கவும் (Verify Source details)",
+      "note": "குறிப்பு: முறையான சமர்ப்பிப்புகளில் சேர்ப்பதற்கு முன் எப்போதும் அத்தியாயம், மொழிபெயர்ப்பு, பதிப்பு மற்றும் தற்போதைய வெளியீட்டு விவரங்களை சரிபார்க்கவும்."
+    },
+    "responsibleUse": "AYURLEX ஆராய்ச்சியை கட்டமைக்கிறது மற்றும் ஆதாரங்களை வரைகிறது, ஆனால் சான்றளிக்கப்பட்ட மருத்துவர்கள், கட்டுப்பாட்டாளர்கள் (regulators), அறிவியல் மதிப்பாய்வாளர்கள் அல்லது தகுதிவாய்ந்த சட்ட ஆலோசனைகளை மாற்றாது."
+  }
+}

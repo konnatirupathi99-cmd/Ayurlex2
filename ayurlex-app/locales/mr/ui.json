@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "आढावा (Overview)",
+    "newAnalysis": "नवीन विश्लेषण (New Analysis)",
+    "evidenceExplorer": "पुरावा शोधक (Evidence Explorer)",
+    "knowledgeBase": "ज्ञानकोश (Knowledge Base)",
+    "analysisHistory": "विश्लेषणाचा इतिहास (Analysis History)",
+    "settings": "सेटिंग्ज (Settings)",
+    "help": "मदत आणि समर्थन (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "विश्लेषण शोधा... (Search analysis...)",
+    "ayurvedaScope": "केवळ आयुर्वेद व्याप्ती (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "प्रतिसाद केवळ आयुर्वेद आणि पारंपारिक वैद्यकीय ज्ञानापुरते मर्यादित आहेत",
+    "drResearcher": "डॉ. संशोधक (Dr. Researcher)",
+    "proAccount": "प्रो खाते (Pro Account)",
+    "signInToSave": "सेव्ह करण्यासाठी साइन इन करा",
+    "export": "निर्यात करा (Export)",
+    "open": "उघडा (Open)",
+    "resume": "पुन्हा सुरू करा (Resume)",
+    "search": "शोधा (Search)"
+  },
+  "workspace": {
+    "headerTitle": "वाढणारे काम जतन करा (Keep the work that should compound)",
+    "headerSubtitle": "नवोन्मेष प्रकल्प (Innovation projects) सेव्ह करा, चॅट इतिहास पहा आणि व्युत्पन्न केलेले अहवाल एका सुरक्षित आयुर्वेद संशोधन कार्यक्षेत्रात (workspace) ठेवा.",
+    "newProject": "नवीन प्रकल्प (New project)",
+    "previewMode": "पूर्वावलोकन मोड सक्रिय आहे (Preview mode is active)",
+    "previewText": "तुम्ही नमुना कार्यक्षेत्र (workspace) आशय पाहत आहात. साइन इन केल्याने खाजगी जतन सक्षम होते आणि तुमचे प्रकल्प सत्रांमध्ये जोडले जातात. टीप: आम्ही दुसऱ्या वापरकर्त्याचे रेकॉर्ड कधीही प्रदर्शित करत नाही.",
+    "metrics": {
+      "savedProjects": "सेव्ह केलेले प्रकल्प (Saved Projects)",
+      "chatSessions": "चॅट सत्रे (Chat Sessions)",
+      "generatedReports": "व्युत्पन्न केलेले अहवाल (Generated Reports)"
+    },
+    "projects": {
+      "title": "नवोन्मेष प्रकल्प (Innovation Projects)",
+      "allStatuses": "सर्व स्थिती (All Statuses)",
+      "active": "सक्रिय (Active)",
+      "paused": "थांबवलेले (Paused)",
+      "completed": "पूर्ण (Completed)",
+      "allJurisdictions": "सर्व अधिकारक्षेत्रे (All Jurisdictions)",
+      "india": "भारत (India)",
+      "us": "युनायटेड स्टेट्स (United States)",
+      "eu": "युरोपियन युनियन (European Union)",
+      "noProjectsTitle": "अद्याप कोणतेही प्रकल्प नाहीत",
+      "noProjectsDesc": "तुमचा पहिला आयुर्वेद नवोन्मेष प्रकल्प (innovation project) तयार करून तुमचे संशोधन, चॅट सत्रे आणि अहवाल गटबद्ध करा.",
+      "createProject": "प्रकल्प तयार करा (Create Project)",
+      "focus": "फोकस (Focus)",
+      "jurisdiction": "अधिकारक्षेत्र (Jurisdiction)",
+      "updated": "अद्यतनित (Updated)",
+      "chats": "चॅट्स (Chats)",
+      "reports": "अहवाल (Reports)"
+    },
+    "chats": {
+      "title": "चॅट इतिहास (Chat History)",
+      "noChatsTitle": "कोणतेही सेव्ह केलेले चॅट नाहीत",
+      "noChatsDesc": "पारंपारिक ज्ञान किंवा नियामक मार्गांचे (regulatory pathways) अन्वेषण सुरू करा.",
+      "askAyurlex": "AYURLEX ला विचारा (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "व्युत्पन्न केलेले अहवाल (Generated Reports)",
+      "noReportsTitle": "कोणतेही अहवाल तयार केलेले नाहीत",
+      "noReportsDesc": "येथे अहवाल सेव्ह करण्यासाठी अधिकारक्षेत्र मॅट्रिक्स (jurisdiction matrix) किंवा नवोन्मेष संक्षेप (innovation brief) पूर्ण करा."
+    }
+  },
+  "assistant": {
+    "headerTitle": "उत्तम प्रश्न विचारा. शहाणे नवोन्मेष तयार करा.",
+    "headerSubtitle": "AYURLEX आयुर्वेद संशोधन, फॉर्म्युलेशन विश्लेषण, पारंपारिक ज्ञान शोध, पुरावा पडताळणी, बौद्धिक संपदा (Intellectual property) आणि नियामक मार्गांना (Regulatory pathways) समर्थन देते.",
+    "citationOnline": "उद्धरण स्तर (Citation layer) ऑनलाइन",
+    "assistantName": "AYURLEX सहाय्यक (Assistant)",
+    "scopeBadge": "पुराव्यावर आधारित (Evidence-grounded) · केवळ आयुर्वेद",
+    "liveCitation": "थेट उद्धरण सूचक (Live citation indicator)",
+    "guardrailText": "मी केवळ आयुर्वेद संबंधित प्रश्नांसाठी डिझाइन केलेलो आहे. मी हा विषय आयुर्वेदिक फॉर्म्युलेशन, पारंपारिक ज्ञान, पुरावा, नवोन्मेष (Innovation), बौद्धिक संपदा (Intellectual property) किंवा बाजारपेठेच्या मार्गाशी (market pathway) जोडण्यास मदत करू शकतो.",
+    "guardrailDisclaimer": "AYURLEX वैद्यकीय निदान किंवा आपत्कालीन वैद्यकीय सल्ला देत नाही. कृपया क्लिनिकल मार्गदर्शनासाठी पात्र चिकित्सकाचा सल्ला घ्या.",
+    "composerPlaceholder": "एखादा घटक (ingredient), फॉर्म्युलेशन, पारंपारिक ज्ञान किंवा नवोन्मेष मार्गाबद्दल (innovation pathway) विचारा...",
+    "shiftEnter": "नवीन ओळीसाठी Shift + Enter दाबा",
+    "lens": {
+      "title": "संदर्भ लेन्स (Context Lens)",
+      "jurisdiction": "प्राथमिक अधिकारक्षेत्र (Primary Jurisdiction)",
+      "pathway": "मार्ग तयारी (Pathway Readiness)",
+      "category": "श्रेणी स्मरण (Category Reminder)",
+      "claimSensitivity": "दावा संवेदनशीलता (Claim Sensitivity)",
+      "expectedEvidence": "अपेक्षित पुरावा (Evidence Expected)"
+    },
+    "quality": {
+      "title": "उत्तराची गुणवत्ता (Answer Quality)",
+      "coverage": "स्रोत कव्हरेज (Source Coverage)",
+      "classical": "शास्त्रीय संदर्भ (Classical References)",
+      "journal": "जर्नल इंडेक्स (Journal Index)",
+      "openQuestions": "खुले प्रश्न (Open Questions)"
+    },
+    "citations": {
+      "title": "थेट उद्धरणे (Live Citations)",
+      "classicalType": "शास्त्रीय मजकूर (Classical Text)",
+      "journalType": "जर्नल (Journal)",
+      "author": "लेखक (Author)",
+      "chapter": "अध्याय (Chapter)",
+      "year": "वर्ष (Year)",
+      "source": "स्रोत (Source)",
+      "viewOriginal": "मूळ संस्कृत आणि भाषांतर पहा (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC द्वारे स्रोत तपशील सत्यापित करा (Verify Source details)",
+      "note": "टीप: औपचारिक सबमिशनमध्ये समाविष्ट करण्यापूर्वी नेहमी अध्याय, भाषांतर, आवृत्ती आणि वर्तमान प्रकाशन तपशीलाची पडताळणी करा."
+    },
+    "responsibleUse": "AYURLEX संशोधनाची रचना करते आणि पुराव्यांचे नकाशे बनवते, परंतु ते प्रमाणित चिकित्सक, नियामक (regulators), वैज्ञानिक पुनरावलोकनकर्ते (scientific reviewers) किंवा पात्र कायदेशीर सल्लागार यांची जागा घेत नाही."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "അവലോകനം (Overview)",
+    "newAnalysis": "പുതിയ വിശകലനം (New Analysis)",
+    "evidenceExplorer": "തെളിവ് അന്വേഷകൻ (Evidence Explorer)",
+    "knowledgeBase": "വിവരശേഖരം (Knowledge Base)",
+    "analysisHistory": "വിശകലന ചരിത്രം (Analysis History)",
+    "settings": "ക്രമീകരണങ്ങൾ (Settings)",
+    "help": "സഹായവും പിന്തുണയും (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "വിശകലനം തിരയുക... (Search analysis...)",
+    "ayurvedaScope": "ആയുർവേദം മാത്രം (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "മറുപടികൾ ആയുർവേദത്തിനും പരമ്പരാഗത വൈദ്യശാസ്ത്രത്തിനും മാത്രമായി പരിമിതപ്പെടുത്തിയിരിക്കുന്നു",
+    "drResearcher": "ഡോ. ഗവേഷകൻ (Dr. Researcher)",
+    "proAccount": "പ്രോ അക്കൗണ്ട് (Pro Account)",
+    "signInToSave": "സേവ് ചെയ്യാൻ സൈൻ ഇൻ ചെയ്യുക (Sign in to save)",
+    "export": "കയറ്റുമതി ചെയ്യുക (Export)",
+    "open": "തുറക്കുക (Open)",
+    "resume": "തുടരുക (Resume)",
+    "search": "തിരയുക (Search)"
+  },
+  "workspace": {
+    "headerTitle": "വളരേണ്ട പ്രവർത്തനങ്ങൾ സംരക്ഷിക്കുക (Keep the work that should compound)",
+    "headerSubtitle": "ഇന്നൊവേഷൻ പ്രൊജക്റ്റുകൾ (Innovation projects) സംരക്ഷിക്കുക, ചാറ്റ് ചരിത്രം കാണുക, ഒരു സുരക്ഷിത ആയുർവേദ ഗവേഷണ ഇടത്തിൽ (workspace) റിപ്പോർട്ടുകൾ സൂക്ഷിക്കുക.",
+    "newProject": "പുതിയ പ്രൊജക്റ്റ് (New project)",
+    "previewMode": "പ്രിവ്യൂ മോഡ് സജീവമാണ് (Preview mode is active)",
+    "previewText": "നിങ്ങൾ മാതൃകാ വർക്ക്‌സ്‌പേസ് വിവരങ്ങളാണ് കാണുന്നത്. സൈൻ ഇൻ ചെയ്യുന്നത് സ്വകാര്യ സേവിംഗ് സജീവമാക്കുകയും നിങ്ങളുടെ പ്രൊജക്റ്റുകളെ സെഷനുകളുമായി ബന്ധിപ്പിക്കുകയും ചെയ്യുന്നു. ശ്രദ്ധിക്കുക: മറ്റൊരു ഉപയോക്താവിന്റെ വിവരങ്ങൾ ഞങ്ങൾ ഒരിക്കലും പ്രദർശിപ്പിക്കില്ല.",
+    "metrics": {
+      "savedProjects": "സംരക്ഷിച്ച പ്രൊജക്റ്റുകൾ (Saved Projects)",
+      "chatSessions": "ചാറ്റ് സെഷനുകൾ (Chat Sessions)",
+      "generatedReports": "തയ്യാറാക്കിയ റിപ്പോർട്ടുകൾ (Generated Reports)"
+    },
+    "projects": {
+      "title": "ഇന്നൊവേഷൻ പ്രൊജക്റ്റുകൾ (Innovation Projects)",
+      "allStatuses": "എല്ലാ അവസ്ഥകളും (All Statuses)",
+      "active": "സജീവം (Active)",
+      "paused": "താല്ക്കാലികമായി നിർത്തി (Paused)",
+      "completed": "പൂർത്തിയായി (Completed)",
+      "allJurisdictions": "എല്ലാ അധികാരപരിധികളും (All Jurisdictions)",
+      "india": "ഇന്ത്യ (India)",
+      "us": "യുണൈറ്റഡ് സ്റ്റേറ്റ്സ് (United States)",
+      "eu": "യൂറോപ്യൻ യൂണിയൻ (European Union)",
+      "noProjectsTitle": "ഇതുവരെ പ്രൊജക്റ്റുകളൊന്നുമില്ല",
+      "noProjectsDesc": "നിങ്ങളുടെ ആദ്യത്തെ ആയുർവേദ ഇന്നൊവേഷൻ പ്രൊജക്റ്റ് സൃഷ്ടിച്ച് നിങ്ങളുടെ ഗവേഷണം, ചാറ്റ് സെഷനുകൾ, റിപ്പോർട്ടുകൾ എന്നിവ ക്രമീകരിക്കുക.",
+      "createProject": "പ്രൊജക്റ്റ് സൃഷ്ടിക്കുക (Create Project)",
+      "focus": "ശ്രദ്ധാകേന്ദ്രം (Focus)",
+      "jurisdiction": "അധികാരപരിധി (Jurisdiction)",
+      "updated": "പുതുക്കിയത് (Updated)",
+      "chats": "ചാറ്റുകൾ (Chats)",
+      "reports": "റിപ്പോർട്ടുകൾ (Reports)"
+    },
+    "chats": {
+      "title": "ചാറ്റ് ചരിത്രം (Chat History)",
+      "noChatsTitle": "സംരക്ഷിച്ച ചാറ്റുകളില്ല",
+      "noChatsDesc": "പരമ്പരാഗത അറിവുകൾ അല്ലെങ്കിൽ റെഗുലേറ്ററി വഴികൾ (regulatory pathways) പര്യവേക്ഷണം ചെയ്യാൻ ആരംഭിക്കുക.",
+      "askAyurlex": "AYURLEX നോട് ചോദിക്കുക (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "തയ്യാറാക്കിയ റിപ്പോർട്ടുകൾ (Generated Reports)",
+      "noReportsTitle": "റിപ്പോർട്ടുകളൊന്നും തയ്യാറാക്കിയിട്ടില്ല",
+      "noReportsDesc": "ഇവിടെ റിപ്പോർട്ടുകൾ സംരക്ഷിക്കാൻ ജൂറിസ്‌ഡിക്ഷൻ മാട്രിക്‌സ് (jurisdiction matrix) അല്ലെങ്കിൽ ഇന്നൊവേഷൻ ബ്രീഫ് (innovation brief) പൂർത്തിയാക്കുക."
+    }
+  },
+  "assistant": {
+    "headerTitle": "മികച്ച ചോദ്യങ്ങൾ ചോദിക്കുക. ബുദ്ധിപരമായ കണ്ടെത്തലുകൾ നടത്തുക.",
+    "headerSubtitle": "AYURLEX ആയുർവേദ ഗവേഷണം, ഫോർമുലേഷൻ വിശകലനം (Formulation analysis), പരമ്പരാഗത അറിവ് തിരയൽ, തെളിവ് പരിശോധന, ബൗദ്ധിക സ്വത്ത് (Intellectual property), റെഗുലേറ്ററി വഴികൾ (Regulatory pathways) എന്നിവയെ പിന്തുണയ്ക്കുന്നു.",
+    "citationOnline": "സൈറ്റേഷൻ ലെയർ ഓൺലൈനിലാണ് (Citation layer online)",
+    "assistantName": "AYURLEX സഹായി (Assistant)",
+    "scopeBadge": "തെളിവ് അടിസ്ഥാനമാക്കിയത് (Evidence-grounded) · ആയുർവേദം മാത്രം",
+    "liveCitation": "തത്സമയ സൈറ്റേഷൻ സൂചകം (Live citation indicator)",
+    "guardrailText": "ആയുർവേദവുമായി ബന്ധപ്പെട്ട ചോദ്യങ്ങൾക്ക് മാത്രമാണ് എന്നെ രൂപകൽപ്പന ചെയ്തിരിക്കുന്നത്. ഈ വിഷയത്തെ ആയുർവേദ ഫോർമുലേഷൻ (Formulation), പരമ്പരാഗത അറിവ്, തെളിവ് (Evidence), ഇന്നൊവേഷൻ (Innovation), ബൗദ്ധിക സ്വത്ത് (Intellectual property) അല്ലെങ്കിൽ മാർക്കറ്റ് വഴിയുമായി (Market pathway) ബന്ധിപ്പിക്കാൻ എനിക്ക് സഹായിക്കാനാകും.",
+    "guardrailDisclaimer": "AYURLEX മെഡിക്കൽ രോഗനിർണ്ണയമോ അടിയന്തര വൈദ്യോപദേശമോ നൽകുന്നില്ല. ദയവായി മെഡിക്കൽ മാർഗ്ഗനിർദ്ദേശത്തിനായി യോഗ്യനായ ഡോക്ടറെ സമീപിക്കുക.",
+    "composerPlaceholder": "ചേരുവ (Ingredient), ഫോർമുലേഷൻ, പരമ്പരാഗത അറിവ് അല്ലെങ്കിൽ ഇന്നൊവേഷൻ വഴി എന്നിവയെക്കുറിച്ച് ചോദിക്കുക...",
+    "shiftEnter": "പുതിയ വരിക്കായി Shift + Enter അമർത്തുക",
+    "lens": {
+      "title": "കോൺടെക്സ്റ്റ് ലെൻസ് (Context Lens)",
+      "jurisdiction": "പ്രാഥമിക അധികാരപരിധി (Primary Jurisdiction)",
+      "pathway": "വഴി തയ്യാറെടുപ്പ് (Pathway Readiness)",
+      "category": "വിഭാഗം ഓർമ്മപ്പെടുത്തൽ (Category Reminder)",
+      "claimSensitivity": "അവകാശവാദ സൂക്ഷ്മത (Claim Sensitivity)",
+      "expectedEvidence": "പ്രതീക്ഷിക്കുന്ന തെളിവ് (Evidence Expected)"
+    },
+    "quality": {
+      "title": "ഉത്തരത്തിന്റെ നിലവാരം (Answer Quality)",
+      "coverage": "ഉറവിട കവറേജ് (Source Coverage)",
+      "classical": "ക്ലാസിക്കൽ അവലംബങ്ങൾ (Classical References)",
+      "journal": "ജേണൽ സൂചിക (Journal Index)",
+      "openQuestions": "തുറന്ന ചോദ്യങ്ങൾ (Open Questions)"
+    },
+    "citations": {
+      "title": "തത്സമയ സൈറ്റേഷനുകൾ (Live Citations)",
+      "classicalType": "ക്ലാസിക്കൽ ടെക്സ്റ്റ് (Classical Text)",
+      "journalType": "ജേണൽ (Journal)",
+      "author": "രചയിതാവ് (Author)",
+      "chapter": "അധ്യായം (Chapter)",
+      "year": "വർഷം (Year)",
+      "source": "ഉറവിടം (Source)",
+      "viewOriginal": "യഥാർത്ഥ സംസ്കൃതവും വിവർത്തനവും കാണുക (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC വഴി ഉറവിട വിശദാംശങ്ങൾ പരിശോധിക്കുക (Verify Source details)",
+      "note": "ശ്രദ്ധിക്കുക: ഔദ്യോഗിക സമർപ്പണങ്ങളിൽ ഉൾപ്പെടുത്തുന്നതിന് മുമ്പ് എല്ലായ്പ്പോഴും അധ്യായം, വിവർത്തനം, പതിപ്പ്, നിലവിലെ പ്രസിദ്ധീകരണ വിശദാംശങ്ങൾ എന്നിവ പരിശോധിക്കുക."
+    },
+    "responsibleUse": "AYURLEX ഗവേഷണത്തെ രൂപപ്പെടുത്തുകയും തെളിവുകൾ (Evidence) മാപ്പ് ചെയ്യുകയും ചെയ്യുന്നു, എന്നാൽ സാക്ഷ്യപ്പെടുത്തിയ ഡോക്ടർമാർ, റെഗുലേറ്റർമാർ (regulators), ശാസ്ത്രീയ അവലോകനം ചെയ്യുന്നവർ അല്ലെങ്കിൽ യോഗ്യരായ നിയമ ഉപദേശകർ എന്നിവർക്ക് പകരമാവില്ല."
+  }
+}

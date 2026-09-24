@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "ਸੰਖੇਪ ਜਾਣਕਾਰੀ (Overview)",
+    "newAnalysis": "ਨਵਾਂ ਵਿਸ਼ਲੇਸ਼ਣ (New Analysis)",
+    "evidenceExplorer": "ਸਬੂਤ ਖੋਜੀ (Evidence Explorer)",
+    "knowledgeBase": "ਗਿਆਨ ਆਧਾਰ (Knowledge Base)",
+    "analysisHistory": "ਵਿਸ਼ਲੇਸ਼ਣ ਦਾ ਇਤਿਹਾਸ (Analysis History)",
+    "settings": "ਸੈਟਿੰਗਾਂ (Settings)",
+    "help": "ਮਦਦ ਅਤੇ ਸਹਾਇਤਾ (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "ਵਿਸ਼ਲੇਸ਼ਣ ਖੋਜੋ... (Search analysis...)",
+    "ayurvedaScope": "ਸਿਰਫ਼ ਆਯੁਰਵੇਦ (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "ਜਵਾਬ ਸਿਰਫ਼ ਆਯੁਰਵੇਦ ਅਤੇ ਰਵਾਇਤੀ ਡਾਕਟਰੀ ਗਿਆਨ ਤੱਕ ਸੀਮਤ ਹਨ",
+    "drResearcher": "ਡਾ. ਖੋਜਕਾਰ (Dr. Researcher)",
+    "proAccount": "ਪ੍ਰੋ ਖਾਤਾ (Pro Account)",
+    "signInToSave": "ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ (Sign in to save)",
+    "export": "ਐਕਸਪੋਰਟ ਕਰੋ (Export)",
+    "open": "ਖੋਲ੍ਹੋ (Open)",
+    "resume": "ਮੁੜ ਚਾਲੂ ਕਰੋ (Resume)",
+    "search": "ਖੋਜ (Search)"
+  },
+  "workspace": {
+    "headerTitle": "ਉਹ ਕੰਮ ਸੁਰੱਖਿਅਤ ਰੱਖੋ ਜੋ ਵਧਦਾ ਹੈ (Keep the work that should compound)",
+    "headerSubtitle": "ਨਵੀਨਤਾ ਪ੍ਰੋਜੈਕਟ (Innovation projects) ਸੰਭਾਲੋ, ਚੈਟ ਇਤਿਹਾਸ ਦੇਖੋ ਅਤੇ ਤਿਆਰ ਕੀਤੀਆਂ ਗਈਆਂ ਰਿਪੋਰਟਾਂ ਨੂੰ ਇੱਕ ਸੁਰੱਖਿਅਤ ਆਯੁਰਵੇਦ ਖੋਜ ਕਾਰਜ-ਖੇਤਰ (workspace) ਵਿੱਚ ਰੱਖੋ।",
+    "newProject": "ਨਵਾਂ ਪ੍ਰੋਜੈਕਟ (New project)",
+    "previewMode": "ਪੂਰਵ-ਦਰਸ਼ਨ ਮੋਡ ਸਰਗਰਮ ਹੈ (Preview mode is active)",
+    "previewText": "ਤੁਸੀਂ ਨਮੂਨਾ ਕਾਰਜ-ਖੇਤਰ ਸਮੱਗਰੀ ਦੇਖ ਰਹੇ ਹੋ। ਸਾਈਨ ਇਨ ਕਰਨ ਨਾਲ ਨਿੱਜੀ ਬਚਤ ਸਰਗਰਮ ਹੁੰਦੀ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਪ੍ਰੋਜੈਕਟ ਸੈਸ਼ਨਾਂ ਨਾਲ ਜੁੜ ਜਾਂਦੇ ਹਨ। ਨੋਟ: ਅਸੀਂ ਕਦੇ ਵੀ ਕਿਸੇ ਹੋਰ ਉਪਭੋਗਤਾ ਦੇ ਰਿਕਾਰਡ ਪ੍ਰਦਰਸ਼ਿਤ ਨਹੀਂ ਕਰਦੇ ਹਾਂ।",
+    "metrics": {
+      "savedProjects": "ਸੁਰੱਖਿਅਤ ਕੀਤੇ ਪ੍ਰੋਜੈਕਟ (Saved Projects)",
+      "chatSessions": "ਚੈਟ ਸੈਸ਼ਨ (Chat Sessions)",
+      "generatedReports": "ਤਿਆਰ ਕੀਤੀਆਂ ਰਿਪੋਰਟਾਂ (Generated Reports)"
+    },
+    "projects": {
+      "title": "ਨਵੀਨਤਾ ਪ੍ਰੋਜੈਕਟ (Innovation Projects)",
+      "allStatuses": "ਸਾਰੀਆਂ ਸਥਿਤੀਆਂ (All Statuses)",
+      "active": "ਸਰਗਰਮ (Active)",
+      "paused": "ਰੋਕਿਆ ਗਿਆ (Paused)",
+      "completed": "ਮੁਕੰਮਲ (Completed)",
+      "allJurisdictions": "ਸਾਰੇ ਅਧਿਕਾਰ ਖੇਤਰ (All Jurisdictions)",
+      "india": "ਭਾਰਤ (India)",
+      "us": "ਸੰਯੁਕਤ ਰਾਜ (United States)",
+      "eu": "ਯੂਰਪੀਅਨ ਯੂਨੀਅਨ (European Union)",
+      "noProjectsTitle": "ਅਜੇ ਕੋਈ ਪ੍ਰੋਜੈਕਟ ਨਹੀਂ",
+      "noProjectsDesc": "ਆਪਣਾ ਪਹਿਲਾ ਆਯੁਰਵੇਦ ਨਵੀਨਤਾ ਪ੍ਰੋਜੈਕਟ ਬਣਾ ਕੇ ਆਪਣੀ ਖੋਜ, ਚੈਟ ਸੈਸ਼ਨਾਂ ਅਤੇ ਰਿਪੋਰਟਾਂ ਨੂੰ ਇਕੱਠਾ ਕਰੋ।",
+      "createProject": "ਪ੍ਰੋਜੈਕਟ ਬਣਾਓ (Create Project)",
+      "focus": "ਧਿਆਨ (Focus)",
+      "jurisdiction": "ਅਧਿਕਾਰ ਖੇਤਰ (Jurisdiction)",
+      "updated": "ਅੱਪਡੇਟ ਕੀਤਾ (Updated)",
+      "chats": "ਚੈਟਸ (Chats)",
+      "reports": "ਰਿਪੋਰਟਾਂ (Reports)"
+    },
+    "chats": {
+      "title": "ਚੈਟ ਇਤਿਹਾਸ (Chat History)",
+      "noChatsTitle": "ਕੋਈ ਸੁਰੱਖਿਅਤ ਚੈਟ ਨਹੀਂ",
+      "noChatsDesc": "ਰਵਾਇਤੀ ਗਿਆਨ ਜਾਂ ਰੈਗੂਲੇਟਰੀ ਮਾਰਗਾਂ (regulatory pathways) ਦੀ ਪੜਚੋਲ ਕਰਨੀ ਸ਼ੁਰੂ ਕਰੋ।",
+      "askAyurlex": "AYURLEX ਨੂੰ ਪੁੱਛੋ (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "ਤਿਆਰ ਕੀਤੀਆਂ ਰਿਪੋਰਟਾਂ (Generated Reports)",
+      "noReportsTitle": "ਕੋਈ ਰਿਪੋਰਟ ਤਿਆਰ ਨਹੀਂ ਕੀਤੀ ਗਈ",
+      "noReportsDesc": "ਇੱਥੇ ਰਿਪੋਰਟਾਂ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਅਧਿਕਾਰ ਖੇਤਰ ਮੈਟ੍ਰਿਕਸ (jurisdiction matrix) ਜਾਂ ਨਵੀਨਤਾ ਸੰਖੇਪ (innovation brief) ਨੂੰ ਪੂਰਾ ਕਰੋ।"
+    }
+  },
+  "assistant": {
+    "headerTitle": "ਵਧੀਆ ਸਵਾਲ ਪੁੱਛੋ। ਬੁੱਧੀਮਾਨ ਨਵੀਨਤਾਵਾਂ ਬਣਾਓ।",
+    "headerSubtitle": "AYURLEX ਆਯੁਰਵੇਦ ਖੋਜ, ਫਾਰਮੂਲੇਸ਼ਨ ਵਿશ્લેਸ਼ਣ (Formulation analysis), ਰਵਾਇਤੀ ਗਿਆਨ ਖੋਜ, ਸਬੂਤ ਪੜਤਾਲ, ਬੌਧਿਕ ਜਾਇਦਾਦ (Intellectual property) ਅਤੇ ਰੈਗੂਲੇਟਰੀ ਮਾਰਗਾਂ (Regulatory pathways) ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ।",
+    "citationOnline": "ਹਵਾਲਾ ਪਰਤ ਔਨਲਾਈਨ ਹੈ (Citation layer online)",
+    "assistantName": "AYURLEX ਸਹਾਇਕ (Assistant)",
+    "scopeBadge": "ਸਬੂਤ-ਅਧਾਰਿਤ (Evidence-grounded) · ਸਿਰਫ਼ ਆਯੁਰਵੇਦ",
+    "liveCitation": "ਲਾਈਵ ਹਵਾਲਾ ਸੂਚਕ (Live citation indicator)",
+    "guardrailText": "ਮੈਨੂੰ ਸਿਰਫ਼ ਆਯੁਰਵੇਦ ਨਾਲ ਸੰਬੰਧਿਤ ਸਵਾਲਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ। ਮੈਂ ਇਸ ਵਿਸ਼ੇ ਨੂੰ ਆਯੁਰਵੇਦ ਫਾਰਮੂਲੇਸ਼ਨ (Formulation), ਰਵਾਇਤੀ ਗਿਆਨ, ਸਬੂਤ (Evidence), ਨਵੀਨਤਾ (Innovation), ਬੌਧਿਕ ਜਾਇਦਾਦ (Intellectual property) ਜਾਂ ਮਾਰਕੀਟ ਮਾਰਗ ਨਾਲ ਜੋੜਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹਾਂ।",
+    "guardrailDisclaimer": "AYURLEX ਡਾਕਟਰੀ ਤਸ਼ਖ਼ੀਸ ਜਾਂ ਐਮਰਜੈਂਸੀ ਡਾਕਟਰੀ ਸਲਾਹ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਕਲੀਨਿਕਲ ਮਾਰਗਦਰਸ਼ਨ ਲਈ ਯੋਗ ਡਾਕਟਰ ਨਾਲ ਸਲਾਹ ਕਰੋ।",
+    "composerPlaceholder": "ਸਮੱਗਰੀ (Ingredient), ਫਾਰਮੂਲੇਸ਼ਨ, ਰਵਾਇਤੀ ਗਿਆਨ ਜਾਂ ਨਵੀਨਤਾ ਮਾਰਗ ਬਾਰੇ ਪੁੱਛੋ...",
+    "shiftEnter": "ਨਵੀਂ ਲਾਈਨ ਲਈ Shift + Enter ਦਬਾਓ",
+    "lens": {
+      "title": "ਸੰਦਰਭ ਲੈਂਸ (Context Lens)",
+      "jurisdiction": "ਪ੍ਰਾਇਮਰੀ ਅਧਿਕਾਰ ਖੇਤਰ (Primary Jurisdiction)",
+      "pathway": "ਮਾਰਗ ਦੀ ਤਿਆਰੀ (Pathway Readiness)",
+      "category": "ਸ਼੍ਰੇਣੀ ਰੀਮਾਈਂਡਰ (Category Reminder)",
+      "claimSensitivity": "ਦਾਅਵਾ ਸੰਵੇਦਨਸ਼ੀਲਤਾ (Claim Sensitivity)",
+      "expectedEvidence": "ਉਮੀਦ ਕੀਤੇ ਸਬੂਤ (Evidence Expected)"
+    },
+    "quality": {
+      "title": "ਜਵਾਬ ਦੀ ਗੁਣਵત્તા (Answer Quality)",
+      "coverage": "ਸਰੋਤ ਕવਰੇਜ (Source Coverage)",
+      "classical": "ਕਲਾਸੀਕਲ ਹਵਾਲੇ (Classical References)",
+      "journal": "ਜਰਨਲ ਇੰਡੈਕਸ (Journal Index)",
+      "openQuestions": "ਖੁੱਲ੍ਹੇ ਸਵਾਲ (Open Questions)"
+    },
+    "citations": {
+      "title": "ਲਾਈਵ ਹਵਾਲੇ (Live Citations)",
+      "classicalType": "ਕਲਾਸੀਕਲ ਟੈਕਸਟ (Classical Text)",
+      "journalType": "ਜਰਨਲ (Journal)",
+      "author": "ਲੇਖਕ (Author)",
+      "chapter": "ਅਧਿਆਇ (Chapter)",
+      "year": "ਸਾਲ (Year)",
+      "source": "ਸਰੋਤ (Source)",
+      "viewOriginal": "ਅਸਲ ਸੰਸਕ੍ਰਿਤ ਅਤੇ ਅਨੁਵਾਦ ਦੇਖੋ (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC ਰਾਹੀਂ ਸਰੋਤ ਵੇਰਵਿਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ (Verify Source details)",
+      "note": "ਨੋਟ: ਰਸਮੀ ਜਮ੍ਹਾਂ ਕਰਨ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਹਮੇਸ਼ਾ ਅਧਿਆਇ, ਅਨੁਵਾਦ, ਸੰਸਕਰਨ ਅਤੇ ਮੌਜੂਦਾ ਪ੍ਰਕਾਸ਼ਨ ਵੇਰਵਿਆਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।"
+    },
+    "responsibleUse": "AYURLEX ਖੋਜ ਦਾ ਢਾਂਚਾ ਤਿਆਰ ਕਰਦਾ ਹੈ ਅਤੇ ਸਬੂਤਾਂ (Evidence) ਨੂੰ ਮੈਪ ਕਰਦਾ ਹੈ, ਪਰ ਪ੍ਰਮਾਣਿਤ ਡਾਕਟਰਾਂ, ਰੈਗੂਲੇਟਰਾਂ (regulators), ਵਿਗਿਆਨਕ ਸਮੀਖਿਅਕਾਂ ਜਾਂ ਯੋਗ ਕਾਨੂੰਨੀ ਸਲਾਹਕਾਰਾਂ ਦੀ ਥਾਂ ਨਹੀਂ ਲੈਂਦਾ।"
+  }
+}

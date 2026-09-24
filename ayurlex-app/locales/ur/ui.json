@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "جائزہ (Overview)",
+    "newAnalysis": "نیا تجزیہ (New Analysis)",
+    "evidenceExplorer": "شواہد کا متلاشی (Evidence Explorer)",
+    "knowledgeBase": "علم کا ذخیرہ (Knowledge Base)",
+    "analysisHistory": "تجزیہ کی تاریخ (Analysis History)",
+    "settings": "ترتیبات (Settings)",
+    "help": "مدد اور تعاون (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "تجزیہ تلاش کریں... (Search analysis...)",
+    "ayurvedaScope": "صرف آیوروید (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "جوابات صرف آیوروید اور روایتی طبی علم تک محدود ہیں",
+    "drResearcher": "ڈاکٹر محقق (Dr. Researcher)",
+    "proAccount": "پرو اکاؤنٹ (Pro Account)",
+    "signInToSave": "محفوظ کرنے کے لیے سائن ان کریں (Sign in to save)",
+    "export": "ایکسپورٹ کریں (Export)",
+    "open": "کھولیں (Open)",
+    "resume": "دوبارہ شروع کریں (Resume)",
+    "search": "تلاش کریں (Search)"
+  },
+  "workspace": {
+    "headerTitle": "ایسا کام محفوظ کریں جو بڑھے (Keep the work that should compound)",
+    "headerSubtitle": "اختراعی پروجیکٹس (Innovation projects) محفوظ کریں، چیٹ کی تاریخ دیکھیں اور تیار کردہ رپورٹس کو محفوظ آیورویدک تحقیقی ورک اسپیس (workspace) میں رکھیں۔",
+    "newProject": "نیا پروجیکٹ (New project)",
+    "previewMode": "پریویو موڈ فعال ہے (Preview mode is active)",
+    "previewText": "آپ نمونہ ورک اسپیس کا مواد دیکھ رہے ہیں۔ سائن ان کرنے سے نجی بچت فعال ہو جاتی ہے اور آپ کے پروجیکٹس سیشنز سے منسلک ہو جاتے ہیں۔ نوٹ: ہم کبھی بھی کسی دوسرے صارف کا ریکارڈ ظاہر نہیں کرتے ہیں۔",
+    "metrics": {
+      "savedProjects": "محفوظ کردہ پروجیکٹس (Saved Projects)",
+      "chatSessions": "چیٹ سیشنز (Chat Sessions)",
+      "generatedReports": "تیار کردہ رپورٹس (Generated Reports)"
+    },
+    "projects": {
+      "title": "اختراعی پروجیکٹس (Innovation Projects)",
+      "allStatuses": "تمام حالتیں (All Statuses)",
+      "active": "فعال (Active)",
+      "paused": "موقوف (Paused)",
+      "completed": "مکمل (Completed)",
+      "allJurisdictions": "تمام دائرہ اختیار (All Jurisdictions)",
+      "india": "بھارت (India)",
+      "us": "امریکہ (United States)",
+      "eu": "یورپی یونین (European Union)",
+      "noProjectsTitle": "ابھی تک کوئی پروجیکٹ نہیں",
+      "noProjectsDesc": "اپنا پہلا آیورویدک اختراعی پروجیکٹ بنا کر اپنی تحقیق، چیٹ سیشنز اور رپورٹس کو ایک ساتھ رکھیں۔",
+      "createProject": "پروجیکٹ بنائیں (Create Project)",
+      "focus": "توجہ (Focus)",
+      "jurisdiction": "دائرہ اختیار (Jurisdiction)",
+      "updated": "اپ ڈیٹ کیا گیا (Updated)",
+      "chats": "چیٹس (Chats)",
+      "reports": "رپورٹس (Reports)"
+    },
+    "chats": {
+      "title": "چیٹ کی تاریخ (Chat History)",
+      "noChatsTitle": "کوئی محفوظ کردہ چیٹ نہیں",
+      "noChatsDesc": "روایتی علم یا ریگولیٹری راستوں (regulatory pathways) کی تلاش شروع کریں۔",
+      "askAyurlex": "AYURLEX سے پوچھیں (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "تیار کردہ رپورٹس (Generated Reports)",
+      "noReportsTitle": "کوئی رپورٹ تیار نہیں کی گئی",
+      "noReportsDesc": "یہاں رپورٹس محفوظ کرنے کے لیے دائرہ اختیار میٹرکس (jurisdiction matrix) یا اختراعی بریف (innovation brief) مکمل کریں۔"
+    }
+  },
+  "assistant": {
+    "headerTitle": "بہترین سوالات پوچھیں۔ دانشمندانہ اختراعات کریں۔",
+    "headerSubtitle": "AYURLEX آیوروید کی تحقیق، فارمولیشن تجزیہ (Formulation analysis)، روایتی علم کی تلاش، شواہد کی تصدیق، دانشورانہ املاک (Intellectual property) اور ریگولیٹری راستوں (Regulatory pathways) کی معاونت کرتا ہے۔",
+    "citationOnline": "حوالہ جات کی پرت آن لائن ہے (Citation layer online)",
+    "assistantName": "AYURLEX معاون (Assistant)",
+    "scopeBadge": "شواہد پر مبنی (Evidence-grounded) · صرف آیوروید",
+    "liveCitation": "براہ راست حوالہ جات کا اشارہ (Live citation indicator)",
+    "guardrailText": "مجھے صرف آیوروید سے متعلق سوالات کے لیے ڈیزائن کیا گیا ہے۔ میں اس موضوع کو آیورویدک فارمولیشن (Formulation)، روایتی علم، شواہد (Evidence)، اختراع (Innovation)، دانشورانہ املاک (Intellectual property) یا مارکیٹ کے راستے سے جوڑنے میں مدد کر سکتا ہوں۔",
+    "guardrailDisclaimer": "AYURLEX طبی تشخیص یا ہنگامی طبی مشورہ فراہم نہیں کرتا ہے۔ براہ کرم طبی رہنمائی کے لیے کسی مستند ڈاکٹر سے رجوع کریں۔",
+    "composerPlaceholder": "جز (Ingredient)، فارمولیشن، روایتی علم یا اختراعی راستے کے بارے میں پوچھیں...",
+    "shiftEnter": "نئی لائن کے لیے Shift + Enter دبائیں",
+    "lens": {
+      "title": "سیاق و سباق کا لینس (Context Lens)",
+      "jurisdiction": "بنیادی دائرہ اختیار (Primary Jurisdiction)",
+      "pathway": "راستے کی تیاری (Pathway Readiness)",
+      "category": "زمرہ کی یاد دہانی (Category Reminder)",
+      "claimSensitivity": "دعوے کی حساسیت (Claim Sensitivity)",
+      "expectedEvidence": "متوقع شواہد (Evidence Expected)"
+    },
+    "quality": {
+      "title": "جواب کا معیار (Answer Quality)",
+      "coverage": "ماخذ کی کوریج (Source Coverage)",
+      "classical": "کلاسیکی حوالہ جات (Classical References)",
+      "journal": "جرنل انڈیکس (Journal Index)",
+      "openQuestions": "غیر حل شدہ سوالات (Open Questions)"
+    },
+    "citations": {
+      "title": "براہ راست حوالہ جات (Live Citations)",
+      "classicalType": "کلاسیکی متن (Classical Text)",
+      "journalType": "جرنل (Journal)",
+      "author": "مصنف (Author)",
+      "chapter": "باب (Chapter)",
+      "year": "سال (Year)",
+      "source": "ماخذ (Source)",
+      "viewOriginal": "اصل سنسکرت اور ترجمہ دیکھیں (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC کے ذریعے ماخذ کی تفصیلات کی تصدیق کریں (Verify Source details)",
+      "note": "نوٹ: رسمی جمع کرانے میں شامل کرنے سے پہلے ہمیشہ باب، ترجمہ، ایڈیشن اور موجودہ اشاعت کی تفصیلات کی تصدیق کریں۔"
+    },
+    "responsibleUse": "AYURLEX تحقیق کو تشکیل دیتا ہے اور شواہد (Evidence) کا نقشہ بناتا ہے، لیکن یہ تصدیق شدہ ڈاکٹروں، ریگولیٹرز (regulators)، سائنسی جائزہ لینے والوں یا مستند قانونی مشیروں کا متبادل نہیں ہے۔"
+  }
+}

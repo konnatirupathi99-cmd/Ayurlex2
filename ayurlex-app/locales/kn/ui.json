@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "ಅವಲೋಕನ (Overview)",
+    "newAnalysis": "ಹೊಸ ವಿಶ್ಲೇಷಣೆ (New Analysis)",
+    "evidenceExplorer": "ಆಧಾರ ಶೋಧಕ (Evidence Explorer)",
+    "knowledgeBase": "ಜ್ಞಾನ ನೆಲೆ (Knowledge Base)",
+    "analysisHistory": "ವಿಶ್ಲೇಷಣಾ ಇತಿಹಾಸ (Analysis History)",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು (Settings)",
+    "help": "ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲ (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "ವಿಶ್ಲೇಷಣೆಯನ್ನು ಹುಡುಕಿ... (Search analysis...)",
+    "ayurvedaScope": "ಆಯುರ್ವೇದ ಮಾತ್ರ (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "ಪ್ರತಿಕ್ರಿಯೆಗಳು ಆಯುರ್ವೇದ ಮತ್ತು ಸಾಂಪ್ರದಾಯಿಕ ವೈದ್ಯಕೀಯ ಜ್ಞಾನಕ್ಕೆ ಮಾತ್ರ ಸೀಮಿತವಾಗಿವೆ",
+    "drResearcher": "ಡಾ. ಸಂಶೋಧಕ (Dr. Researcher)",
+    "proAccount": "ಪ್ರೊ ಖಾತೆ (Pro Account)",
+    "signInToSave": "ಉಳಿಸಲು ಸೈನ್ ಇನ್ ಮಾಡಿ (Sign in to save)",
+    "export": "ರಫ್ತು ಮಾಡಿ (Export)",
+    "open": "ತೆರೆಯಿರಿ (Open)",
+    "resume": "ಮುಂದುವರಿಸಿ (Resume)",
+    "search": "ಹುಡುಕಿ (Search)"
+  },
+  "workspace": {
+    "headerTitle": "ಬೆಳೆಯುವ ಕೆಲಸವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಿ (Keep the work that should compound)",
+    "headerSubtitle": "ನಾವೀನ್ಯತಾ ಯೋಜನೆಗಳನ್ನು (Innovation projects) ಉಳಿಸಿ, ಚಾಟ್ ಇತಿಹಾಸವನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ರಚಿಸಲಾದ ವರದಿಗಳನ್ನು ಸುರಕ್ಷಿತ ಆಯುರ್ವೇದ ಸಂಶೋಧನಾ ಕಾರ್ಯಕ್ಷೇತ್ರದಲ್ಲಿ (workspace) ಇರಿಸಿ.",
+    "newProject": "ಹೊಸ ಯೋಜನೆ (New project)",
+    "previewMode": "ಮುನ್ನೋಟ ಮೋಡ್ ಸಕ್ರಿಯವಾಗಿದೆ (Preview mode is active)",
+    "previewText": "ನೀವು ಮಾದರಿ ಕಾರ್ಯಕ್ಷೇತ್ರದ ವಿಷಯವನ್ನು ನೋಡುತ್ತಿದ್ದೀರಿ. ಸೈನ್ ಇನ್ ಮಾಡುವುದರಿಂದ ಖಾಸಗಿ ಉಳಿಸುವಿಕೆ ಸಕ್ರಿಯಗೊಳ್ಳುತ್ತದೆ ಮತ್ತು ನಿಮ್ಮ ಯೋಜನೆಗಳು ಸೆಷನ್‌ಗಳಿಗೆ ಲಗತ್ತಿಸಲ್ಪಡುತ್ತವೆ. ಗಮನಿಸಿ: ನಾವು ಎಂದಿಗೂ ಮತ್ತೊಬ್ಬ ಬಳಕೆದಾರರ ದಾಖಲೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸುವುದಿಲ್ಲ.",
+    "metrics": {
+      "savedProjects": "ಉಳಿಸಿದ ಯೋಜನೆಗಳು (Saved Projects)",
+      "chatSessions": "ಚಾಟ್ ಸೆಷನ್‌ಗಳು (Chat Sessions)",
+      "generatedReports": "ರಚಿಸಲಾದ ವರದಿಗಳು (Generated Reports)"
+    },
+    "projects": {
+      "title": "ನಾವೀನ್ಯತಾ ಯೋಜನೆಗಳು (Innovation Projects)",
+      "allStatuses": "ಎಲ್ಲಾ ಸ್ಥಿತಿಗಳು (All Statuses)",
+      "active": "ಸಕ್ರಿಯ (Active)",
+      "paused": "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ (Paused)",
+      "completed": "ಪೂರ್ಣಗೊಂಡಿದೆ (Completed)",
+      "allJurisdictions": "ಎಲ್ಲಾ ನ್ಯಾಯವ್ಯಾಪ್ತಿಗಳು (All Jurisdictions)",
+      "india": "ಭಾರತ (India)",
+      "us": "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ (United States)",
+      "eu": "ಯುರೋಪಿಯನ್ ಯೂನಿಯನ್ (European Union)",
+      "noProjectsTitle": "ಇನ್ನೂ ಯಾವುದೇ ಯೋಜನೆಗಳಿಲ್ಲ",
+      "noProjectsDesc": "ನಿಮ್ಮ ಮೊದಲ ಆಯುರ್ವೇದ ನಾವೀನ್ಯತಾ ಯೋಜನೆಯನ್ನು ರಚಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಸಂಶೋಧನೆ, ಚಾಟ್ ಸೆಷನ್‌ಗಳು ಮತ್ತು ವರದಿಗಳನ್ನು ಗುಂಪು ಮಾಡಿ.",
+      "createProject": "ಯೋಜನೆಯನ್ನು ರಚಿಸಿ (Create Project)",
+      "focus": "ಗಮನ (Focus)",
+      "jurisdiction": "ನ್ಯಾಯವ್ಯಾಪ್ತಿ (Jurisdiction)",
+      "updated": "ನವೀಕರಿಸಲಾಗಿದೆ (Updated)",
+      "chats": "ಚಾಟ್‌ಗಳು (Chats)",
+      "reports": "ವರದಿಗಳು (Reports)"
+    },
+    "chats": {
+      "title": "ಚಾಟ್ ಇತಿಹಾಸ (Chat History)",
+      "noChatsTitle": "ಯಾವುದೇ ಉಳಿಸಿದ ಚಾಟ್‌ಗಳಿಲ್ಲ",
+      "noChatsDesc": "ಸಾಂಪ್ರದಾಯಿಕ ಜ್ಞಾನ ಅಥವಾ ನಿಯಂತ್ರಕ ಮಾರ್ಗಗಳನ್ನು (regulatory pathways) ಅನ್ವೇಷಿಸಲು ಪ್ರಾರಂಭಿಸಿ.",
+      "askAyurlex": "AYURLEX ಅನ್ನು ಕೇಳಿ (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "ರಚಿಸಲಾದ ವರದಿಗಳು (Generated Reports)",
+      "noReportsTitle": "ಯಾವುದೇ ವರದಿಗಳನ್ನು ರಚಿಸಲಾಗಿಲ್ಲ",
+      "noReportsDesc": "ಇಲ್ಲಿ ವರದಿಗಳನ್ನು ಉಳಿಸಲು ನ್ಯಾಯವ್ಯಾಪ್ತಿ ಮ್ಯಾಟ್ರಿಕ್ಸ್ (jurisdiction matrix) ಅಥವಾ ನಾವೀನ್ಯತಾ ಸಂಕ್ಷಿಪ್ತವನ್ನು (innovation brief) ಪೂರ್ಣಗೊಳಿಸಿ."
+    }
+  },
+  "assistant": {
+    "headerTitle": "ಉತ್ತಮ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಿ. ಬುದ್ಧಿವಂತ ನಾವೀನ್ಯತೆಗಳನ್ನು ರಚಿಸಿ.",
+    "headerSubtitle": "AYURLEX ಆಯುರ್ವೇದ ಸಂಶೋಧನೆ, ಸೂತ್ರೀಕರಣ ವಿಶ್ಲೇಷಣೆ (Formulation analysis), ಸಾಂಪ್ರದಾಯಿಕ ಜ್ಞಾನ ಶೋಧನೆ, ಆಧಾರ ಪರಿಶೀಲನೆ, ಬೌದ್ಧಿಕ ಆಸ್ತಿ (Intellectual property) ಮತ್ತು ನಿಯಂತ್ರಕ ಮಾರ್ಗಗಳನ್ನು (Regulatory pathways) ಬೆಂಬಲಿಸುತ್ತದೆ.",
+    "citationOnline": "ಉಲ್ಲೇಖದ ಪದರ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿದೆ (Citation layer online)",
+    "assistantName": "AYURLEX ಸಹಾಯಕ (Assistant)",
+    "scopeBadge": "ಆಧಾರ-ಆಧಾರಿತ (Evidence-grounded) · ಆಯುರ್ವೇದ ಮಾತ್ರ",
+    "liveCitation": "ನೇರ ಉಲ್ಲೇಖ ಸೂಚಕ (Live citation indicator)",
+    "guardrailText": "ನನ್ನನ್ನು ಆಯುರ್ವೇದಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಶ್ನೆಗಳಿಗಾಗಿ ಮಾತ್ರ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. ಈ ವಿಷಯವನ್ನು ಆಯುರ್ವೇದ ಸೂತ್ರೀಕರಣ (Formulation), ಸಾಂಪ್ರದಾಯಿಕ ಜ್ಞಾನ, ಆಧಾರ (Evidence), ನಾವೀನ್ಯತೆ (Innovation), ಬೌದ್ಧಿಕ ಆಸ್ತಿ (Intellectual property) ಅಥವಾ ಮಾರುಕಟ್ಟೆ ಮಾರ್ಗದೊಂದಿಗೆ (Market pathway) ಸಂಪರ್ಕಿಸಲು ನಾನು ಸಹಾಯ ಮಾಡಬಲ್ಲೆ.",
+    "guardrailDisclaimer": "AYURLEX ವೈದ್ಯಕೀಯ ರೋಗನಿರ್ಣಯ ಅಥವಾ ತುರ್ತು ವೈದ್ಯಕೀಯ ಸಲಹೆಯನ್ನು ನೀಡುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ವೈದ್ಯಕೀಯ ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ಅರ್ಹ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+    "composerPlaceholder": "ಪದಾರ್ಥ (Ingredient), ಸೂತ್ರೀಕರಣ, ಸಾಂಪ್ರದಾಯಿಕ ಜ್ಞಾನ ಅಥವಾ ನಾವೀನ್ಯತಾ ಮಾರ್ಗದ ಕುರಿತು ಕೇಳಿ...",
+    "shiftEnter": "ಹೊಸ ಸಾಲಿಗಾಗಿ Shift + Enter ಒತ್ತಿ",
+    "lens": {
+      "title": "ಸಂದರ್ಭ ಲೆನ್ಸ್ (Context Lens)",
+      "jurisdiction": "ಪ్రాಥಮಿಕ ನ್ಯಾಯವ್ಯಾಪ್ತಿ (Primary Jurisdiction)",
+      "pathway": "ಮಾರ್ಗ ಸಿದ್ಧತೆ (Pathway Readiness)",
+      "category": "ವರ್ಗ ಜ್ಞಾಪನೆ (Category Reminder)",
+      "claimSensitivity": "ಹಕ್ಕು ಸೂಕ್ಷ್ಮತೆ (Claim Sensitivity)",
+      "expectedEvidence": "ನಿರೀಕ್ಷಿತ ಆಧಾರ (Evidence Expected)"
+    },
+    "quality": {
+      "title": "ಉತ್ತರದ ಗುಣಮಟ್ಟ (Answer Quality)",
+      "coverage": "ಮೂಲ ಕವರೇಜ್ (Source Coverage)",
+      "classical": "ಶಾಸ್ತ್ರೀಯ ಉಲ್ಲೇಖಗಳು (Classical References)",
+      "journal": "ಜರ್ನಲ್ ಸೂಚ್ಯಂಕ (Journal Index)",
+      "openQuestions": "ಮುಕ್ತ ಪ್ರಶ್ನೆಗಳು (Open Questions)"
+    },
+    "citations": {
+      "title": "ನೇರ ಉಲ್ಲೇಖಗಳು (Live Citations)",
+      "classicalType": "ಶಾಸ್ತ್ರೀಯ ಪಠ್ಯ (Classical Text)",
+      "journalType": "ಜರ್ನಲ್ (Journal)",
+      "author": "ಲೇಖಕ (Author)",
+      "chapter": "ಅಧ್ಯಾಯ (Chapter)",
+      "year": "ವರ್ಷ (Year)",
+      "source": "ಮೂಲ (Source)",
+      "viewOriginal": "ಮೂಲ ಸಂಸ್ಕೃತ ಮತ್ತು ಅನುವಾದವನ್ನು ವೀಕ್ಷಿಸಿ (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC ಮೂಲಕ ಮೂಲ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ (Verify Source details)",
+      "note": "ಸೂಚನೆ: ಔಪಚಾರಿಕ ಸಲ್ಲಿಕೆಗಳಲ್ಲಿ ಸೇರಿಸುವ ಮೊದಲು ಯಾವಾಗಲೂ ಅಧ್ಯಾಯ, ಅನುವಾದ, ಆವೃತ್ತಿ ಮತ್ತು ಪ್ರಸ್ತುತ ಪ್ರಕಟಣೆ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ."
+    },
+    "responsibleUse": "AYURLEX ಸಂಶೋಧನೆಯನ್ನು ರೂಪಿಸುತ್ತದೆ ಮತ್ತು ಪುರಾವೆಗಳನ್ನು (Evidence) ನಕ್ಷೆ ಮಾಡುತ್ತದೆ, ಆದರೆ ಪ್ರಮಾಣೀಕೃತ ವೈದ್ಯರು, ನಿಯಂತ್ರಕರು (regulators), ವೈಜ್ಞಾನಿಕ ವಿಮರ್ಶಕರು ಅಥವಾ ಅರ್ಹ ಕಾನೂನು ಸಲಹೆಗಾರರನ್ನು ಬದಲಿಸುವುದಿಲ್ಲ."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "overview": "දළ විශ්ලේෂණය (Overview)",
+    "newAnalysis": "නව විශ්ලේෂණය (New Analysis)",
+    "evidenceExplorer": "සාක්ෂි ගවේෂකය (Evidence Explorer)",
+    "knowledgeBase": "දැනුම් සම්භාරය (Knowledge Base)",
+    "analysisHistory": "විශ්ලේෂණ ඉතිහාසය (Analysis History)",
+    "settings": "සැකසුම් (Settings)",
+    "help": "උපකාර සහ සහාය (Help & Support)"
+  },
+  "common": {
+    "searchAnalysis": "විශ්ලේෂණය සොයන්න... (Search analysis...)",
+    "ayurvedaScope": "ආයුර්වේදය පමණි (Ayurveda-only Scope)",
+    "scopeNoticeTooltip": "පිළිතුරු ආයුර්වේදය සහ සාම්ප්‍රදායික වෛද්‍ය දැනුමට පමණක් සීමා වේ",
+    "drResearcher": "ආචාර්ය පර්යේෂක (Dr. Researcher)",
+    "proAccount": "ප්‍රෝ ගිණුම (Pro Account)",
+    "signInToSave": "සුරැකීමට පුරනය වන්න (Sign in to save)",
+    "export": "අපනයනය කරන්න (Export)",
+    "open": "විවෘත කරන්න (Open)",
+    "resume": "නැවත අරඹන්න (Resume)",
+    "search": "සොයන්න (Search)"
+  },
+  "workspace": {
+    "headerTitle": "ඔබේ පර්යේෂණ සුරක්ෂිත කරන්න (Keep the work that should compound)",
+    "headerSubtitle": "නවෝත්පාදන ව්‍යාපෘති (Innovation projects) සුරකින්න, කතාබස් ඉතිහාසය බලන්න සහ සකස් කළ වාර්තා සුරක්ෂිත ආයුර්වේද පර්යේෂණ වැඩබිමක (workspace) තබා ගන්න.",
+    "newProject": "නව ව්‍යාපෘතිය (New project)",
+    "previewMode": "පෙරදසුන් මාදිලිය සක්‍රීයයි (Preview mode is active)",
+    "previewText": "ඔබ නියැදි වැඩබිම් අන්තර්ගතය බලමින් සිටී. පුරනය වීම මගින් පුද්ගලික සුරැකුම් සක්‍රීය වන අතර ඔබගේ ව්‍යාපෘති සැසි සමග සම්බන්ධ වේ. සටහන: අපි කිසිවිටෙකත් වෙනත් පරිශීලකයෙකුගේ වාර්තා පෙන්වන්නේ නැත.",
+    "metrics": {
+      "savedProjects": "සුරැකි ව්‍යාපෘති (Saved Projects)",
+      "chatSessions": "කතාබස් සැසි (Chat Sessions)",
+      "generatedReports": "නිපදවූ වාර්තා (Generated Reports)"
+    },
+    "projects": {
+      "title": "නවෝත්පාදන ව්‍යාපෘති (Innovation Projects)",
+      "allStatuses": "සියලුම තත්වයන් (All Statuses)",
+      "active": "සක්‍රීය (Active)",
+      "paused": "තාවකාලිකව නැවැත්වූ (Paused)",
+      "completed": "සම්පූර්ණයි (Completed)",
+      "allJurisdictions": "සියලුම අධිකරණ බල ප්‍රදේශ (All Jurisdictions)",
+      "india": "ඉන්දියාව (India)",
+      "us": "ඇමරිකා එක්සත් ජනපදය (United States)",
+      "eu": "යුරෝපා සංගමය (European Union)",
+      "noProjectsTitle": "තවමත් ව්‍යාපෘති නොමැත",
+      "noProjectsDesc": "ඔබගේ පළමු ආයුර්වේද නවෝත්පාදන ව්‍යාපෘතිය සාදා ඔබගේ පර්යේෂණ, කතාබස් සැසි සහ වාර්තා එකතු කරන්න.",
+      "createProject": "ව්‍යාපෘතිය සාදන්න (Create Project)",
+      "focus": "අවධානය (Focus)",
+      "jurisdiction": "නියාමන බල ප්‍රදේශය (Jurisdiction)",
+      "updated": "යාවත්කාලීන කරන ලදි (Updated)",
+      "chats": "කතාබස් (Chats)",
+      "reports": "වාර්තා (Reports)"
+    },
+    "chats": {
+      "title": "කතාබස් ඉතිහාසය (Chat History)",
+      "noChatsTitle": "සුරැකි කතාබස් නොමැත",
+      "noChatsDesc": "සාම්ප්‍රදායික දැනුම හෝ නියාමන මාර්ග (regulatory pathways) ගවේෂණය ආරම්භ කරන්න.",
+      "askAyurlex": "AYURLEX ගෙන් අසන්න (Ask AYURLEX)"
+    },
+    "reports": {
+      "title": "නිපදවූ වාර්තා (Generated Reports)",
+      "noReportsTitle": "කිසිදු වාර්තාවක් නිපදවා නැත",
+      "noReportsDesc": "මෙහි වාර්තා සුරැකීමට අධිකරණ බල ප්‍රදේශ න්‍යාසය (jurisdiction matrix) හෝ නවෝත්පාදන සාරාංශය (innovation brief) සම්පූර්ණ කරන්න."
+    }
+  },
+  "assistant": {
+    "headerTitle": "විශිෂ්ට ප්‍රශ්න අසන්න. බුද්ධිමත් නවෝත්පාදන ගොඩනඟන්න.",
+    "headerSubtitle": "AYURLEX ආයුර්වේද පර්යේෂණ, සංයෝග විශ්ලේෂණය (Formulation analysis), සාම්ප්‍රදායික දැනුම ගවේෂණය, සාක්ෂි (Evidence), බුද්ධිමය දේපළ (Intellectual property) සහ නියාමන මාර්ග (Regulatory pathways) සඳහා සහාය වේ.",
+    "citationOnline": "උපුටා දැක්වීම් ස්තරය සබැඳිව පවතී (Citation layer online)",
+    "assistantName": "AYURLEX සහායක (Assistant)",
+    "scopeBadge": "සාක්ෂි මත පදනම් වූ (Evidence-grounded) · ආයුර්වේදය පමණි",
+    "liveCitation": "සජීවී උපුටා දැක්වීම් දර්ශකය (Live citation indicator)",
+    "guardrailText": "මා නිර්මාණය කර ඇත්තේ ආයුර්වේදයට අදාළ ප්‍රශ්න සඳහා පමණි. මෙම මාතෘකාව ආයුර්වේද සංයෝග (Formulation), සාම්ප්‍රදායික දැනුම, සාක්ෂි (Evidence), නවෝත්පාදන (Innovation), බුද්ධිමය දේපළ (Intellectual property) හෝ වෙළඳපල මාර්ග සමඟ සම්බන්ධ කිරීමට මට උපකාර කළ හැකිය.",
+    "guardrailDisclaimer": "AYURLEX වෛද්‍ය රෝග විනිශ්චය හෝ හදිසි වෛද්‍ය උපදෙස් සපයන්නේ නැත. සායනික මාර්ගෝපදේශ සඳහා කරුණාකර සුදුසුකම් ලත් වෛද්‍යවරයෙකුගෙන් උපදෙස් ලබා ගන්න.",
+    "composerPlaceholder": "අමුද්‍රව්‍ය (Ingredient), සංයෝගය, සාම්ප්‍රදායික දැනුම හෝ නවෝත්පාදන මාර්ගය ගැන අසන්න...",
+    "shiftEnter": "නව පේළියක් සඳහා Shift + Enter ඔබන්න",
+    "lens": {
+      "title": "සන්දර්භ කාචය (Context Lens)",
+      "jurisdiction": "ප්‍රාථමික අධිකරණ බල ප්‍රදේශය (Primary Jurisdiction)",
+      "pathway": "සංයෝගය සහ නවෝත්පාදනය (Formulation & Innovation)",
+      "category": "සාක්ෂි, හිමිකම් සහ ආරක්ෂාව (Evidence, Claim & Safety)",
+      "claimSensitivity": "බුද්ධිමය දේපළ සහ නියාමනය (IP & Regulatory)",
+      "expectedEvidence": "ප්‍රභවය සහ ගුණාත්මකභාවය (Provenance & Quality)"
+    },
+    "quality": {
+      "title": "පිළිතුරේ ගුණාත්මකභාවය (Answer Quality)",
+      "coverage": "මූලාශ්‍ර ආවරණය (Source Coverage)",
+      "classical": "සම්භාව්‍ය ආයුර්වේද දැනුම (Classical Ayurvedic Knowledge)",
+      "journal": "නූතන විද්‍යාත්මක සොයාගැනීම් (Modern Scientific Findings)",
+      "openQuestions": "විවෘත ප්‍රශ්න සහ සත්‍යාපනය (Open Questions & Verification)"
+    },
+    "citations": {
+      "title": "සජීවී උපුටා දැක්වීම් (Live Citations)",
+      "classicalType": "සම්භාව්‍ය ග්‍රන්ථ (Classical Text)",
+      "journalType": "සඟරාව (Journal)",
+      "author": "කර්තෘ (Author)",
+      "chapter": "පරිච්ඡේදය (Chapter)",
+      "year": "වර්ෂය (Year)",
+      "source": "මූලාශ්‍රය (Source)",
+      "viewOriginal": "මුල් සංස්කෘත සහ පරිවර්තනය බලන්න (View original Sanskrit & Translation)",
+      "verifySource": "Europe PMC හරහා මූලාශ්‍ර විස්තර තහවුරු කරන්න (Verify Source details)",
+      "note": "සටහන: විධිමත් ඉදිරිපත් කිරීමකට පෙර සෑම විටම පරිච්ඡේදය, පරිවර්තනය සහ ප්‍රකාශන විස්තර සත්‍යාපනය කරන්න."
+    },
+    "responsibleUse": "AYURLEX පර්යේෂණ රාමුගත කරන අතර සාක්ෂි (Evidence) සිතියම්ගත කරයි, නමුත් සහතික කළ වෛද්‍යවරුන්, නියාමකයින් (regulators), විද්‍යාත්මක විචාරකයින් හෝ නීති උපදේශකයින් ප්‍රතිස්ථාපනය නොකරයි."
+  }
+}
