@@ -31,21 +31,7 @@ async def synthesize_report(
         detected_language=core_output.processing.get("language_detected", "en"),
         summary=summary,
         normalized_terms=normalized_terms,
-        formulation_context={
-            "classification": core_output.formulation_intelligence.classification.label if core_output.formulation_intelligence.classification else "Unclear",
-            "type": core_output.formulation_intelligence.classification.type if core_output.formulation_intelligence.classification else "unclear",
-            "details": core_output.formulation_intelligence.classification.summary if core_output.formulation_intelligence.classification else "Pending"
-        },
-        ip_intelligence={
-            "status": core_output.ip_intelligence.status,
-            "details": core_output.ip_intelligence.summary,
-            "patent_context": core_output.ip_intelligence.patent_context.dict(),
-            "prior_art": core_output.ip_intelligence.prior_art.dict(),
-            "differentiation": core_output.ip_intelligence.innovation_differentiation.dict(),
-            "trademark": core_output.ip_intelligence.trademark_context.dict(),
-            "key_findings": core_output.ip_intelligence.key_findings
-        },
-        traditional_knowledge={
+        classical_ayurvedic_rationale={
             "status": core_output.traditional_knowledge.status,
             "details": core_output.traditional_knowledge.summary,
             "term_analysis": core_output.traditional_knowledge.term_analysis.dict(),
@@ -54,13 +40,26 @@ async def synthesize_report(
             "traditional_use_analysis": core_output.traditional_knowledge.traditional_use_analysis.dict(),
             "key_findings": core_output.traditional_knowledge.key_findings
         },
-        abs_context={
-            "status": core_output.abs_context.signals[0] if core_output.abs_context.signals else "No Signals",
-            "details": core_output.abs_context.summary
+        contemporary_scientific_evidence={
+            "classification": core_output.formulation_intelligence.classification.label if core_output.formulation_intelligence.classification else "Unclear",
+            "type": core_output.formulation_intelligence.classification.type if core_output.formulation_intelligence.classification else "unclear",
+            "details": core_output.formulation_intelligence.classification.summary if core_output.formulation_intelligence.classification else "Pending",
+            "signals": core_output.formulation_intelligence.signals
         },
-        regulatory_context={
-            "status": core_output.regulatory_context.signals[0] if core_output.regulatory_context.signals else "No Signals",
-            "details": core_output.regulatory_context.summary
+        product_or_process_novelty={
+            "status": core_output.ip_intelligence.status,
+            "details": core_output.ip_intelligence.summary,
+            "patent_context": core_output.ip_intelligence.patent_context.dict(),
+            "prior_art": core_output.ip_intelligence.prior_art.dict(),
+            "differentiation": core_output.ip_intelligence.innovation_differentiation.dict(),
+            "trademark": core_output.ip_intelligence.trademark_context.dict(),
+            "key_findings": core_output.ip_intelligence.key_findings
+        },
+        jurisdictional_interpretation={
+            "abs_status": core_output.abs_context.signals[0] if core_output.abs_context.signals else "No Signals",
+            "abs_details": core_output.abs_context.summary,
+            "regulatory_status": core_output.regulatory_context.signals[0] if core_output.regulatory_context.signals else "No Signals",
+            "regulatory_details": core_output.regulatory_context.summary
         },
         evidence=[], # Mock empty evidence mapping
         confidence={

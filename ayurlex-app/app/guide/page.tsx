@@ -208,7 +208,9 @@ export default function InnovationGuide() {
                   <div className={styles.askContent}>
                     <div className={styles.askLabel}>Ask AYURLEX</div>
                     <div className={styles.askText}>"What evidence would change our decision at this phase?"</div>
-                    <button className={styles.askButton}>Ask Assistant</button>
+                    <Link href="/assistant" className={styles.askButton} style={{textDecoration: 'none', color: 'inherit'}}>
+                      Ask Assistant
+                    </Link>
                   </div>
                 </div>
 

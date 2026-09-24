@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { 
   AlertTriangle, 
   Download, 
@@ -55,9 +56,9 @@ export default function JurisdictionsIntelligence() {
             </p>
           </div>
           <div className={styles.headerActions}>
-            <button className={styles.actionButton}>
+            <Link href="/assistant" className={styles.actionButton} style={{textDecoration: 'none', color: 'inherit'}}>
               <MessageCircle size={16} /> Ask AYURLEX
-            </button>
+            </Link>
             <button className={styles.actionButton} onClick={handleExportCSV}>
               <FileText size={16} /> Export CSV
             </button>

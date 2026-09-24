@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useLanguage } from "@/components/LanguageProvider";
 import Link from "next/link";
 import { 
   FolderKanban, 
@@ -81,11 +82,9 @@ const MOCK_REPORTS = [
 ];
 
 export default function MyWorkspace() {
-  // Toggle this to see authenticated vs unauthenticated states
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
-  // State for toggling empty states for demonstration
   const [showEmptyStates, setShowEmptyStates] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <div className={styles.workspaceContainer}>
@@ -95,14 +94,14 @@ export default function MyWorkspace() {
         <div className={styles.headerPattern}></div>
         <div className={styles.headerContent}>
           <div className={styles.headerInfo}>
-            <h1 className={styles.headerTitle}>Keep the work that should compound.</h1>
+            <h1 className={styles.headerTitle}>{t('workspace.headerTitle')}</h1>
             <p className={styles.headerSubtitle}>
-              Save innovation projects, return to chat history and keep generated reports in one secure Ayurveda research workspace.
+              {t('workspace.headerSubtitle')}
             </p>
           </div>
-          <button className={styles.newProjectButton}>
-            <Plus size={18} /> New project
-          </button>
+          <Link href="/guide" className={styles.newProjectButton} style={{textDecoration: 'none', color: 'inherit'}}>
+            <Plus size={18} /> {t('workspace.newProject')}
+          </Link>
         </div>
       </header>
 
@@ -111,14 +110,14 @@ export default function MyWorkspace() {
         <div className={styles.previewBanner}>
           <div className={styles.previewBannerInfo}>
             <div className={styles.previewBannerTitle}>
-              <Lock size={18} /> Preview mode is active
+              <Lock size={18} /> {t('workspace.previewMode')}
             </div>
             <div className={styles.previewBannerText}>
-              You are viewing sample workspace content. Signing in enables private saving and connects your projects across sessions. Note: We never display another user's records.
+              {t('workspace.previewText')}
             </div>
           </div>
           <button className={styles.signInButton} onClick={() => setIsAuthenticated(true)}>
-            Sign in to save
+            {t('common.signInToSave')}
           </button>
         </div>
       )}
@@ -133,7 +132,7 @@ export default function MyWorkspace() {
             </div>
             <div>
               <div className={styles.metricValue}>{showEmptyStates ? 0 : MOCK_PROJECTS.length}</div>
-              <div className={styles.metricLabel}>Saved Projects</div>
+              <div className={styles.metricLabel}>{t('workspace.metrics.savedProjects')}</div>
             </div>
           </div>
           <div className={styles.metricCard}>
@@ -142,7 +141,7 @@ export default function MyWorkspace() {
             </div>
             <div>
               <div className={styles.metricValue}>{showEmptyStates ? 0 : MOCK_CHATS.length}</div>
-              <div className={styles.metricLabel}>Chat Sessions</div>
+              <div className={styles.metricLabel}>{t('workspace.metrics.chatSessions')}</div>
             </div>
           </div>
           <div className={styles.metricCard}>
@@ -151,7 +150,7 @@ export default function MyWorkspace() {
             </div>
             <div>
               <div className={styles.metricValue}>{showEmptyStates ? 0 : MOCK_REPORTS.length}</div>
-              <div className={styles.metricLabel}>Generated Reports</div>
+              <div className={styles.metricLabel}>{t('workspace.metrics.generatedReports')}</div>
             </div>
           </div>
         </div>
@@ -160,20 +159,20 @@ export default function MyWorkspace() {
         <section>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>
-              <FolderKanban size={20} /> Innovation Projects
+              <FolderKanban size={20} /> {t('workspace.projects.title')}
             </h2>
             <div className={styles.filters}>
               <select className={styles.filterSelect}>
-                <option>All Statuses</option>
-                <option>Active</option>
-                <option>Paused</option>
-                <option>Completed</option>
+                <option>{t('workspace.projects.allStatuses')}</option>
+                <option>{t('workspace.projects.active')}</option>
+                <option>{t('workspace.projects.paused')}</option>
+                <option>{t('workspace.projects.completed')}</option>
               </select>
               <select className={styles.filterSelect}>
-                <option>All Jurisdictions</option>
-                <option>India</option>
-                <option>United States</option>
-                <option>European Union</option>
+                <option>{t('workspace.projects.allJurisdictions')}</option>
+                <option>{t('workspace.projects.india')}</option>
+                <option>{t('workspace.projects.us')}</option>
+                <option>{t('workspace.projects.eu')}</option>
               </select>
             </div>
           </div>
@@ -181,9 +180,9 @@ export default function MyWorkspace() {
           {showEmptyStates ? (
             <div className={styles.emptyState}>
               <div className={styles.emptyIcon}><FolderKanban size={32} /></div>
-              <div className={styles.emptyTitle}>No projects yet</div>
-              <div className={styles.emptyDesc}>Group your research, chat sessions, and reports by creating your first Ayurveda innovation project.</div>
-              <button className={styles.newProjectButton}><Plus size={16} /> Create Project</button>
+              <div className={styles.emptyTitle}>{t('workspace.projects.noProjectsTitle')}</div>
+              <div className={styles.emptyDesc}>{t('workspace.projects.noProjectsDesc')}</div>
+              <button className={styles.newProjectButton}><Plus size={16} /> {t('workspace.projects.createProject')}</button>
             </div>
           ) : (
             <div className={styles.cardsGrid}>
@@ -200,25 +199,25 @@ export default function MyWorkspace() {
                   </div>
                   <div className={styles.projectDetails}>
                     <div className={styles.projectDetail}>
-                      <Leaf size={14} className="text-stone-400" /> Focus: {project.focus}
+                      <Leaf size={14} className="text-stone-400" /> {t('workspace.projects.focus')}: {project.focus}
                     </div>
                     <div className={styles.projectDetail}>
-                      <Scale size={14} className="text-stone-400" /> Jurisdiction: {project.jurisdiction}
+                      <Scale size={14} className="text-stone-400" /> {t('workspace.projects.jurisdiction')}: {project.jurisdiction}
                     </div>
                     <div className={styles.projectDetail}>
-                      <Clock size={14} className="text-stone-400" /> Updated: {project.lastUpdated}
+                      <Clock size={14} className="text-stone-400" /> {t('workspace.projects.updated')}: {project.lastUpdated}
                     </div>
                   </div>
                   <div className={styles.projectFooter}>
                     <div className={styles.projectLinks}>
                       <Link href="#" className={styles.projectLink}>
-                        <MessageSquare size={12} /> {project.linkedChats} Chats
+                        <MessageSquare size={12} /> {project.linkedChats} {t('workspace.projects.chats')}
                       </Link>
                       <Link href="#" className={styles.projectLink}>
-                        <FileBarChart size={12} /> {project.linkedReports} Reports
+                        <FileBarChart size={12} /> {project.linkedReports} {t('workspace.projects.reports')}
                       </Link>
                     </div>
-                    <Link href="#" className={styles.projectLink}>Open <ArrowRight size={14} /></Link>
+                    <Link href="#" className={styles.projectLink}>{t('common.open')} <ArrowRight size={14} /></Link>
                   </div>
                 </div>
               ))}
@@ -232,11 +231,11 @@ export default function MyWorkspace() {
           <section>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                <MessageSquare size={20} /> Chat History
+                <MessageSquare size={20} /> {t('workspace.chats.title')}
               </h2>
               <div className={styles.filters}>
                 <div className={styles.filterSelect} style={{display: 'flex', alignItems: 'center', gap: '0.25rem'}}>
-                  <Search size={14}/> Search
+                  <Search size={14}/> {t('common.search')}
                 </div>
               </div>
             </div>
@@ -244,9 +243,9 @@ export default function MyWorkspace() {
             {showEmptyStates ? (
               <div className={styles.emptyState} style={{padding: '3rem 1.5rem'}}>
                 <div className={styles.emptyIcon} style={{width: '3rem', height: '3rem'}}><MessageSquare size={24} /></div>
-                <div className={styles.emptyTitle}>No saved chats</div>
-                <div className={styles.emptyDesc}>Start exploring traditional knowledge or regulatory pathways.</div>
-                <Link href="/assistant" className={styles.signInButton} style={{textDecoration: 'none'}}>Ask AYURLEX</Link>
+                <div className={styles.emptyTitle}>{t('workspace.chats.noChatsTitle')}</div>
+                <div className={styles.emptyDesc}>{t('workspace.chats.noChatsDesc')}</div>
+                <Link href="/assistant" className={styles.signInButton} style={{textDecoration: 'none'}}>{t('workspace.chats.askAyurlex')}</Link>
               </div>
             ) : (
               <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
@@ -264,7 +263,7 @@ export default function MyWorkspace() {
                       </div>
                     </div>
                     <Link href="/assistant" className={styles.itemAction}>
-                      Resume <ArrowRight size={16} />
+                      {t('common.resume')} <ArrowRight size={16} />
                     </Link>
                   </div>
                 ))}
@@ -276,15 +275,15 @@ export default function MyWorkspace() {
           <section>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                <FileBarChart size={20} /> Generated Reports
+                <FileBarChart size={20} /> {t('workspace.reports.title')}
               </h2>
             </div>
 
             {showEmptyStates ? (
               <div className={styles.emptyState} style={{padding: '3rem 1.5rem'}}>
                 <div className={styles.emptyIcon} style={{width: '3rem', height: '3rem'}}><FileBarChart size={24} /></div>
-                <div className={styles.emptyTitle}>No reports generated</div>
-                <div className={styles.emptyDesc}>Complete a jurisdiction matrix or innovation brief to save reports here.</div>
+                <div className={styles.emptyTitle}>{t('workspace.reports.noReportsTitle')}</div>
+                <div className={styles.emptyDesc}>{t('workspace.reports.noReportsDesc')}</div>
               </div>
             ) : (
               <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
@@ -301,10 +300,10 @@ export default function MyWorkspace() {
                     </div>
                     <div style={{display: 'flex', gap: '0.75rem'}}>
                       <Link href="#" className={styles.itemAction}>
-                        <ExternalLink size={16} /> Open
+                        <ExternalLink size={16} /> {t('common.open')}
                       </Link>
                       <Link href="#" className={styles.itemAction}>
-                        <Download size={16} /> Export
+                        <FileBarChart size={16} /> {t('common.export')}
                       </Link>
                     </div>
                   </div>

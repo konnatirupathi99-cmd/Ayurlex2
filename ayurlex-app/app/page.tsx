@@ -79,9 +79,9 @@ export default function OverviewDashboard() {
           className={styles.commandInput} 
           placeholder="Ask about an ingredient, formulation, traditional knowledge or innovation pathway..." 
         />
-        <button className={styles.scopeBadge}>
+        <Link href="/assistant" className={styles.scopeBadge}>
           <Leaf size={14} /> Ayurveda-only scope
-        </button>
+        </Link>
       </div>
 
       <main className={styles.mainContent}>
@@ -98,9 +98,9 @@ export default function OverviewDashboard() {
             <div className={styles.signalInsight}>
               Your <strong>Turmeric</strong> innovation has a strong India fit. The open question is EU claim substantiation.
             </div>
-            <button className={styles.signalAction}>
+            <Link href="/jurisdictions" className={styles.signalAction}>
               Compare Jurisdictions
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -156,7 +156,7 @@ export default function OverviewDashboard() {
         {/* Innovation Workbench */}
         <h2 className={styles.sectionTitle}>Innovation Workbench</h2>
         <div className={`${styles.grid} ${styles.workbenchGrid}`}>
-          <div className={styles.moduleCard}>
+          <Link href="/guide" className={styles.moduleCard} style={{textDecoration: 'none'}}>
             <div className={styles.moduleHeader}>
               <div className={styles.moduleIcon}><Beaker size={24} /></div>
               <span className={styles.moduleCategory}>Analysis</span>
@@ -166,9 +166,9 @@ export default function OverviewDashboard() {
               Deconstruct complex Ayurvedic formulations, map ingredient synergies, and validate against classical references.
             </p>
             <div className={styles.moduleFooter}><ArrowRight size={20} /></div>
-          </div>
+          </Link>
 
-          <div className={styles.moduleCard}>
+          <Link href="/library" className={styles.moduleCard} style={{textDecoration: 'none'}}>
             <div className={styles.moduleHeader}>
               <div className={styles.moduleIcon}><BookOpen size={24} /></div>
               <span className={styles.moduleCategory}>Knowledge</span>
@@ -178,9 +178,9 @@ export default function OverviewDashboard() {
               Trace origins across classical texts, explore TKDL alignments, and understand historical usage contexts.
             </p>
             <div className={styles.moduleFooter}><ArrowRight size={20} /></div>
-          </div>
+          </Link>
 
-          <div className={styles.moduleCard}>
+          <Link href="/jurisdictions" className={styles.moduleCard} style={{textDecoration: 'none'}}>
             <div className={styles.moduleHeader}>
               <div className={styles.moduleIcon}><Scale size={24} /></div>
               <span className={styles.moduleCategory}>Regulatory</span>
@@ -190,9 +190,9 @@ export default function OverviewDashboard() {
               Navigate global compliance, compare jurisdiction requirements, and assess claim viability across markets.
             </p>
             <div className={styles.moduleFooter}><ArrowRight size={20} /></div>
-          </div>
+          </Link>
 
-          <div className={styles.moduleCard}>
+          <Link href="/workspace" className={styles.moduleCard} style={{textDecoration: 'none'}}>
             <div className={styles.moduleHeader}>
               <div className={styles.moduleIcon}><ShieldCheck size={24} /></div>
               <span className={styles.moduleCategory}>Protection</span>
@@ -202,39 +202,43 @@ export default function OverviewDashboard() {
               Analyze patent landscapes, uncover prior art boundaries, and identify white-space for true innovation.
             </p>
             <div className={styles.moduleFooter}><ArrowRight size={20} /></div>
-          </div>
+          </Link>
         </div>
 
         {/* Recent Briefs */}
         <h2 className={styles.sectionTitle}>Recent Briefs</h2>
         <div className={styles.recentBriefs}>
           <ul className={styles.briefList}>
-            <li className={styles.briefItem}>
-              <div className={styles.briefInfo}>
-                <span className={styles.briefTitle}>Ashwagandha Cognitive Formulation Review</span>
-                <div className={styles.briefMeta}>
-                  <span>Ingredient: Ashwagandha</span>
-                  <span>Market: US / EU</span>
-                  <span>Today, 10:42 AM</span>
+            <Link href="/workspace" style={{textDecoration: 'none', color: 'inherit'}}>
+              <li className={styles.briefItem}>
+                <div className={styles.briefInfo}>
+                  <span className={styles.briefTitle}>Ashwagandha Cognitive Formulation Review</span>
+                  <div className={styles.briefMeta}>
+                    <span>Ingredient: Ashwagandha</span>
+                    <span>Market: US / EU</span>
+                    <span>Today, 10:42 AM</span>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.briefScore}>
-                <CheckCircle2 size={14} /> High Grounding (94%)
-              </div>
-            </li>
-            <li className={styles.briefItem}>
-              <div className={styles.briefInfo}>
-                <span className={styles.briefTitle}>Triphala Delivery Mechanism Patents</span>
-                <div className={styles.briefMeta}>
-                  <span>Ingredient: Triphala</span>
-                  <span>Market: India</span>
-                  <span>Yesterday, 02:15 PM</span>
+                <div className={styles.briefScore}>
+                  <CheckCircle2 size={14} /> High Grounding (94%)
                 </div>
-              </div>
-              <div className={styles.briefScore}>
-                <CheckCircle2 size={14} /> Moderate Grounding (81%)
-              </div>
-            </li>
+              </li>
+            </Link>
+            <Link href="/workspace" style={{textDecoration: 'none', color: 'inherit'}}>
+              <li className={styles.briefItem}>
+                <div className={styles.briefInfo}>
+                  <span className={styles.briefTitle}>Triphala Delivery Mechanism Patents</span>
+                  <div className={styles.briefMeta}>
+                    <span>Ingredient: Triphala</span>
+                    <span>Market: India</span>
+                    <span>Yesterday, 02:15 PM</span>
+                  </div>
+                </div>
+                <div className={styles.briefScore}>
+                  <CheckCircle2 size={14} /> Moderate Grounding (81%)
+                </div>
+              </li>
+            </Link>
           </ul>
         </div>
 

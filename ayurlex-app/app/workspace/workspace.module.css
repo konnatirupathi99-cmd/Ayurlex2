@@ -9,7 +9,7 @@
 
 .header {
   padding: 3rem 4rem 2rem;
-  background-color: white;
+  background-color: var(--card);
   border-bottom: 1px solid var(--color-border);
   position: relative;
   overflow: hidden;
@@ -106,7 +106,7 @@
 }
 
 .signInButton {
-  background-color: white;
+  background-color: var(--card);
   color: var(--color-botanical-green);
   border: 1px solid var(--color-botanical-green);
   padding: 0.5rem 1rem;
@@ -139,7 +139,7 @@
 }
 
 .metricCard {
-  background: white;
+  background: var(--card);
   padding: 1.5rem;
   border-radius: 1rem;
   border: 1px solid var(--color-border);
@@ -196,7 +196,7 @@
 }
 
 .filterSelect {
-  background-color: white;
+  background-color: var(--card);
   border: 1px solid var(--color-border);
   padding: 0.375rem 0.75rem;
   border-radius: 0.375rem;
@@ -213,7 +213,7 @@
 }
 
 .projectCard {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;
   padding: 1.5rem;
@@ -310,7 +310,7 @@
 }
 
 .itemCard {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;
   padding: 1.25rem;
@@ -370,7 +370,7 @@
 }
 
 .emptyState {
-  background-color: white;
+  background-color: var(--card);
   border: 1px dashed var(--color-border);
   border-radius: 1rem;
   padding: 4rem 2rem;

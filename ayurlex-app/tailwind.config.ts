@@ -24,6 +24,11 @@ export default {
           900: '#14532d', // Primary deep botanical green
           950: '#052e16',
         },
+        sage: "var(--color-sage)",
+        ivory: "var(--color-ivory)",
+        terracotta: "var(--color-terracotta)",
+        amber: "var(--color-amber)",
+        indigo: "var(--color-indigo)",
         card: "var(--card)",
         "card-foreground": "var(--card-foreground)",
       },

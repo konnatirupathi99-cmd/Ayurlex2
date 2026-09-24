@@ -24,11 +24,10 @@ class IntelligenceReport(BaseModel):
     detected_language: str
     summary: str
     normalized_terms: List[NormalizedTerm]
-    formulation_context: Dict[str, Any]
-    ip_intelligence: Dict[str, Any]
-    traditional_knowledge: Dict[str, Any]
-    abs_context: Dict[str, Any]
-    regulatory_context: Dict[str, Any]
+    classical_ayurvedic_rationale: Dict[str, Any]
+    contemporary_scientific_evidence: Dict[str, Any]
+    product_or_process_novelty: Dict[str, Any]
+    jurisdictional_interpretation: Dict[str, Any]
     evidence: List[EvidenceSource]
     confidence: Dict[str, Any]
     recommended_next_steps: List[str]

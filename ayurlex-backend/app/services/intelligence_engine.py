@@ -12,7 +12,7 @@ from app.models.intelligence_output import CoreIntelligenceOutput, ModuleOutput
 # Import Services
 from app.services.language_service import detect_language
 from app.services.terminology_service import normalize_terms
-from app.rag.retrieval import retrieve_evidence
+
 from app.services.evidence_router import EvidenceRouter
 
 # Import Intelligence Modules

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { useLanguage } from "@/components/LanguageProvider";
+import { useLanguage, LANGUAGE_NAMES } from "@/components/LanguageProvider";
 import { 
   ArrowRight, 
   ArrowLeft, 
@@ -16,7 +16,7 @@ import {
   Loader2
 } from "lucide-react";
 
-type Step = 1 | 2 | 3 | 4 | 5 | 'processing';
+type Step = 1 | 2 | 3 | 4 | 'processing';
 
 export default function NewAnalysisWizard() {
   const router = useRouter();
@@ -32,10 +32,7 @@ export default function NewAnalysisWizard() {
   const [ingredientInput, setIngredientInput] = useState("");
   
   const [jurisdiction, setJurisdiction] = useState<string>("");
-  const { language: globalLang } = useLanguage();
-  const [language, setLanguage] = useState<string>(
-    globalLang === 'hi' ? 'हिन्दी' : globalLang === 'te' ? 'తెలుగు' : 'English'
-  );
+  const { language: globalLangCode, languageName: globalLangName } = useLanguage();
 
   const [processingStage, setProcessingStage] = useState(0);
 
@@ -61,14 +58,14 @@ export default function NewAnalysisWizard() {
           if (prev < processingStages.length - 1) return prev + 1;
           clearInterval(interval);
           // Pass the mocked API context to the report
-          sessionStorage.setItem('ayurlex_mock_report_lang', language);
+          sessionStorage.setItem('ayurlex_mock_report_lang', globalLangCode);
           setTimeout(() => router.push('/analysis/demo-id-123'), 1000); // Redirect to report
           return prev;
         });
       }, 1500);
       return () => clearInterval(interval);
     }
-  }, [step, router, language, processingStages.length]);
+  }, [step, router, globalLangCode, processingStages.length]);
 
   const handleAddIngredient = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && ingredientInput.trim() !== '') {
@@ -84,7 +81,7 @@ export default function NewAnalysisWizard() {
     setIngredients(ingredients.filter(i => i !== tag));
   };
 
-  const nextStep = () => setStep((s) => typeof s === 'number' && s < 5 ? (s + 1) as Step : s);
+  const nextStep = () => setStep((s) => typeof s === 'number' && s < 4 ? (s + 1) as Step : s);
   const prevStep = () => setStep((s) => typeof s === 'number' && s > 1 ? (s - 1) as Step : s);
 
   if (step === 'processing') {
@@ -139,12 +136,12 @@ export default function NewAnalysisWizard() {
       <div className="mb-10 text-center">
         <h1 className="text-2xl font-bold text-stone-900 mb-6">New Intelligence Analysis</h1>
         <div className="flex items-center justify-center gap-2 sm:gap-4 text-sm font-medium">
-           {['Innovation', 'Ingredients', 'Jurisdiction', 'Language', 'Review'].map((label, idx) => (
+           {['Innovation', 'Ingredients', 'Jurisdiction', 'Review'].map((label, idx) => (
              <React.Fragment key={label}>
                <span className={`${step === idx + 1 ? 'text-botanical-700 font-bold' : step > idx + 1 ? 'text-botanical-600' : 'text-stone-400'}`}>
                  {label}
                </span>
-               {idx < 4 && <ArrowRight className="w-4 h-4 text-stone-300" />}
+               {idx < 3 && <ArrowRight className="w-4 h-4 text-stone-300" />}
              </React.Fragment>
            ))}
         </div>
@@ -273,27 +270,8 @@ export default function NewAnalysisWizard() {
           </div>
         )}
 
-        {/* STEP 4: LANGUAGE */}
+        {/* STEP 4: REVIEW */}
         {step === 4 && (
-          <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h2 className="text-xl font-bold text-stone-900 mb-6">Select Analysis Language</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {['English', 'हिन्दी', 'తెలుగు'].map(lang => (
-                <button 
-                  key={lang}
-                  onClick={() => setLanguage(lang)}
-                  className={`p-6 rounded-xl border-2 text-center transition-all ${language === lang ? 'border-botanical-600 bg-botanical-50 text-botanical-900 font-bold' : 'border-stone-200 hover:border-botanical-300 text-stone-700'}`}
-                >
-                  {lang}
-                </button>
-              ))}
-            </div>
-            <p className="text-sm text-stone-500 text-center mt-4">The selected language controls the requested report language.</p>
-          </div>
-        )}
-
-        {/* STEP 5: REVIEW */}
-        {step === 5 && (
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <h2 className="text-xl font-bold text-stone-900 mb-6">Review Analysis Details</h2>
             
@@ -322,7 +300,7 @@ export default function NewAnalysisWizard() {
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <span className="text-stone-500 font-medium">Language</span>
-                <span className="col-span-2 text-stone-900">{language}</span>
+                <span className="col-span-2 text-stone-900">{globalLangName}</span>
               </div>
             </div>
           </div>
@@ -338,7 +316,7 @@ export default function NewAnalysisWizard() {
             Back
           </button>
           
-          {step < 5 ? (
+          {step < 4 ? (
             <button 
               onClick={nextStep}
               className="px-6 py-2.5 rounded-lg bg-botanical-700 hover:bg-botanical-800 text-white font-medium flex items-center gap-2 shadow-sm transition-colors"

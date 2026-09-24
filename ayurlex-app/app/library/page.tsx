@@ -18,7 +18,8 @@ import {
   MessageCircle,
   Database,
   CheckCircle2,
-  Bookmark
+  Bookmark,
+  Leaf
 } from "lucide-react";
 import styles from "./library.module.css";
 
@@ -37,9 +38,9 @@ export default function KnowledgeLibrary() {
               Your source-aware research archive. Reports, source trails, terminology decisions, and working notes remain visible and traceable.
             </p>
           </div>
-          <button className={styles.primaryAction}>
+          <Link href="/guide" className={styles.primaryAction} style={{textDecoration: 'none', color: 'inherit'}}>
             <Plus size={18} /> New research brief
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -307,7 +308,7 @@ export default function KnowledgeLibrary() {
                     <div className={styles.reportScore}>
                       <CheckCircle2 size={16} /> 94% Grounding
                     </div>
-                    <Link href="#" className={styles.primaryAction} style={{padding: '0.5rem 1rem', fontSize: '0.875rem'}}>
+                    <Link href="/workspace" className={styles.primaryAction} style={{padding: '0.5rem 1rem', fontSize: '0.875rem', textDecoration: 'none', color: 'inherit'}}>
                       Open Report
                     </Link>
                   </div>
@@ -327,7 +328,7 @@ export default function KnowledgeLibrary() {
                     <div className={styles.reportScore} style={{color: 'var(--color-indigo)'}}>
                       <CheckCircle2 size={16} /> 81% Grounding
                     </div>
-                    <Link href="#" className={styles.primaryAction} style={{padding: '0.5rem 1rem', fontSize: '0.875rem'}}>
+                    <Link href="/workspace" className={styles.primaryAction} style={{padding: '0.5rem 1rem', fontSize: '0.875rem', textDecoration: 'none', color: 'inherit'}}>
                       Open Report
                     </Link>
                   </div>

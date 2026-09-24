@@ -63,7 +63,7 @@ function TerminologyCard({ input, normalized, scientific }: { input: string, nor
   );
 }
 
-type Tab = 'Overview' | 'IP Intelligence' | 'Traditional Knowledge' | 'ABS Context' | 'Regulatory Context' | 'Evidence' | 'Recommended Next Steps';
+type Tab = 'Overview' | 'Classical Ayurvedic Rationale' | 'Contemporary Scientific Evidence' | 'Product or Process Novelty' | 'Jurisdictional Interpretation';
 
 export default function IntelligenceReport({ params }: { params: { id: string } }) {
   const [activeTab, setActiveTab] = useState<Tab>('Overview');
@@ -84,12 +84,10 @@ export default function IntelligenceReport({ params }: { params: { id: string } 
 
   const tabs: Tab[] = [
     'Overview', 
-    'IP Intelligence', 
-    'Traditional Knowledge', 
-    'ABS Context', 
-    'Regulatory Context', 
-    'Evidence', 
-    'Recommended Next Steps'
+    'Classical Ayurvedic Rationale', 
+    'Contemporary Scientific Evidence', 
+    'Product or Process Novelty', 
+    'Jurisdictional Interpretation'
   ];
 
   const openEvidence = (evidence: any) => {
@@ -229,126 +227,123 @@ export default function IntelligenceReport({ params }: { params: { id: string } 
           </div>
         )}
 
-        {activeTab === 'IP Intelligence' && (
+        {activeTab === 'Classical Ayurvedic Rationale' && (
+          <div className="p-6 sm:p-8 animate-in fade-in duration-500">
+            <h3 className="text-lg font-bold text-stone-900 mb-6">Classical Ayurvedic Rationale</h3>
+            <div className="space-y-4">
+              <div className="border border-stone-200 rounded-xl p-5 hover:border-botanical-300 transition-colors bg-white">
+                <div className="flex justify-between items-start mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="bg-stone-100 text-stone-600 text-xs font-bold px-2 py-1 rounded">TK-1</span>
+                    <h4 className="font-bold text-stone-900">Charaka Samhita Reference</h4>
+                  </div>
+                  <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-botanical-100 text-botanical-800">High Relevance</span>
+                </div>
+                <p className="text-sm font-medium text-stone-700 mb-2">Traditional Knowledge Context:</p>
+                <blockquote className="border-l-2 border-stone-300 pl-4 py-1 text-sm text-stone-600 italic mb-4 bg-stone-50 rounded-r-lg">
+                  "Use of Haridra (Turmeric) for balancing doshas and promoting general immunity is well documented..."
+                </blockquote>
+                <div className="flex gap-4">
+                  <button onClick={() => openEvidence({ id: 'TK-1', title: 'Charaka Samhita Sutrasthana', type: 'Classical Text', relevance: 'High' })} className="text-sm font-medium text-botanical-600 flex items-center hover:text-botanical-800 bg-botanical-50 px-3 py-1.5 rounded-lg w-max">
+                    <FileText className="w-4 h-4 mr-2" /> View Source
+                  </button>
+                  <span className="text-sm text-stone-500 flex items-center"><Info className="w-4 h-4 mr-1"/> Botanical: <i>Curcuma longa</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'Contemporary Scientific Evidence' && (
+          <div className="p-6 sm:p-8 animate-in fade-in duration-500">
+            <h3 className="text-lg font-bold text-stone-900 mb-6">Contemporary Scientific Evidence</h3>
+            <div className="space-y-4">
+              <div className="border border-stone-200 rounded-xl p-5 hover:border-botanical-300 transition-colors bg-white">
+                <div className="flex justify-between items-start mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="bg-stone-100 text-stone-600 text-xs font-bold px-2 py-1 rounded">SCI-1</span>
+                    <h4 className="font-bold text-stone-900">Clinical Efficacy of Ashwagandha</h4>
+                  </div>
+                  <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">Strong Evidence</span>
+                </div>
+                <p className="text-sm text-stone-700 mb-4">
+                  Recent double-blind placebo-controlled studies have corroborated the adaptogenic properties of <i className="text-stone-900">Withania somnifera</i> root extract.
+                </p>
+                <div className="bg-amber-50 border border-amber-200 rounded p-3 mb-4 flex gap-2">
+                   <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
+                   <p className="text-xs text-amber-900">Evidence Gap: Long-term synergistic effects of combining with Curcumin remain under-studied in modern clinical contexts.</p>
+                </div>
+                <button onClick={() => openEvidence({ id: 'SCI-1', title: 'Journal of Ethnopharmacology', type: 'Scientific Journal', relevance: 'High' })} className="text-sm font-medium text-botanical-600 flex items-center hover:text-botanical-800 bg-botanical-50 px-3 py-1.5 rounded-lg w-max">
+                  <FileText className="w-4 h-4 mr-2" /> View Journal Abstract
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'Product or Process Novelty' && (
           <div className="p-6 sm:p-8 space-y-8 animate-in fade-in duration-500">
-            <h3 className="text-lg font-bold text-stone-900 mb-4">Intellectual Property Context</h3>
+            <h3 className="text-lg font-bold text-stone-900 mb-4">Product or Process Novelty (IP)</h3>
             
             <div className="space-y-4">
-              <div className="border border-stone-200 rounded-xl p-5">
+              <div className="border border-stone-200 rounded-xl p-5 bg-white">
                 <div className="flex justify-between items-start mb-2">
                   <h4 className="font-bold text-stone-900">Patent Context</h4>
                   <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-amber-100 text-amber-800">Review Advised</span>
                 </div>
-                <p className="text-sm text-stone-600 mb-4">Found 2 internationally filed patents detailing similar extraction methods for Withania somnifera.</p>
+                <p className="text-sm text-stone-600 mb-4">Found 2 internationally filed patents detailing similar extraction methods for <i>Withania somnifera</i>.</p>
                 <button onClick={() => openEvidence({ id: 'P-102', title: 'Extraction of Withanolides', type: 'Patent', relevance: 'High' })} className="text-sm font-medium text-botanical-600 flex items-center hover:text-botanical-800">
                   <ExternalLink className="w-4 h-4 mr-1" /> View Related Evidence
                 </button>
               </div>
 
-              <div className="border border-stone-200 rounded-xl p-5">
+              <div className="border border-stone-200 rounded-xl p-5 bg-white">
                 <div className="flex justify-between items-start mb-2">
                   <h4 className="font-bold text-stone-900">Prior-Art Considerations</h4>
-                  <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">Standard</span>
+                  <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-stone-100 text-stone-800">Standard</span>
                 </div>
-                <p className="text-sm text-stone-600 mb-4">Extensive prior art exists for the individual use of the listed botanicals.</p>
-                <button className="text-sm font-medium text-botanical-600 flex items-center hover:text-botanical-800">
-                  <ExternalLink className="w-4 h-4 mr-1" /> View Related Evidence
-                </button>
+                <p className="text-sm text-stone-600 mb-4">Extensive prior art exists for the individual use of the listed botanicals, reducing likelihood of novelty for mere admixture.</p>
               </div>
             </div>
           </div>
         )}
 
-        {activeTab === 'Traditional Knowledge' && (
+        {activeTab === 'Jurisdictional Interpretation' && (
           <div className="p-6 sm:p-8 animate-in fade-in duration-500">
-            <h3 className="text-lg font-bold text-stone-900 mb-6">Retrieved References</h3>
-            <div className="space-y-4">
-              {[1, 2].map((item) => (
-                <div key={item} className="border border-stone-200 rounded-xl p-5 hover:border-botanical-300 transition-colors">
-                  <div className="flex justify-between items-start mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="bg-stone-100 text-stone-600 text-xs font-bold px-2 py-1 rounded">TK-{item}</span>
-                      <h4 className="font-bold text-stone-900">Charaka Samhita Reference</h4>
-                    </div>
-                    <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">High Relevance</span>
-                  </div>
-                  <p className="text-sm font-medium text-stone-700 mb-2">Traditional Knowledge Context:</p>
-                  <blockquote className="border-l-2 border-stone-300 pl-4 py-1 text-sm text-stone-600 italic mb-4 bg-stone-50 rounded-r-lg">
-                    "Use of Haridra (Turmeric) for balancing doshas and promoting general immunity..."
-                  </blockquote>
-                  <button onClick={() => openEvidence({ id: `TK-${item}`, title: 'Charaka Samhita Sutrasthana', type: 'Classical Text', relevance: 'High' })} className="text-sm font-medium text-botanical-600 flex items-center hover:text-botanical-800 bg-botanical-50 px-3 py-1.5 rounded-lg w-max">
-                    <FileText className="w-4 h-4 mr-2" /> View Source
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {activeTab === 'ABS Context' && (
-          <div className="p-6 sm:p-8 animate-in fade-in duration-500">
+             <h3 className="text-lg font-bold text-stone-900 mb-6">Jurisdictional Interpretation</h3>
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
               <div className="flex gap-3">
                 <Info className="w-6 h-6 text-blue-600 shrink-0" />
                 <div>
-                  <h4 className="font-bold text-blue-900 mb-1">System Analysis Context</h4>
+                  <h4 className="font-bold text-blue-900 mb-1">Regulatory Context</h4>
                   <p className="text-sm text-blue-800 leading-relaxed mb-3">
-                    This system provides intelligence signals regarding Access and Benefit Sharing (ABS) applicability based on the biological resources identified. <strong>It does not provide a final legal determination.</strong>
+                    This system provides intelligence signals regarding Access and Benefit Sharing (ABS) and product classification based on the biological resources identified. <strong>It does not provide a final legal determination.</strong>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 bg-white p-5 rounded-xl border border-stone-200">
                 <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center shrink-0">
                   <AlertTriangle className="w-5 h-5 text-amber-600" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-stone-900">Further Review May Be Appropriate</h4>
+                  <h4 className="font-bold text-stone-900">ABS Applicability (India)</h4>
                   <p className="text-sm text-stone-600 mt-1">
                     The use of biological resources from India for commercial utilization may require prior intimation/approval under the Biological Diversity Act, 2002.
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        )}
-
-        {activeTab === 'Recommended Next Steps' && (
-          <div className="p-6 sm:p-8 animate-in fade-in duration-500">
-            <h3 className="text-lg font-bold text-stone-900 mb-6">Prioritized Checklist</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 p-5 rounded-xl border border-red-200 bg-red-50">
-                <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-red-600 font-bold">1</div>
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-bold text-stone-900">Conduct detailed prior-art review</h4>
-                    <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider font-bold rounded bg-red-200 text-red-800">High Priority</span>
-                  </div>
-                  <p className="text-sm text-stone-700">Review international patent databases for specific extraction methodologies of Withania somnifera.</p>
+              <div className="flex items-start gap-4 bg-white p-5 rounded-xl border border-stone-200">
+                <div className="w-10 h-10 rounded-full bg-botanical-100 flex items-center justify-center shrink-0">
+                  <CheckCircle2 className="w-5 h-5 text-botanical-600" />
                 </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-5 rounded-xl border border-stone-200 bg-white">
-                <div className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center shrink-0 text-stone-600 font-bold">2</div>
                 <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-bold text-stone-900">Review Traditional Knowledge references</h4>
-                    <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider font-bold rounded bg-stone-200 text-stone-800">Recommended</span>
-                  </div>
-                  <p className="text-sm text-stone-600">Cross-check formulation claims against TKDL to prevent IP rejection.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-5 rounded-xl border border-stone-200 bg-white">
-                <div className="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center shrink-0 text-stone-600 font-bold">3</div>
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="font-bold text-stone-900">Confirm Product Classification</h4>
-                    <span className="px-2 py-0.5 text-[10px] uppercase tracking-wider font-bold rounded bg-stone-200 text-stone-800">Recommended</span>
-                  </div>
-                  <p className="text-sm text-stone-600">Determine whether the product falls under 'Ayurvedic Medicine' or 'Food Supplement' in target jurisdictions.</p>
+                  <h4 className="font-bold text-stone-900">Classification Pathway</h4>
+                  <p className="text-sm text-stone-600 mt-1">
+                    Potential classification under "Ayurvedic Proprietary Medicine" if manufactured in India under Section 3(a) of Drugs and Cosmetics Act, 1940.
+                  </p>
                 </div>
               </div>
             </div>
