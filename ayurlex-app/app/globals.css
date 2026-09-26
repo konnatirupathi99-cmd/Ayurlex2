@@ -3,62 +3,346 @@
 @tailwind utilities;
 
 :root {
-  /* AYURLEX Core Colors */
-  --color-botanical-green: #1a3b2b;
-  --color-botanical-green-dark: #12291d;
-  --color-sage: #8a9a86;
-  --color-ivory: #fdfbf7;
-  --color-ivory-muted: #e6e3dd;
-  --color-terracotta: #c65d47;
-  --color-amber: #d4a373;
-  --color-indigo: #3d5a80;
-  
-  --color-text: #1c1917;
-  --color-text-light: #57534e;
-  --color-border: #e7e5e4;
+  /* 1. Core neutral tokens */
+  --ink: #172B2B;
+  --ink-soft: #44635D;
+  --muted: #7C9088;
+  --line: #E1EBE3;
+  --line-strong: #CADBCE;
+  --paper: #F5F8F4;
+  --surface: #FFFFFF;
+  --surface-soft: #FBFDF9;
 
-  --background: var(--color-ivory);
-  --foreground: var(--color-text);
-  --card: #ffffff;
-  --card-foreground: var(--color-text);
+  /* 2. Botanical green tokens */
+  --sage: #8BAD91;
+  --sage-deep: #35675A;
+  --sage-pale: #E6F1E6;
+  --sage-deep-hover: #2B564B;
+
+  /* 3. Innovation accent tokens */
+  --terra: #C77861;
+  --terra-pale: #F9ECE7;
+  --amber: #C49450;
+  --amber-pale: #FBF2DF;
+  --indigo: #7789B5;
+  --indigo-pale: #EDF0FA;
+  --teal: #5B9994;
+
+  /* 4. Hero and dark botanical tokens */
+  --hero: #213C3A;
+  --hero-highlight: #A9C69C;
+  --hero-text: #FFFFFF;
+  --hero-copy: #BDCFCA;
+  --hero-muted: #809A90;
+  --hero-grid: rgba(255, 255, 255, 0.12);
+
+  /* 5. Semantic state colours */
+  --color-primary: var(--sage-deep);
+  --color-primary-soft: var(--sage-pale);
+  --color-positive: var(--sage-deep);
+  --color-positive-soft: var(--sage-pale);
+  --color-attention: #A87D35;
+  --color-attention-soft: var(--amber-pale);
+  --color-human-context: #A9614F;
+  --color-human-context-soft: var(--terra-pale);
+  --color-research: #6678A8;
+  --color-research-soft: var(--indigo-pale);
+  --color-live: #5EA976;
+  --color-danger: #A64F4F;
+  --color-danger-soft: #F8E7E7;
+
+  /* 6. Shadows and depth */
+  --shadow-sm: 0 2px 10px rgba(34, 63, 50, 0.035),
+               0 1px 2px rgba(34, 63, 50, 0.025);
+  --shadow-md: 0 20px 52px rgba(34, 63, 50, 0.08),
+               0 4px 12px rgba(34, 63, 50, 0.035);
+
+  /* Legacy fallbacks just in case existing tailwind relies on them */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+
+  /* --- MOTION SYSTEM TOKENS --- */
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out: cubic-bezier(.77, 0, .175, 1);
+  --ease-standard: cubic-bezier(.2, .8, .2, 1);
+  --motion-fast: 120ms;
+  --motion-control: 160ms;
+  --motion-medium: 220ms;
+  --motion-page: 340ms;
+  --motion-modal: 280ms;
 }
 
+/* Future Dark Theme Placeholder */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-botanical-green: #234d38;
-    --color-botanical-green-dark: #1a3b2b;
-    --color-sage: #a1b09d;
-    --color-ivory: #1c1917;
-    --color-ivory-muted: #292524;
-    --color-terracotta: #e07a5f;
-    --color-amber: #e3bc9a;
-    --color-indigo: #5c7fa6;
+    /* Mapped for dark theme */
+    --ink: #E1EBE3;
+    --ink-soft: #A3B5AE;
+    --muted: #7C9088;
+    --line: #2A403A;
+    --line-strong: #3F5E56;
+    --paper: #0E1A1A;
+    --surface: #132222;
+    --surface-soft: #172B2B;
 
-    --color-text: #fafaf9;
-    --color-text-light: #a8a29e;
-    --color-border: #44403c;
-    
-    --background: var(--color-ivory);
-    --foreground: var(--color-text);
-    --card: #292524;
-    --card-foreground: var(--color-text);
+    --sage: #5A7D63;
+    --sage-deep: #779B8C;
+    --sage-pale: #1A3029;
+    --sage-deep-hover: #8AB2A1;
+
+    --terra: #D88E78;
+    --terra-pale: #3D221B;
+    --amber: #D7A762;
+    --amber-pale: #3D2D14;
+    --indigo: #8EA0CC;
+    --indigo-pale: #1F273D;
+    --teal: #6BAEA8;
+
+    --hero: #091211;
+    --hero-highlight: #C2DBB7;
+    --hero-text: #FFFFFF;
+    --hero-copy: #9FAEA9;
+    --hero-muted: #677A73;
+    --hero-grid: rgba(255, 255, 255, 0.06);
+
+    /* Semantic Overrides for Dark Mode */
+    --color-attention: #D7A762;
+    --color-human-context: #C87562;
+    --color-research: #8EA0CC;
+    --color-live: #75C68D;
+    --color-danger: #D66D6D;
+    --color-danger-soft: #3D1F1F;
+
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 20px 52px rgba(0, 0, 0, 0.5);
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--surface);
+    --card-foreground: var(--ink);
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--ink);
+  background: var(--paper);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Base resets since we're using vanilla CSS for the page */
 * {
   box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--sage-deep);
+}
+
+a:hover {
+  color: var(--sage-deep-hover);
+}
+
+/* Focus indicator */
+*:focus-visible {
+  outline: 2px solid rgba(53, 103, 90, 0.54) !important;
+  outline-offset: 3px !important;
+}
+
+/* High contrast support */
+@media (prefers-contrast: more) {
+  :root {
+    --ink: #000000;
+    --muted: #333333;
+    --line: #777777;
+    --line-strong: #000000;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #FFFFFF;
+      --muted: #CCCCCC;
+      --line: #888888;
+      --line-strong: #FFFFFF;
+    }
+  }
+}
+
+
+/* =======================================================================
+   MOTION SYSTEM 
+======================================================================= */
+
+/* 3. Base transition prompt */
+button,
+a,
+input,
+textarea,
+select,
+.card-surface,
+.nav-item,
+.module-tile,
+.icon-button {
+  transition:
+    color var(--motion-control) ease,
+    background-color var(--motion-control) ease,
+    border-color var(--motion-control) ease,
+    box-shadow var(--motion-medium) var(--ease-out),
+    transform var(--motion-control) var(--ease-out),
+    opacity var(--motion-control) ease;
+}
+
+/* 4. Page entry animation */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.dashboard-page,
+.assistant-page,
+.guide-page,
+.jurisdiction-page,
+.library-page,
+.workspace-page {
+  animation: page-in var(--motion-page) var(--ease-out) both;
+}
+
+/* 5. Navigation motion */
+.nav-item {
+  transition:
+    color var(--motion-control) ease,
+    background-color var(--motion-control) ease,
+    transform var(--motion-control) var(--ease-out);
+}
+ 
+.nav-item:hover {
+  transform: translateX(2px);
+}
+ 
+.nav-item:active {
+  transform: translateX(1px) scale(.99);
+}
+
+/* 6. Button motion */
+.button-primary,
+.button-secondary,
+.new-analysis-button {
+  transition:
+    transform var(--motion-control) var(--ease-out),
+    background-color var(--motion-control) ease,
+    border-color var(--motion-control) ease,
+    box-shadow var(--motion-control) var(--ease-out);
+}
+ 
+.button-primary:hover,
+.new-analysis-button:hover {
+  transform: translateY(-1px);
+}
+ 
+.button-primary:active,
+.button-secondary:active,
+.new-analysis-button:active {
+  transform: scale(.97);
+}
+
+/* 7. Card and module motion */
+.card-surface,
+.module-tile {
+  transition:
+    transform var(--motion-medium) var(--ease-out),
+    border-color var(--motion-medium) ease,
+    box-shadow var(--motion-medium) var(--ease-out);
+}
+ 
+.card-surface:hover,
+.module-tile:hover {
+  transform: translateY(-2px);
+}
+
+/* 8. Popovers, menus, and dialogs */
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+ 
+.language-menu,
+.notification-popover {
+  animation: pop 180ms var(--ease-out) both;
+  transform-origin: top right;
+}
+
+/* 9. Hero visual motion */
+@keyframes orbit-drift {
+  from {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(340deg);
+  }
+}
+ 
+@keyframes orb-breathe {
+  0%, 100% { opacity: .86; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.025); }
+}
+
+/* 10. Loading and live citation motion */
+@keyframes ayurlex-spin {
+  to { transform: rotate(360deg); }
+}
+ 
+.spin {
+  animation: ayurlex-spin 1s linear infinite;
+}
+
+/* 11. Chat motion */
+@keyframes message-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.message-row.new {
+  animation: message-in 180ms var(--ease-out) both;
+}
+
+/* 12. Notification and status motion */
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(94, 169, 118, .22); }
+  50% { box-shadow: 0 0 0 4px rgba(94, 169, 118, .08); }
+}
+ 
+.live-badge span {
+  animation: live-pulse 2.4s ease-out infinite;
+}
+
+/* 15. Reduced-motion implementation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .001ms !important;
+  }
 }

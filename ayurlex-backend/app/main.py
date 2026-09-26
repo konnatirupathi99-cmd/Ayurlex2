@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import analysis, documents, health, knowledge
+from app.api import analysis, documents, health, knowledge, auth, citations, workspace, system, exports
 
 app = FastAPI(
     title="AYURLEX Intelligence Engine",
@@ -22,3 +22,8 @@ app.include_router(health.router, tags=["Health"])
 app.include_router(analysis.router, tags=["Analysis"], prefix="/analysis")
 app.include_router(documents.router, tags=["Documents"], prefix="/documents")
 app.include_router(knowledge.router, tags=["Knowledge"])
+app.include_router(auth.router, tags=["Auth"], prefix="/auth")
+app.include_router(citations.router, tags=["Citations"], prefix="/citations")
+app.include_router(workspace.router, tags=["Workspace"], prefix="/workspace")
+app.include_router(system.router, tags=["System Services"], prefix="/system")
+app.include_router(exports.router, tags=["Exports"], prefix="/exports")

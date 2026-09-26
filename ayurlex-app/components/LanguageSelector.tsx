@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Globe, Check, Search, ChevronDown } from "lucide-react";
+import { Globe, Check, Search, ChevronDown, ChevronUp } from "lucide-react";
 import { useLanguage, LANGUAGE_NAMES } from "./LanguageProvider";
 
 export function LanguageSelector() {
@@ -33,9 +33,13 @@ export function LanguageSelector() {
         aria-label="Select Language"
       >
         <Globe className="w-5 h-5 text-botanical-600" />
-        <span className="hidden sm:inline-flex font-medium text-sm gap-1 items-center">
+        <span className="inline-flex font-medium text-sm gap-1 items-center">
           {LANGUAGE_NAMES[language]}
-          <ChevronDown className="w-4 h-4 text-stone-400" />
+          {isOpen ? (
+            <ChevronUp className="w-4 h-4 text-stone-400" />
+          ) : (
+            <ChevronDown className="w-4 h-4 text-stone-400" />
+          )}
         </span>
       </button>
 

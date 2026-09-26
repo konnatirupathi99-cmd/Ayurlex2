@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { useLanguage } from "@/components/LanguageProvider";
+import { useLanguage, LANGUAGE_NAMES } from "@/components/LanguageProvider";
 import Link from "next/link";
 import { 
   Leaf, 
@@ -56,24 +56,9 @@ export default function AskAyurlexAssistant() {
             </div>
             <div className={styles.toolbarItem}>
               <Globe size={14} />
-              <select className={styles.contextValueSelect} style={{ background: 'transparent', border: 'none', padding: 0 }}>
-                <option>English</option>
-                <option>Hindi</option>
-                <option>Sanskrit</option>
-                <option>Marathi</option>
-                <option>Tamil</option>
-                <option>Telugu</option>
-                <option>Kannada</option>
-                <option>Malayalam</option>
-                <option>Bengali</option>
-                <option>Gujarati</option>
-                <option>Punjabi</option>
-                <option>Odia</option>
-                <option>Urdu</option>
-                <option>Nepali</option>
-                <option>Sinhala</option>
-                <option>French</option>
-              </select>
+              <span className={styles.contextValueSelect} style={{ background: 'transparent', border: 'none', padding: 0 }}>
+                {LANGUAGE_NAMES[language]}
+              </span>
             </div>
             <div className={styles.toolbarItem}>
               <ShieldAlert size={14} />

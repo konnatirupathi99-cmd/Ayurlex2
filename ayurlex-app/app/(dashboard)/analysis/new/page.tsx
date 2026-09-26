@@ -32,14 +32,14 @@ export default function NewAnalysisWizard() {
   const [ingredientInput, setIngredientInput] = useState("");
   
   const [jurisdiction, setJurisdiction] = useState<string>("");
-  const { language: globalLangCode, languageName: globalLangName } = useLanguage();
+  const { t, language: globalLangCode, languageName: globalLangName } = useLanguage();
 
   const [processingStage, setProcessingStage] = useState(0);
 
   const processingStages = [
     "Understanding Innovation",
-    `Detecting Language (Detected: te)`,
-    "Normalizing Ayurvedic Terminology (అశ్వగంధ → Ashwagandha)",
+    `Detecting Language (Detected: ${globalLangCode})`,
+    "Normalizing Ayurvedic Terminology",
     "Classifying Formulation Context",
     "Searching Knowledge Base",
     "Reviewing IP Context",
@@ -87,8 +87,8 @@ export default function NewAnalysisWizard() {
   if (step === 'processing') {
     return (
       <div className="max-w-3xl mx-auto py-12 flex flex-col items-center">
-        <h1 className="text-3xl font-bold text-stone-900 text-center mb-2">AYURLEX is Analysing Your Innovation</h1>
-        <p className="text-stone-500 text-center mb-12">Building an evidence-aware intelligence report.</p>
+        <h1 className="text-3xl font-bold text-stone-900 text-center mb-2">{t('wizard.processingTitle')}</h1>
+        <p className="text-stone-500 text-center mb-12">{t('wizard.processingDesc')}</p>
 
         <div className="flex w-full gap-12">
           {/* Visual Animation */}
@@ -134,9 +134,9 @@ export default function NewAnalysisWizard() {
     <div className="max-w-3xl mx-auto pb-12">
       {/* Header & Progress */}
       <div className="mb-10 text-center">
-        <h1 className="text-2xl font-bold text-stone-900 mb-6">New Intelligence Analysis</h1>
+        <h1 className="text-2xl font-bold text-stone-900 mb-6">{t('wizard.title')}</h1>
         <div className="flex items-center justify-center gap-2 sm:gap-4 text-sm font-medium">
-           {['Innovation', 'Ingredients', 'Jurisdiction', 'Review'].map((label, idx) => (
+           {[t('wizard.step1'), t('wizard.step2'), t('wizard.step3'), t('wizard.step4')].map((label, idx) => (
              <React.Fragment key={label}>
                <span className={`${step === idx + 1 ? 'text-botanical-700 font-bold' : step > idx + 1 ? 'text-botanical-600' : 'text-stone-400'}`}>
                  {label}
@@ -154,7 +154,7 @@ export default function NewAnalysisWizard() {
         {step === 1 && (
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div>
-              <label className="block text-sm font-semibold text-stone-900 mb-2">Innovation Name</label>
+              <label className="block text-sm font-semibold text-stone-900 mb-2">{t('wizard.innovationName')}</label>
               <input 
                 type="text" 
                 value={innovationName}
@@ -164,7 +164,7 @@ export default function NewAnalysisWizard() {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-stone-900 mb-2">Describe Your Innovation</label>
+              <label className="block text-sm font-semibold text-stone-900 mb-2">{t('wizard.innovationDesc')}</label>
               <textarea 
                 rows={4}
                 value={description}
@@ -175,7 +175,7 @@ export default function NewAnalysisWizard() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-stone-900 mb-2">Product Category</label>
+                <label className="block text-sm font-semibold text-stone-900 mb-2">{t('wizard.category')}</label>
                 <select 
                   value={category}
                   onChange={e => setCategory(e.target.value)}
@@ -191,7 +191,7 @@ export default function NewAnalysisWizard() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-stone-900 mb-2">Intended Purpose <span className="text-stone-400 font-normal">(Optional)</span></label>
+                <label className="block text-sm font-semibold text-stone-900 mb-2">{t('wizard.purpose')} <span className="text-stone-400 font-normal">(Optional)</span></label>
                 <input 
                   type="text" 
                   value={purpose}
@@ -208,7 +208,7 @@ export default function NewAnalysisWizard() {
         {step === 2 && (
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div>
-              <h2 className="text-xl font-bold text-stone-900 mb-2">Add Ingredients</h2>
+              <h2 className="text-xl font-bold text-stone-900 mb-2">{t('wizard.addIngredients')}</h2>
               <p className="text-sm text-stone-500 mb-6">Enter ingredient names and press Enter to add. You can enter names in your preferred supported language.</p>
               
               <div className="relative">
@@ -240,7 +240,7 @@ export default function NewAnalysisWizard() {
         {/* STEP 3: JURISDICTION */}
         {step === 3 && (
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h2 className="text-xl font-bold text-stone-900 mb-6">Select Jurisdiction Context</h2>
+            <h2 className="text-xl font-bold text-stone-900 mb-6">{t('wizard.selectJurisdiction')}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <button 
                 onClick={() => setJurisdiction('India')}
@@ -273,11 +273,11 @@ export default function NewAnalysisWizard() {
         {/* STEP 4: REVIEW */}
         {step === 4 && (
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h2 className="text-xl font-bold text-stone-900 mb-6">Review Analysis Details</h2>
+            <h2 className="text-xl font-bold text-stone-900 mb-6">{t('wizard.reviewDetails')}</h2>
             
             <div className="bg-stone-50 p-6 rounded-xl border border-stone-200 space-y-4 text-sm">
               <div className="grid grid-cols-3 gap-4 border-b border-stone-200 pb-4">
-                <span className="text-stone-500 font-medium">Innovation Name</span>
+                <span className="text-stone-500 font-medium">{t('wizard.innovationName')}</span>
                 <span className="col-span-2 text-stone-900 font-semibold">{innovationName || 'Not provided'}</span>
               </div>
               <div className="grid grid-cols-3 gap-4 border-b border-stone-200 pb-4">
@@ -313,7 +313,7 @@ export default function NewAnalysisWizard() {
             disabled={step === 1}
             className={`px-6 py-2.5 rounded-lg font-medium transition-colors ${step === 1 ? 'opacity-0 pointer-events-none' : 'text-stone-600 hover:bg-stone-100'}`}
           >
-            Back
+            {t('wizard.back')}
           </button>
           
           {step < 4 ? (
@@ -321,14 +321,14 @@ export default function NewAnalysisWizard() {
               onClick={nextStep}
               className="px-6 py-2.5 rounded-lg bg-botanical-700 hover:bg-botanical-800 text-white font-medium flex items-center gap-2 shadow-sm transition-colors"
             >
-              Continue <ArrowRight className="w-4 h-4" />
+              {t('wizard.continue')} <ArrowRight className="w-4 h-4" />
             </button>
           ) : (
             <button 
               onClick={() => setStep('processing')}
               className="px-8 py-3 rounded-lg bg-botanical-700 hover:bg-botanical-800 text-white font-bold flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
             >
-              <Wand2 className="w-5 h-5" /> Start AYURLEX Analysis
+              <Wand2 className="w-5 h-5" /> {t('wizard.startAnalysis')}
             </button>
           )}
         </div>
