@@ -1,0 +1,72 @@
+version: '3.8'
+services:
+  backend:
+    build: 
+      context: ./ayurlex-backend
+      dockerfile: Dockerfile
+    # In production, we run multiple workers with Gunicorn+Uvicorn
+    command: gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000
+    volumes:
+      - chroma_data:/app/chroma_db
+      - upload_data:/app/uploads
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=postgresql://ayurlex_prod_user:${DB_PASSWORD}@postgres:5432/ayurlex_prod
+      - BACKEND_CORS_ORIGINS=["https://ayurlex.com"]
+    env_file:
+      - ./ayurlex-backend/.env.prod
+    depends_on:
+      postgres:
+        condition: service_healthy
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  frontend:
+    build:
+      context: ./ayurlex-app
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_PUBLIC_API_URL=https://api.ayurlex.com/api
+    command: npm run start
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ayurlex_prod_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ayurlex_prod
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ayurlex_prod_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      restart_policy:
+        condition: always
+
+  # API Gateway / Reverse Proxy handling HTTPS and routing
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  chroma_data:
+  upload_data:
+  postgres_data:

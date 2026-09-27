@@ -15,7 +15,7 @@ class RetrievedEvidence(BaseModel):
     jurisdiction_scope: Optional[str] = None
     language: str
     section: Optional[str] = None
-    page_number: Optional[int] = None
+    page_number: Optional[str] = None
     content: str
     original_content: Optional[str] = None
     relevance_score: float

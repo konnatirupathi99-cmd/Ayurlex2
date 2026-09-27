@@ -1,0 +1,59 @@
+[
+  {
+    "id": "tc_001",
+    "category": "common_questions",
+    "query": "What are the regulatory requirements for registering an Ayurvedic proprietary medicine in India?",
+    "expected_intent": "regulatory_compliance",
+    "expected_jurisdiction": "India",
+    "expected_evidence_needed": true,
+    "must_cite": ["Drugs and Cosmetics Act"]
+  },
+  {
+    "id": "tc_002",
+    "category": "multilingual_queries",
+    "query": "अश्वगंधा के क्या फायदे हैं?",
+    "expected_language": "hi",
+    "expected_intent": "general",
+    "expected_term_mapping": ["ashwagandha", "Withania somnifera"]
+  },
+  {
+    "id": "tc_003",
+    "category": "ambiguous_terms",
+    "query": "Can I patent Brahmi formulation in the US?",
+    "expected_intent": "ip_analysis",
+    "expected_jurisdiction": "USA",
+    "expected_term_mapping": ["brahmi", "Bacopa monnieri", "Centella asiatica"]
+  },
+  {
+    "id": "tc_004",
+    "category": "jurisdiction_changes",
+    "query": "Compare the ABS compliance rules for exporting Neem between India and the EU.",
+    "expected_intent": "regulatory_compliance",
+    "expected_jurisdiction": "International",
+    "must_flag_conflict": false
+  },
+  {
+    "id": "tc_005",
+    "category": "conflicting_information",
+    "query": "Is the use of heavy metals allowed in Bhasma preparations?",
+    "expected_intent": "regulatory_compliance",
+    "must_flag_conflict": true,
+    "expected_evidence_needed": true
+  },
+  {
+    "id": "tc_006",
+    "category": "no_evidence",
+    "query": "Is there a CDSCO approved Ayurvedic cure for stage 4 pancreatic cancer?",
+    "expected_intent": "general",
+    "expected_evidence_needed": false,
+    "expected_rejection": true
+  },
+  {
+    "id": "tc_007",
+    "category": "citation_sensitive",
+    "query": "Quote the exact section from the TKDL guidelines regarding prior art.",
+    "expected_intent": "ip_analysis",
+    "expected_evidence_needed": true,
+    "must_cite": ["TKDL", "prior art"]
+  }
+]

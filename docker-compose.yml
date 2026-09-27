@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  backend:
+    build: 
+      context: ./ayurlex-backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./ayurlex-backend:/app
+      - chroma_data:/app/chroma_db
+      - upload_data:/app/uploads
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+      - DATABASE_URL=sqlite:///./ayurlex.db
+      - BACKEND_CORS_ORIGINS=["http://localhost:3000"]
+      # Secrets should be loaded from .env locally
+    env_file:
+      - ./ayurlex-backend/.env
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./ayurlex-app:/app
+    ports:
+      - "3000:3000"
+    command: npm run dev
+
+volumes:
+  chroma_data:
+  upload_data:

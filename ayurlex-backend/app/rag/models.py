@@ -39,6 +39,11 @@ class RAGSystemOutput(BaseModel):
     query_analysis: QueryAnalysis
     retrieval_context: RetrievalContext
     evidence: List[RetrievedEvidence]
+    retrieved_chunks: List[str] = []
+    source_metadata: List[Dict[str, Any]] = []
+    relevance_scores: List[float] = []
+    citation_information: List[Dict[str, str]] = []
+    retrieval_limitations: List[str] = []
     retrieval_confidence: RetrievalConfidence
     limitations: List[str]
     metadata: Dict[str, Any]
@@ -46,17 +51,15 @@ class RAGSystemOutput(BaseModel):
 class DocumentMetadata(BaseModel):
     document_id: str
     title: str
-    source_name: str
-    source_type: str
+    source: str
+    authority: Optional[str] = None
     category: str
-    sub_category: Optional[str] = None
     jurisdiction: str
-    jurisdiction_scope: Optional[str] = None
     language: str
     publication_date: Optional[str] = None
-    author: Optional[str] = None
-    url: Optional[str] = None
+    effective_date: Optional[str] = None
     version: Optional[str] = None
+    url_reference: Optional[str] = None
     ingestion_date: str
 
 class ChunkMetadata(BaseModel):
@@ -64,8 +67,15 @@ class ChunkMetadata(BaseModel):
     document_id: str
     content: str
     chunk_index: int
-    section_title: Optional[str] = None
-    page_number: Optional[int] = None
+    source: str
+    authority: Optional[str] = None
+    title: str
     language: str
-    category: str
     jurisdiction: str
+    category: str
+    publication_date: Optional[str] = None
+    effective_date: Optional[str] = None
+    version: Optional[str] = None
+    page: Optional[str] = None
+    section: Optional[str] = None
+    url_reference: Optional[str] = None

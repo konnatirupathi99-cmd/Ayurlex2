@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+.npm/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.env
+.venv
+
+# Database
+*.sqlite3
+*.db
+
+# ChromaDB
+ayurlex/backend/knowledge/chroma/
+chroma.sqlite3
+
+# Uploads
+ayurlex/backend/uploads/*
+!ayurlex/backend/uploads/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

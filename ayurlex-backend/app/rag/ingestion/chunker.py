@@ -24,17 +24,24 @@ class SemanticChunker:
         chunk_metadata_list = []
         
         for i, chunk_text in enumerate(chunks):
-            # In a more advanced implementation, section_title and page_number would be parsed
+            # In a more advanced implementation, section and page would be parsed
             chunk_meta = ChunkMetadata(
                 chunk_id=str(uuid.uuid4()),
                 document_id=metadata.document_id,
                 content=chunk_text,
                 chunk_index=i,
-                section_title=None, 
-                page_number=None,
+                source=metadata.source,
+                authority=metadata.authority,
+                title=metadata.title,
                 language=metadata.language,
+                jurisdiction=metadata.jurisdiction,
                 category=metadata.category,
-                jurisdiction=metadata.jurisdiction
+                publication_date=metadata.publication_date,
+                effective_date=metadata.effective_date,
+                version=metadata.version,
+                page=None,
+                section=None,
+                url_reference=metadata.url_reference
             )
             chunk_metadata_list.append(chunk_meta)
             

@@ -1,0 +1,46 @@
+version: '3.8'
+services:
+  backend:
+    build: 
+      context: ./ayurlex-backend
+      dockerfile: Dockerfile
+    volumes:
+      - chroma_data:/app/chroma_db
+      - upload_data:/app/uploads
+    environment:
+      - ENVIRONMENT=staging
+      - DATABASE_URL=postgresql://ayurlex_user:${DB_PASSWORD}@postgres:5432/ayurlex_staging
+      - BACKEND_CORS_ORIGINS=["https://staging.ayurlex.com"]
+    env_file:
+      - ./ayurlex-backend/.env.staging
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./ayurlex-app
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_PUBLIC_API_URL=https://api-staging.ayurlex.com/api
+    command: npm run start
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: ayurlex_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ayurlex_staging
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ayurlex_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  chroma_data:
+  upload_data:
+  postgres_data:

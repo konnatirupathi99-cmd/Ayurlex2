@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ayur-900: #152522;
+  --color-ayur-800: #172D29;
+  --color-ayur-700: #1C302C;
+  --color-ayur-600: #203732;
+  --color-ayur-500: #213C3A;
+  --color-ayur-400: #356659;
+  --color-ayur-300: #4D7F7B;
+  --color-ayur-200: #84A899;
+  --color-ayur-100: #8A8C7B;
+  --color-ayur-50: #B2C1B5;
+  --color-ayur-25: #ECEFE5;
+  
+  --color-background: #152522;
+  --color-foreground: #ECEFE5;
+}
+
+@layer base {
+  :root {
+    --background: #152522;
+    --foreground: #ECEFE5;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+}

@@ -1,29 +1,42 @@
+import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import analysis, documents, health, knowledge, auth, citations, workspace, system, exports
+from app.core.config import settings
+from app.core.middleware import RequestContextMiddleware
+from app.api.router import api_router
 
-app = FastAPI(
-    title="AYURLEX Intelligence Engine",
-    description="Multilingual API for Ayurvedic Intelligence and Innovation",
-    version="1.0.0"
+# Setup basic logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 )
 
-# Configure CORS for frontend communication
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], # In production, restrict to actual frontend domains
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+def create_app() -> FastAPI:
+    app = FastAPI(
+        title=settings.PROJECT_NAME,
+        version=settings.VERSION,
+        description="Multilingual AI Assistant for Intellectual Property and Regulatory Guidance in Ayurveda",
+        openapi_url=f"{settings.API_V1_STR}/openapi.json",
+        docs_url=f"{settings.API_V1_STR}/docs",
+        redoc_url=f"{settings.API_V1_STR}/redoc",
+    )
 
-# Include Routers
-app.include_router(health.router, tags=["Health"])
-app.include_router(analysis.router, tags=["Analysis"], prefix="/analysis")
-app.include_router(documents.router, tags=["Documents"], prefix="/documents")
-app.include_router(knowledge.router, tags=["Knowledge"])
-app.include_router(auth.router, tags=["Auth"], prefix="/auth")
-app.include_router(citations.router, tags=["Citations"], prefix="/citations")
-app.include_router(workspace.router, tags=["Workspace"], prefix="/workspace")
-app.include_router(system.router, tags=["System Services"], prefix="/system")
-app.include_router(exports.router, tags=["Exports"], prefix="/exports")
+    # Set all CORS enabled origins
+    if settings.BACKEND_CORS_ORIGINS:
+        app.add_middleware(
+            CORSMiddleware,
+            allow_origins=[str(origin) for origin in settings.BACKEND_CORS_ORIGINS],
+            allow_credentials=True,
+            allow_methods=["*"],
+            allow_headers=["*"],
+        )
+
+    # Add custom middlewares (request id, rate limit hook)
+    app.add_middleware(RequestContextMiddleware)
+
+    # Include routers
+    app.include_router(api_router, prefix=settings.API_V1_STR)
+
+    return app
+
+app = create_app()

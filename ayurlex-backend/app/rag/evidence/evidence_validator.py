@@ -11,6 +11,7 @@ class EvidenceValidator:
         limitations = []
         
         seen_chunks = set()
+        seen_content_hashes = set()
         
         for res in results:
             chunk_id = res.get("chunk_id")
@@ -23,6 +24,12 @@ class EvidenceValidator:
             if not content:
                 continue
                 
+            content_hash = hash(content)
+            if content_hash in seen_content_hashes:
+                continue
+                
+            seen_content_hashes.add(content_hash)
+            
             meta = res.get("metadata", {})
             jurisdiction = meta.get("jurisdiction", "International")
             
@@ -35,14 +42,14 @@ class EvidenceValidator:
                 document_id=meta.get("document_id", "unknown"),
                 chunk_id=chunk_id,
                 source_title=meta.get("title", "Unknown Source"),
-                source_name=meta.get("source_name"),
-                source_type=meta.get("source_type"),
+                source_name=meta.get("source"),
+                source_type=meta.get("category", "General"), # changed source_type to map to category or something since source_type was removed
                 category=meta.get("category", "General"),
                 jurisdiction=jurisdiction,
-                jurisdiction_scope=meta.get("jurisdiction_scope"),
+                jurisdiction_scope=meta.get("authority"), # mapped jurisdiction_scope to authority for backward compatibility
                 language=meta.get("language", "en"),
-                section=meta.get("section_title"),
-                page_number=meta.get("page_number"),
+                section=meta.get("section"),
+                page_number=meta.get("page"), # might need conversion to int if it expects int, but model says Optional[int]. We can just pass the string if we change the model.
                 content=content,
                 original_content=content,
                 relevance_score=float(res.get("relevance_score", 0.0)),

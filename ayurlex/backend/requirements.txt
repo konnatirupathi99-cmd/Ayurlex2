@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+chromadb
+python-dotenv
+openai
+google-generativeai
+anthropic
+python-multipart

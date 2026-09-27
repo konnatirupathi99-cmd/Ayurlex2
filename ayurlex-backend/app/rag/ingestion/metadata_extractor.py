@@ -13,16 +13,14 @@ class MetadataExtractor:
         return DocumentMetadata(
             document_id=str(uuid.uuid4()),
             title=title,
-            source_name=raw_metadata.get("source_name", "Unknown Source"),
-            source_type=raw_metadata.get("source_type", "Document"),
+            source=raw_metadata.get("source", raw_metadata.get("source_name", "Unknown Source")),
+            authority=raw_metadata.get("authority"),
             category=raw_metadata.get("category", default_category),
-            sub_category=raw_metadata.get("sub_category"),
             jurisdiction=raw_metadata.get("jurisdiction", default_jurisdiction),
-            jurisdiction_scope=raw_metadata.get("jurisdiction_scope"),
             language=raw_metadata.get("language", "en"),
             publication_date=raw_metadata.get("publication_date"),
-            author=raw_metadata.get("author"),
-            url=raw_metadata.get("url"),
+            effective_date=raw_metadata.get("effective_date"),
             version=raw_metadata.get("version"),
+            url_reference=raw_metadata.get("url_reference", raw_metadata.get("url")),
             ingestion_date=datetime.utcnow().isoformat() + "Z"
         )

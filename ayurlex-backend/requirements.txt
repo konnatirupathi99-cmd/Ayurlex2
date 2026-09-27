@@ -3,7 +3,7 @@ uvicorn
 pydantic
 pydantic-settings
 python-dotenv
-chromadb
+chromadb==0.4.15
 langchain
 langchain-community
 langchain-core
@@ -14,3 +14,8 @@ beautifulsoup4
 python-docx
 rank_bm25
 sentence-transformers
+PyJWT
+passlib
+bcrypt
+email-validator
+onnxruntime

@@ -54,12 +54,22 @@ class ContextBuilder:
         elif level == "low":
             status = "limited_results"
             
+        retrieved_chunks = [e.content for e in evidence]
+        source_metadata = [{"document_id": e.document_id, "category": e.category, "jurisdiction": e.jurisdiction} for e in evidence]
+        relevance_scores = [e.relevance_score for e in evidence]
+        citation_information = [{"title": e.source_title, "section": e.section or "N/A", "page": str(e.page_number) or "N/A"} for e in evidence]
+            
         return RAGSystemOutput(
             analysis_id=analysis_id,
             status=status,
             query_analysis=qa,
             retrieval_context=ctx,
             evidence=evidence,
+            retrieved_chunks=retrieved_chunks,
+            source_metadata=source_metadata,
+            relevance_scores=relevance_scores,
+            citation_information=citation_information,
+            retrieval_limitations=list(set(limitations)),
             retrieval_confidence=confidence,
             limitations=list(set(limitations)),
             metadata={"total_results": len(evidence), "retrieval_methods": ["hybrid"]}
