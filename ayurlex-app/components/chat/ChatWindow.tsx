@@ -39,8 +39,8 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ onSourceClick }) => {
     setInput('');
     setIsLoading(true);
 
+    const tempId = (Date.now() + 1).toString();
     try {
-      const tempId = (Date.now() + 1).toString();
       setMessages(prev => [...prev, {
         id: tempId,
         role: 'assistant',
@@ -63,6 +63,12 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ onSourceClick }) => {
       ));
     } catch (error) {
       console.error('Failed to send message:', error);
+      const message = error instanceof Error ? error.message : 'The research request failed.';
+      setMessages(prev => prev.map(msg =>
+        msg.id === tempId
+          ? { ...msg, content: `## Research unavailable\n\n${message}\n\nPlease try again. No unsupported answer has been generated.` }
+          : msg
+      ));
     } finally {
       setIsLoading(false);
     }

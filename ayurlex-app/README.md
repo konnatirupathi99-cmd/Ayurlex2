@@ -2,17 +2,26 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and configure the optional server-side AI provider:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local
+# Add OPENAI_API_KEY to .env.local to enable AI synthesis.
+npm run dev -- --hostname 0.0.0.0
 ```
+
+Open the home page and submit a question in the AYURLEX chat workspace. The server route retrieves scientific records from Europe PMC and supplies them to the AYURLEX evidence-grounded policy. If no AI key is configured—or the provider is unavailable—the tool returns a transparent structured evidence report rather than inventing an answer.
+
+Environment variables:
+
+- `OPENAI_API_KEY`: optional server-only API key.
+- `OPENAI_MODEL`: model name; defaults to `gpt-4o-mini`.
+- `OPENAI_BASE_URL`: optional OpenAI-compatible API base URL.
+- `AI_GATEWAY_API_KEY`: optional Vercel AI Gateway key.
+- `AI_GATEWAY_MODEL`: Gateway model; defaults to `openai/gpt-4o-mini`.
+
+On Vercel, the route can also authenticate to AI Gateway with the deployment's short-lived `VERCEL_OIDC_TOKEN`; an explicit OpenAI key is therefore not required when AI Gateway is enabled for the project. Do not prefix credentials with `NEXT_PUBLIC_`; they must remain server-side.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
