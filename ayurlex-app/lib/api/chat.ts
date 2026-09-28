@@ -14,49 +14,45 @@ export interface Source {
   confidenceScore?: number;
 }
 
+type ResearchResponse = {
+  answer?: string;
+  sources?: Source[];
+  error?: string;
+};
+
 export const sendMessage = async (
   message: string,
   history: ChatMessage[],
-  onUpdate: (chunk: string) => void
+  onUpdate: (content: string) => void
 ): Promise<ChatMessage> => {
-  // Mock API call that simulates a streaming response
-  // In a real application, this would connect to the FastAPI backend using fetch or EventSource
-  return new Promise((resolve) => {
-    const aiResponse = "Based on the Ayurvedic texts and regulatory guidelines, this formulation appears to be well-documented. Here are the details:\n\n1. **Ashwagandha**: Known for adaptogenic properties.\n2. **Brahmi**: Used for cognitive enhancement.\n\n```python\n# Example of formulation mapping\nformulation = {\n  'Ashwagandha': '30%',\n  'Brahmi': '20%'\n}\n```\n\nIs there anything else you need help with regarding this IP?";
-    
-    let currentText = "";
-    let currentIndex = 0;
-    
-    const interval = setInterval(() => {
-      const chunk = aiResponse.slice(currentIndex, currentIndex + 5);
-      currentText += chunk;
-      currentIndex += 5;
-      
-      onUpdate(currentText);
-      
-      if (currentIndex >= aiResponse.length) {
-        clearInterval(interval);
-        resolve({
-          id: Date.now().toString(),
-          role: 'assistant',
-          content: aiResponse,
-          timestamp: new Date().toISOString(),
-          sources: [
-            {
-              id: 'src-1',
-              title: 'Charaka Samhita',
-              confidenceScore: 0.95,
-              snippet: 'Reference to Ashwagandha formulation.'
-            },
-            {
-              id: 'src-2',
-              title: 'AYUSH Guidelines 2024',
-              confidenceScore: 0.88,
-              snippet: 'Regulatory constraints on Brahmi.'
-            }
-          ]
-        });
-      }
-    }, 50);
+  const response = await fetch('/api/research', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message,
+      history: history.slice(-8).map(({ role, content }) => ({ role, content })),
+    }),
   });
+
+  const result = await response.json() as ResearchResponse;
+  if (!response.ok || !result.answer) {
+    throw new Error(result.error || 'AYURLEX could not complete this research request.');
+  }
+
+  // Reveal the completed, server-validated report in readable chunks.
+  const answer = result.answer;
+  const chunkSize = 28;
+  for (let index = chunkSize; index < answer.length; index += chunkSize) {
+    onUpdate(answer.slice(0, index));
+    await new Promise((resolve) => setTimeout(resolve, 8));
+  }
+  onUpdate(answer);
+
+  return {
+    id: crypto.randomUUID(),
+    role: 'assistant',
+    content: answer,
+    timestamp: new Date().toISOString(),
+    sources: result.sources || [],
+  };
 };
