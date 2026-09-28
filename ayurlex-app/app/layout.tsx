@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 import { LanguageProvider } from "@/components/LanguageProvider";
-
-const inter = Inter({ subsets: ["latin"] });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
   title: "AYURLEX | AI Intelligence for Ayurvedic Innovation",
@@ -19,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${playfair.variable} min-h-screen bg-background text-foreground antialiased selection:bg-botanical-200 selection:text-botanical-900`}>
+      <body className="min-h-screen bg-background text-foreground antialiased selection:bg-botanical-200 selection:text-botanical-900">
         <LanguageProvider>
           {children}
         </LanguageProvider>
